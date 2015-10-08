@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="MRS\ControleBundle\Entity\TbAcesso" table="tb_acesso">
+    <id name="aceCodigo" type="integer" column="ace_codigo">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="aceUsuario" type="string" column="ace_usuario" length="45" nullable="false">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="aceSenha" type="string" column="ace_senha" length="40" nullable="false">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="aceAtivo" type="string" column="ace_ativo" length="1" nullable="false">
+      <options>
+        <option name="fixed">1</option>
+        <option name="default">S</option>
+      </options>
+    </field>
+  </entity>
+</doctrine-mapping>

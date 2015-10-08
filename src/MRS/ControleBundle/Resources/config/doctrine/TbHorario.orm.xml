@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="MRS\ControleBundle\Entity\TbHorario" table="tb_horario">
+    <id name="horCodigo" type="integer" column="hor_codigo">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="horDiaSemana" type="string" column="hor_dia_semana" length="20" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="horData" type="date" column="hor_data" nullable="true"/>
+    <field name="horEntrada" type="time" column="hor_entrada" nullable="true"/>
+    <field name="horAlmocoIda" type="time" column="hor_almoco_ida" nullable="true"/>
+    <field name="horAlmocoVolta" type="time" column="hor_almoco_volta" nullable="true"/>
+    <field name="horSaida" type="time" column="hor_saida" nullable="true"/>
+    <field name="horJustificativa" type="text" column="hor_justificativa" length="65535" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+  </entity>
+</doctrine-mapping>

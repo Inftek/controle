@@ -1,0 +1,55 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>Lista</h1>
+
+    <table class="table table-bordered table-condensed table-hover table-striped">
+        <thead>
+            <tr>
+                <th>Data</th>
+                <th>Valor</th>
+                <th>Descricao</th>
+                <th>Codigo</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('financas_show', { 'id': entity.finCodigo }) }}">
+                        {{ entity.finDataCadastro | date('d/m/Y') }}
+                    </a>
+                </td>
+                <td>{{ entity.finValor|number_format(2,',','.') }}</td>
+                <td>{{ entity.finDescricao }}</td>
+                <td>{{ entity.catCodigo }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('financas_show', { 'id': entity.finCodigo }) }}">
+                            <button class="btn btn-primary">
+                                <span>Mostrar</span>
+                            </button>
+                        </a>
+
+                        <a href="{{ path('financas_edit', { 'id': entity.finCodigo }) }}">
+                            <button class="btn btn-primary">
+                                <span>Editar</span>
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('financas_new') }}">
+                <button class="btn btn-primary">Novo</button>
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

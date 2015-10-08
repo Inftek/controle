@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="MRS\ControleBundle\Entity\TbFinancas" table="tb_financas">
+    <indexes>
+      <index name="fk_tipo_entrada" columns="ten_codigo"/>
+      <index name="fk_categoria" columns="cat_codigo"/>
+    </indexes>
+    <id name="finCodigo" type="integer" column="fin_codigo">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="finDataCadastro" type="date" column="fin_data_cadastro" nullable="false"/>
+    <field name="finValor" type="decimal" column="fin_valor" precision="10" scale="2" nullable="false"/>
+    <field name="finDescricao" type="string" column="fin_descricao" length="45" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <many-to-one field="tenCodigo" target-entity="TbTipoEntrada" fetch="LAZY">
+      <join-columns>
+        <join-column name="ten_codigo" referenced-column-name="ten_codigo"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="catCodigo" target-entity="TbCategoria" fetch="LAZY">
+      <join-columns>
+        <join-column name="cat_codigo" referenced-column-name="cat_codigo"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

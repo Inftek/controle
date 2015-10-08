@@ -1,0 +1,3 @@
+mrs_controle_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: MRSControleBundle:Default:index }
