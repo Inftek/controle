@@ -9,14 +9,15 @@
 
 namespace MRS\ControleBundle\Repository;
 
-class FinancasRepository extends \Doctrine\ORM\EntityRepository
+class TbFinancasRepository extends \Doctrine\ORM\EntityRepository
 {
 
-    public function meuMetodo()
+    public function findAllInOrder()
     {
         return $this->getEntityManager()
                     ->getRepository('MRSControleBundle:TbFinancas')
-                    ->findAll()
+                    ->createQueryBuilder('f')
+                    ->orderBy('f.finValor','desc')
                     ->getQuery()
                     ->getResult();
 

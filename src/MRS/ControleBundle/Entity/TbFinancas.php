@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * TbFinancas
  *
  * @ORM\Table(name="tb_financas", indexes={@ORM\Index(name="fk_tipo_entrada", columns={"ten_codigo"}), @ORM\Index(name="fk_categoria", columns={"cat_codigo"})})
- * @ORM\Entity(repositoryClass="MRS\ControleBundle\Repository\FinancasRepository")
+ * @ORM\Entity(repositoryClass="MRS\ControleBundle\Repository\TbFinancasRepository")
  */
 class TbFinancas
 {
@@ -198,4 +198,13 @@ class TbFinancas
     {
         return $this->finCodigo;
     }
+
+    /**
+     * @ORM\PrePersist()
+     */
+    public function setValueValor()
+    {
+        $this->finValor = number_format($this->finValor,2,'.','');
+    }
+
 }

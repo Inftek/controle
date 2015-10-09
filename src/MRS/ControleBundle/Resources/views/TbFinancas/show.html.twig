@@ -39,6 +39,8 @@
             <button class="btn btn-primary">Edit</button>
         </a>
     </li>
+{%  if is_granted('ROLE_SUPER_ADMIN') %}
     <li>{{ form(delete_form) }}</li>
+{%  endif %}
 </ul>
 {% endblock %}

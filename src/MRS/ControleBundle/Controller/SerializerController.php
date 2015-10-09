@@ -31,7 +31,7 @@ class SerializerController extends Controller
 
         $response =  new Response($jsonEntity);
 
-        $response->headers->set('ContentType','Application/json');
+        $response->headers->set('Content-Type','Application/json');
 
         return $response;
 
