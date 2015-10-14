@@ -1,6 +1,9 @@
 {% extends '::base.html.twig' %}
 
 {% block body -%}
+
+    {{ include('@MRSControle/TbFinancas/Template/painel.html.twig') }}
+
     <h1>Novo</h1>
 
     {{ form(form) }}

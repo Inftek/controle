@@ -1,6 +1,9 @@
 {% extends '::base.html.twig' %}
 
 {% block body -%}
+
+    {{ include('MRSControleBundle:TbFinancas/Template:painel.html.twig') }}
+
     <h1>TbFinancas edit</h1>
 
     {{ form(edit_form) }}

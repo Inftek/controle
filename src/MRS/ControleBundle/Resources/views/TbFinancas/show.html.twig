@@ -1,32 +1,46 @@
 {% extends '::base.html.twig' %}
 
 {% block body -%}
-    <h1></h1>
 
-    <table class="jumbotron">
-        <tbody>
-            <tr>
-                <th>Data Criacao:</th>
-                <td>{{ entity.finDataCadastro|date('d/m/Y H:i:s') }}</td>
-            </tr>
-            <tr>
-                <th>Valor:</th>
-                <td>{{ entity.finValor | number_format(2,',','.') }}</td>
-            </tr>
-            <tr>
-                <th>Descricao:</th>
-                <td>{{ entity.finDescricao }}</td>
-            </tr>
-            <tr>
-                <th>Tipo:</th>
-                <td>{{ entity.tenCodigo }}</td>
-            </tr>
-            <tr>
-                <th>Categoria:</th>
-                <td>{{ entity.catCodigo }}</td>
-            </tr>
-        </tbody>
-    </table>
+
+    {{ include('MRSControleBundle:TbFinancas/Template:painel.html.twig') }}
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            TITULO AQUI
+        </div>
+        <div class="panel-body">
+
+            <table class="jumbotron">
+                <tbody>
+                <tr>
+                    <th>Data Criacao:</th>
+                    <td>{{ entity.finDataCadastro|date('d/m/Y') }}</td>
+                </tr>
+                <tr>
+                    <th>Valor:</th>
+                    <td>{{ entity.finValor | number_format(2,',','.') }}</td>
+                </tr>
+                <tr>
+                    <th>Descricao:</th>
+                    <td>{{ entity.finDescricao }}</td>
+                </tr>
+                <tr>
+                    <th>Tipo:</th>
+                    <td>{{ entity.tenCodigo }}</td>
+                </tr>
+                <tr>
+                    <th>Categoria:</th>
+                    <td>{{ entity.catCodigo }}</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <div class="panel-footer">
+            Ahh moleque
+        </div>
+    </div>
 
         <ul class="record_actions">
     <li>

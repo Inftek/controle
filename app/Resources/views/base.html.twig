@@ -22,7 +22,7 @@
                         class="icon-bar"></span>
             </button>
 
-            <div class="btn-group">
+            <div class="btn-group btn-lg">
                 <button class="btn btn-default btn-sm">
                     <span class="glyphicon glyphicon-th-large"></span> NOME DO SISTEMA
                 </button>
@@ -31,10 +31,11 @@
                     <span class="glyphicon glyphicon-arrow-down"></span>
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a href="#"><span class="glyphicon glyphicon-home"></span>LINK 1 AQUI</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-home"></span>LINK 2 AQUI</a></li>
+                    <li><a href="{{ path('financas') }}"><span class="glyphicon glyphicon-home"></span> Finanças</a></li>
+                    <li><a href="{{ path('categoria') }}"><span class="glyphicon glyphicon-home"></span> Categoria</a></li>
                     <li class="divider"></li>
                     <li><a href="#"><span class="glyphicon glyphicon-user"></span> Alterar Senha</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sair </a></li>
                 </ul>
             </div>
 
@@ -45,14 +46,15 @@
         <div class="nav navbar-left collapse navbar-collapse">
             <p class="navbar-text">SISTEM NAME</p>
         </div>
-        <div class="nav navbar-right collapse navbar-collapse"
-             id="navbar-collapse-1">
-            <button class="btn btn-default btn-sm">
-                <a href="">
-                    <span class="glyphicon glyphicon-off"></span> Sair
-                </a>
-            </button>
-        </div>
+
+{#        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Dashboard</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Dashboard</a></li>
+            </ul>
+        </div>#}
     </nav>
 
     <nav class="navbar navbar-default" role="navigation"></nav>
