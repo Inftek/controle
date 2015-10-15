@@ -22,45 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="new.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/new.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6666667">
-              <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
-              <folding>
-                <element signature="e#12#28#0#Twig" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/edit.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6666667">
-              <caret line="4" column="70" selection-start-line="4" selection-start-column="70" selection-end-line="4" selection-end-column="70" />
-              <folding>
-                <element signature="e#12#28#0#Twig" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="painel.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/Template/painel.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5512465">
-              <caret line="35" column="46" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.6666665">
-              <caret line="10" column="72" selection-start-line="10" selection-start-column="72" selection-end-line="10" selection-end-column="72" />
+            <state vertical-scroll-proportion="-10.0">
+              <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
               <folding>
                 <element signature="e#12#28#0#Twig" expanded="true" />
               </folding>
@@ -68,13 +34,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/show.html.twig">
+      <file leaf-file-name="TbFinancasController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Controller/TbFinancasController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.3333333">
-              <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.64819944">
+              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding>
-                <element signature="e#12#28#0#Twig" expanded="true" />
+                <element signature="e#49#94#0#PHP" expanded="true" />
+                <element signature="e#1118#1148#1#PHP" expanded="true" />
+                <element signature="e#3631#3661#1#PHP" expanded="true" />
+                <element signature="e#4291#4321#1#PHP" expanded="true" />
+                <element signature="e#5644#5674#1#PHP" expanded="true" />
+                <element signature="e#6721#6751#1#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -90,23 +61,23 @@
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Entity/TbTipoEntrada.php" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Entity/TbCategoria.php" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
-        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/TbFinancasController.php" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Form/TbFinancasType.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Repository/FinancasRepository.php" />
-        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/SerializerController.php" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
         <option value="$PROJECT_DIR$/web/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Entity/TbFinancas.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Template/index.html.twig" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/new.html.twig" />
-        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/index.html.twig" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/show.html.twig" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/edit.html.twig" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/Template/painel.html.twig" />
+        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Repository/FinancasRepository.php" />
+        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/SerializerController.php" />
+        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/TbFinancasController.php" />
       </list>
     </option>
   </component>
@@ -266,14 +237,6 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TbFinancas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -300,8 +263,30 @@
               <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="controle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MRS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ControleBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Repository" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -327,7 +312,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
+              <option name="myItemId" value="Controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -525,28 +510,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Controller/SerializerController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5235457">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="e#49#108#0#PHP" expanded="false" />
-            <element signature="e#699#729#1#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Repository/FinancasRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64819944">
-          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-          <folding>
-            <element signature="e#7#87#0#PHP" expanded="false" />
-            <element signature="e#320#350#1#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/security.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.27600554">
@@ -571,22 +534,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Controller/TbFinancasController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38227147">
-          <caret line="73" column="50" selection-start-line="73" selection-start-column="50" selection-end-line="73" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Entity/TbFinancas.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.92520773">
-          <caret line="206" column="66" selection-start-line="206" selection-start-column="26" selection-end-line="206" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.29916897">
@@ -595,20 +542,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/show.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/edit.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.3333333">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-          <folding>
-            <element signature="e#12#28#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.6666665">
-          <caret line="10" column="72" selection-start-line="10" selection-start-column="72" selection-end-line="10" selection-end-column="72" />
+        <state vertical-scroll-proportion="0.09972299">
+          <caret line="4" column="70" selection-start-line="4" selection-start-column="70" selection-end-line="4" selection-end-column="70" />
           <folding>
             <element signature="e#12#28#0#Twig" expanded="true" />
           </folding>
@@ -617,7 +554,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/new.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6666667">
+        <state vertical-scroll-proportion="0.09972299">
           <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
           <folding>
             <element signature="e#12#28#0#Twig" expanded="true" />
@@ -625,21 +562,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/edit.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/show.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6666667">
-          <caret line="4" column="70" selection-start-line="4" selection-start-column="70" selection-end-line="4" selection-end-column="70" />
+        <state vertical-scroll-proportion="0.12465374">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
           <folding>
             <element signature="e#12#28#0#Twig" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Entity/TbFinancas.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32409972">
+          <caret line="19" column="28" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/Template/painel.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5512465">
-          <caret line="35" column="46" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.6509695">
+          <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Controller/SerializerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64819944">
+          <caret line="28" column="70" selection-start-line="28" selection-start-column="70" selection-end-line="28" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Repository/FinancasRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22437674">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <folding>
+            <marker date="1444859421198" expanded="true" signature="-1:-1" placeholder="SELECT f FRO..MRSControleBundle..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.0">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+          <folding>
+            <element signature="e#12#28#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Controller/TbFinancasController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64819944">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding>
+            <element signature="e#49#94#0#PHP" expanded="true" />
+            <element signature="e#1118#1148#1#PHP" expanded="true" />
+            <element signature="e#3631#3661#1#PHP" expanded="true" />
+            <element signature="e#4291#4321#1#PHP" expanded="true" />
+            <element signature="e#5644#5674#1#PHP" expanded="true" />
+            <element signature="e#6721#6751#1#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

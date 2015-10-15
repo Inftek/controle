@@ -25,11 +25,27 @@ class TbFinancasController extends Controller
      * @Method("GET")
      * @Template()
      */
-    public function indexAction()
+    public function indexAction(Request $request)
     {
+        $dataInicial = ($request->get('dataInicial') == '') ? '2015-01-01' : $request->get('dataInicial');
+
+        $dataFinal = ($request->get('dataFinal') == '') ? date('Y-m-d') : $request->get('dataFinal');
+
+
         $em = $this->getDoctrine()->getManager();
 
-        $entities = $em->getRepository('MRSControleBundle:TbFinancas')->findAll();
+
+/*        $entities = $em->getRepository('MRSControleBundle:TbFinancas')->findAll();*/
+
+        $entities = $em->getRepository('MRSControleBundle:TbFinancas')
+                  ->createQueryBuilder('f')
+                  ->where('f.finDataCadastro > :dataInicial')
+                  ->andWhere('f.finDataCadastro < :dataFinal')
+                  ->setParameters(array('dataInicial' => $dataInicial,
+                                        'dataFinal'=> $dataFinal))
+                  ->orderBy('f.finDataCadastro','DESC')
+                  ->getQuery()
+                  ->getResult();
 
         return array(
             'entities' => $entities,

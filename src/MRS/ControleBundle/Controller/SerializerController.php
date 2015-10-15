@@ -22,6 +22,8 @@ class SerializerController extends Controller
 
     public function jsonFinancas()
     {
+        $param = '';
+
         $Entity = $this->getDoctrine()
                        ->getManager()
                        ->getRepository('MRSControleBundle:TbFinancas')
