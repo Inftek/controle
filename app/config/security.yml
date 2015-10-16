@@ -21,7 +21,9 @@ security:
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
-
+            logout:
+                path: /logout
+                target: /
         main:
             anonymous: ~
             # activate different ways to authenticate

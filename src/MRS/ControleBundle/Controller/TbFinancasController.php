@@ -40,7 +40,7 @@ class TbFinancasController extends Controller
         $entities = $em->getRepository('MRSControleBundle:TbFinancas')
                   ->createQueryBuilder('f')
                   ->where('f.finDataCadastro > :dataInicial')
-                  ->andWhere('f.finDataCadastro < :dataFinal')
+                  ->andWhere('f.finDataCadastro <= :dataFinal')
                   ->setParameters(array('dataInicial' => $dataInicial,
                                         'dataFinal'=> $dataFinal))
                   ->orderBy('f.finDataCadastro','DESC')
