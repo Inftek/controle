@@ -13,70 +13,75 @@
             <form class="form-inline" method="get" action="{{ path('financas') }}">
                 <div class="form-group">
                     <label for="exampleInputName2">Data Inicial:</label>
-                    <input type="date" name="dataInicial" class="form-control">
+                    <input type="date" name="dataInicial" value="{{ datas.dataInicial }}" class="form-control">
                 </div>
+
                 <div class="form-group">
                     <label for="exampleInputEmail2">Data Inicial:</label>
-                    <input type="date" name="dataFinal" class="form-control">
+                    <input type="date" name="dataFinal" value="{{ datas.dataFinal }}" class="form-control">
                 </div>
 
-                <button type="submit" class="btn btn-default">Procurar</button>
-
+                <div class="form-group">
+                    <label for="exampleInputEmail2"></label>
+                    <button type="submit" class="btn btn-default">Procurar</button>
+                </div>
             </form>
         </div>
 
     </div>
 
+
     <div class="row">
         <div class="col-md-12">
-            <h1>Lista</h1>
 
-            <table class="table table-bordered table-condensed table-hover table-striped">
-                <thead>
-                <tr>
-                    <th>Data</th>
-                    <th>Valor</th>
-                    <th>Descricao</th>
-                    <th>Codigo</th>
-                    <th>Actions</th>
-                </tr>
-                </thead>
-                <tbody>
-                {% for entity in entities %}
-                    <tr>
-                        <td><a href="{{ path('financas_show', { 'id': entity.finCodigo }) }}">
-                                {{ entity.finDataCadastro | date('d/m/Y') }}
-                            </a>
-                        </td>
-                        <td>{{ entity.finValor|number_format(2,',','.') }}</td>
-                        <td>{{ entity.finDescricao }}</td>
-                        <td>{{ entity.catCodigo }}</td>
-                        <td>
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Action <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li><a href="{{ path('financas_show', { 'id': entity.finCodigo }) }}">Mostrar</a></li>
-                                    {% if is_granted('ROLE_SUPER_ADMIN') %}
-                                    <li><a href="{{ path('financas_edit', { 'id': entity.finCodigo }) }}">Editar</a></li>
-                                    {%  endif %}
-                                </ul>
-                            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Lista</h3>
+                </div>
 
-                        </td>
-                    </tr>
-                {% endfor %}
-                </tbody>
-            </table>
+                <div class="panel-body">
 
-            <ul class="list-group">
-                <li class="list-group-item">
-                    <a href="{{ path('financas_new') }}">
-                        <button class="btn btn-primary">Novo</button>
-                    </a>
-                </li>
-            </ul>
+
+                    <table class="table table-bordered table-condensed table-hover table-striped">
+                        <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Valor</th>
+                            <th>Descricao</th>
+                            <th>Codigo</th>
+                            <th>#</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for entity in entities %}
+                            <tr>
+                                <td><a href="{{ path('financas_show', { 'id': entity.finCodigo }) }}">
+                                        {{ entity.finDataCadastro | date('d/m/Y') }}
+                                    </a>
+                                </td>
+                                <td>{{ entity.finValor|number_format(2,',','.') }}</td>
+                                <td>{{ entity.finDescricao }}</td>
+                                <td>{{ entity.catCodigo }}</td>
+                                <td>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Opções <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="{{ path('financas_show', { 'id': entity.finCodigo }) }}">Mostrar</a></li>
+                                            {% if is_granted('ROLE_SUPER_ADMIN') %}
+                                                <li><a href="{{ path('financas_edit', { 'id': entity.finCodigo }) }}">Editar</a></li>
+                                            {%  endif %}
+                                        </ul>
+                                    </div>
+
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
 {% endblock %}

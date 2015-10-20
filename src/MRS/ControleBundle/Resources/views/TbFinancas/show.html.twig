@@ -5,9 +5,9 @@
 
     {{ include('MRSControleBundle:TbFinancas/Template:painel.html.twig') }}
 
-    <div class="panel panel-primary">
+    <div class="panel panel-default">
         <div class="panel-heading">
-            TITULO AQUI
+           {{ entity.finDescricao }}
         </div>
         <div class="panel-body">
 
@@ -38,23 +38,25 @@
 
         </div>
         <div class="panel-footer">
-            Ahh moleque
+
         </div>
     </div>
 
-        <ul class="record_actions">
-    <li>
+  <ul class="btn-toolbar">
+    <li class="btn-group">
         <a href="{{ path('financas') }}">
-            Back to the list
+            <button class="btn btn-primary">Listar</button>
         </a>
     </li>
-    <li>
+    <li class="btn-group">
         <a href="{{ path('financas_edit', { 'id': entity.finCodigo }) }}">
             <button class="btn btn-primary">Edit</button>
         </a>
     </li>
 {%  if is_granted('ROLE_SUPER_ADMIN') %}
-    <li>{{ form(delete_form) }}</li>
+    <li class="btn-group">
+        {{ form(delete_form) }}
+    </li>
 {%  endif %}
 </ul>
 {% endblock %}

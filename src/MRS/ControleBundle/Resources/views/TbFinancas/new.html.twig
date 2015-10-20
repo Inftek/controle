@@ -4,15 +4,21 @@
 
     {{ include('@MRSControle/TbFinancas/Template/painel.html.twig') }}
 
-    <h1>Novo</h1>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Pesquisar</h3>
+        </div>
 
-    {{ form(form) }}
+        <div class="panel-body">
 
-        <ul class="record_actions">
-    <li>
-        <a href="{{ path('financas') }}">
-            <span class="glyphicon glyphicon-backward"></span>
-        </a>
-    </li>
-</ul>
+            {{ form(form) }}
+        </div>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+            <a href="{{ path('financas') }}">
+                <button class="btn btn-primary">Voltar</button>
+            </a>
+        </li>
+    </ul>
 {% endblock %}

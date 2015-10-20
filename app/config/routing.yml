@@ -7,3 +7,5 @@ app_financas:
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
+logout:
+    path: /logout

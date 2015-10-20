@@ -4,18 +4,27 @@
 
     {{ include('MRSControleBundle:TbFinancas/Template:painel.html.twig') }}
 
-    <h1>TbFinancas edit</h1>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Pesquisar</h3>
+    </div>
+
+    <div class="panel-body">
 
     {{ form(edit_form) }}
 
-        <ul class="record_actions">
-    <li>
+    </div>
+</div>
+<ul class="btn-toolbar">
+    <li class="btn-group">
         <a href="{{ path('financas') }}">
-            Back to the list
+            <button class="btn btn-primary">Listar</button>
         </a>
     </li>
 {%  if is_granted('ROLE_SUPER_ADMIN') %}
-    <li>{{ form(delete_form) }}</li>
+    <li class="btn-group">
+        {{ form(delete_form) }}
+    </li>
 {%  endif %}
 </ul>
 {% endblock %}

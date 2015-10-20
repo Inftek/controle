@@ -49,6 +49,7 @@ class TbFinancasController extends Controller
 
         return array(
             'entities' => $entities,
+            'datas' => array('dataInicial' => $dataInicial, 'dataFinal' => $dataFinal),
         );
     }
     /**
