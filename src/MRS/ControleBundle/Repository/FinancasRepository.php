@@ -8,25 +8,27 @@
  */
 
 namespace MRS\ControleBundle\Repository;
+use Doctrine\ORM\EntityRepository;
 
-class TbFinancasRepository extends \Doctrine\ORM\EntityRepository
+class TbFinancasRepository extends EntityRepository
 {
 
-    public function findByfinDataCadastro($param)
+    public function findAllInOrder()
     {
 
-        return $this->getEntityManager()
+/*        return $this->getEntityManager()
                     ->createQuery(
                         'SELECT f FROM MRSControleBundle:TbFinancas f ORDER BY f.fin_codigo'
                     )->getResult();
+*/
 
-/*        return $this->getEntityManager()
-                    ->createQuery()getRepository('MRSControleBundle:TbFinancas')
+        return $this->getEntityManager()
+                    ->getRepository('MRS\ControleBundle\Repository\TbFinancas')
                     ->createQueryBuilder('f')
                     ->orderBy('f.finValor','desc')
                     ->getQuery()
                     ->getResult();
-*/
+
 
     }
 

@@ -2,3 +2,5 @@ services:
 #    mrs_controle.example:
 #        class: MRS\ControleBundle\Example
 #        arguments: [@service_id, "plain_value", %parameter%]
+  financas.resultquery:
+    class: MRS\ControleBundle\Service\FinancasService

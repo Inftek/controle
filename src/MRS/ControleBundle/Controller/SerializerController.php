@@ -24,10 +24,16 @@ class SerializerController extends Controller
     {
         $param = '';
 
-        $Entity = $this->getDoctrine()
+        $Financas = $this->get('database_connection')
+            ->fetchAll('SELECT *,(SELECT cat_descricao FROM tb_categoria WHERE cat_codigo = F.cat_codigo) AS cat_descricao
+                        FROM tb_financas AS F');
+
+        $Entity = $Financas;
+
+/*        $Entity = $this->getDoctrine()
                        ->getManager()
-                       ->getRepository('MRSControleBundle:TbFinancas')
-                       ->findAll();
+                       ->getRepository('MRS\ControleBundle\Entity\TbFinancas')
+                       ->findAll();*/
 
         $jsonEntity = $this->get('serializer')->serialize($Entity,'json');
 

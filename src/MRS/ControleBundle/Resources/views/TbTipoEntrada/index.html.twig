@@ -1,0 +1,26 @@
+{% extends '::base.html.twig' %}
+
+
+{% block body -%}
+    <h1>TbTipoEntrada</h1>
+
+
+    {% for entity in entities %}
+
+        {{ entity.tenAtivo }}
+        {{ entity.tenDescricao }}
+
+        <a href="{{ path('tipoentrada_edit', { 'id': entity.id }) }}">
+            Editar
+        </a>
+
+        <a href="{{ path('tipoentrada_show', { 'id': entity.id }) }}">
+            Show
+        </a>
+
+    <a href="{{ path('tipoentrada_new') }}">Novo</a>
+
+    {% endfor %}
+
+
+{% endblock %}

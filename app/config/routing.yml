@@ -1,11 +1,12 @@
 mrs_controle:
     resource: "@MRSControleBundle/Resources/config/routing.yml"
     prefix:   /
+mrs_user:
+    resource: "@UserBundle/Controller/"
+    type:   annotation
 app_financas:
     resource: "@MRSControleBundle/Controller/"
     type:     annotation
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
-logout:
-    path: /logout

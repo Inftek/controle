@@ -1,67 +1,51 @@
 <?php
 
-namespace MRS\ControleBundle\Controller;
+namespace MRS\UserBundle\Controller;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
-use MRS\ControleBundle\Entity\TbFinancas;
-use MRS\ControleBundle\Form\TbFinancasType;
+use MRS\UserBundle\Entity\User;
+use MRS\UserBundle\Form\UserType;
 
 /**
- * TbFinancas controller.
+ * User controller.
  *
- * @Route("/financas")
+ * @Route("/user")
  */
-class TbFinancasController extends Controller
+class UserController extends Controller
 {
 
     /**
-     * Lists all TbFinancas entities.
+     * Lists all User entities.
      *
-     * @Route("/", name="financas")
-     * @Method("GET|POST")
+     * @Route("/", name="user")
+     * @Method("GET")
      * @Template()
      */
-    public function indexAction(Request $request)
+    public function indexAction()
     {
-        $dataInicial = ($request->get('dataInicial') == '') ? '2015-01-01' : $request->get('dataInicial');
-
-        $dataFinal = ($request->get('dataFinal') == '') ? date('Y-m-d') : $request->get('dataFinal');
-
-
         $em = $this->getDoctrine()->getManager();
 
-
-/*        $entities = $em->getRepository('MRSControleBundle:TbFinancas')->findAll();*/
-
-        $entities = $em->getRepository('MRSControleBundle:TbFinancas')
-                  ->createQueryBuilder('f')
-                  ->where('f.finDataCadastro > :dataInicial')
-                  ->andWhere('f.finDataCadastro <= :dataFinal')
-                  ->setParameters(array('dataInicial' => $dataInicial,
-                                        'dataFinal'=> $dataFinal))
-                  ->orderBy('f.finDataCadastro','DESC')
-                  ->getQuery()
-                  ->getResult();
+        $entities = $em->getRepository('UserBundle:User')->findAll();
 
         return array(
             'entities' => $entities,
-            'datas' => array('dataInicial' => $dataInicial, 'dataFinal' => $dataFinal),
+            'error' => ''
         );
     }
     /**
-     * Creates a new TbFinancas entity.
+     * Creates a new User entity.
      *
-     * @Route("/create", name="financas_create")
+     * @Route("/", name="user_create")
      * @Method("POST")
-     * @Template("MRSControleBundle:TbFinancas:new.html.twig")
+     * @Template("UserBundle:User:new.html.twig")
      */
     public function createAction(Request $request)
     {
-        $entity = new TbFinancas();
+        $entity = new User();
         $form = $this->createCreateForm($entity);
         $form->handleRequest($request);
 
@@ -70,7 +54,7 @@ class TbFinancasController extends Controller
             $em->persist($entity);
             $em->flush();
 
-            return $this->redirect($this->generateUrl('financas_show', array('id' => $entity->getId())));
+            return $this->redirect($this->generateUrl('user_show', array('id' => $entity->getId())));
         }
 
         return array(
@@ -80,34 +64,34 @@ class TbFinancasController extends Controller
     }
 
     /**
-     * Creates a form to create a TbFinancas entity.
+     * Creates a form to create a User entity.
      *
-     * @param TbFinancas $entity The entity
+     * @param User $entity The entity
      *
      * @return \Symfony\Component\Form\Form The form
      */
-    private function createCreateForm(TbFinancas $entity)
+    private function createCreateForm(User $entity)
     {
-        $form = $this->createForm(new TbFinancasType(), $entity, array(
-            'action' => $this->generateUrl('financas_create'),
+        $form = $this->createForm(new UserType(), $entity, array(
+            'action' => $this->generateUrl('user_create'),
             'method' => 'POST',
         ));
 
-        $form->add('submit', 'submit', array('label' => 'Salvar'));
+        $form->add('submit', 'submit', array('label' => 'Create'));
 
         return $form;
     }
 
     /**
-     * Displays a form to create a new TbFinancas entity.
+     * Displays a form to create a new User entity.
      *
-     * @Route("/new", name="financas_new")
+     * @Route("/new", name="user_new")
      * @Method("GET")
      * @Template()
      */
     public function newAction()
     {
-        $entity = new TbFinancas();
+        $entity = new User();
         $form   = $this->createCreateForm($entity);
 
         return array(
@@ -117,9 +101,9 @@ class TbFinancasController extends Controller
     }
 
     /**
-     * Finds and displays a TbFinancas entity.
+     * Finds and displays a User entity.
      *
-     * @Route("/{id}", name="financas_show")
+     * @Route("/{id}", name="user_show")
      * @Method("GET")
      * @Template()
      */
@@ -127,10 +111,10 @@ class TbFinancasController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
 
-        $entity = $em->getRepository('MRSControleBundle:TbFinancas')->find($id);
+        $entity = $em->getRepository('UserBundle:User')->find($id);
 
         if (!$entity) {
-            throw $this->createNotFoundException('Unable to find TbFinancas entity.');
+            throw $this->createNotFoundException('Unable to find User entity.');
         }
 
         $deleteForm = $this->createDeleteForm($id);
@@ -142,9 +126,9 @@ class TbFinancasController extends Controller
     }
 
     /**
-     * Displays a form to edit an existing TbFinancas entity.
+     * Displays a form to edit an existing User entity.
      *
-     * @Route("/{id}/edit", name="financas_edit")
+     * @Route("/{id}/edit", name="user_edit")
      * @Method("GET")
      * @Template()
      */
@@ -152,10 +136,10 @@ class TbFinancasController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
 
-        $entity = $em->getRepository('MRSControleBundle:TbFinancas')->find($id);
+        $entity = $em->getRepository('UserBundle:User')->find($id);
 
         if (!$entity) {
-            throw $this->createNotFoundException('Unable to find TbFinancas entity.');
+            throw $this->createNotFoundException('Unable to find User entity.');
         }
 
         $editForm = $this->createEditForm($entity);
@@ -169,16 +153,16 @@ class TbFinancasController extends Controller
     }
 
     /**
-    * Creates a form to edit a TbFinancas entity.
+    * Creates a form to edit a User entity.
     *
-    * @param TbFinancas $entity The entity
+    * @param User $entity The entity
     *
     * @return \Symfony\Component\Form\Form The form
     */
-    private function createEditForm(TbFinancas $entity)
+    private function createEditForm(User $entity)
     {
-        $form = $this->createForm(new TbFinancasType(), $entity, array(
-            'action' => $this->generateUrl('financas_update', array('id' => $entity->getId())),
+        $form = $this->createForm(new UserType(), $entity, array(
+            'action' => $this->generateUrl('user_update', array('id' => $entity->getId())),
             'method' => 'PUT',
         ));
 
@@ -187,20 +171,20 @@ class TbFinancasController extends Controller
         return $form;
     }
     /**
-     * Edits an existing TbFinancas entity.
+     * Edits an existing User entity.
      *
-     * @Route("/{id}", name="financas_update")
+     * @Route("/{id}", name="user_update")
      * @Method("PUT")
-     * @Template("MRSControleBundle:TbFinancas:edit.html.twig")
+     * @Template("UserBundle:User:edit.html.twig")
      */
     public function updateAction(Request $request, $id)
     {
         $em = $this->getDoctrine()->getManager();
 
-        $entity = $em->getRepository('MRSControleBundle:TbFinancas')->find($id);
+        $entity = $em->getRepository('UserBundle:User')->find($id);
 
         if (!$entity) {
-            throw $this->createNotFoundException('Unable to find TbFinancas entity.');
+            throw $this->createNotFoundException('Unable to find User entity.');
         }
 
         $deleteForm = $this->createDeleteForm($id);
@@ -210,7 +194,7 @@ class TbFinancasController extends Controller
         if ($editForm->isValid()) {
             $em->flush();
 
-            return $this->redirect($this->generateUrl('financas_show', array('id' => $id)));
+            return $this->redirect($this->generateUrl('user_edit', array('id' => $id)));
         }
 
         return array(
@@ -220,9 +204,9 @@ class TbFinancasController extends Controller
         );
     }
     /**
-     * Deletes a TbFinancas entity.
+     * Deletes a User entity.
      *
-     * @Route("/{id}", name="financas_delete")
+     * @Route("/{id}", name="user_delete")
      * @Method("DELETE")
      */
     public function deleteAction(Request $request, $id)
@@ -232,21 +216,21 @@ class TbFinancasController extends Controller
 
         if ($form->isValid()) {
             $em = $this->getDoctrine()->getManager();
-            $entity = $em->getRepository('MRSControleBundle:TbFinancas')->find($id);
+            $entity = $em->getRepository('UserBundle:User')->find($id);
 
             if (!$entity) {
-                throw $this->createNotFoundException('Unable to find TbFinancas entity.');
+                throw $this->createNotFoundException('Unable to find User entity.');
             }
 
             $em->remove($entity);
             $em->flush();
         }
 
-        return $this->redirect($this->generateUrl('financas'));
+        return $this->redirect($this->generateUrl('user'));
     }
 
     /**
-     * Creates a form to delete a TbFinancas entity by id.
+     * Creates a form to delete a User entity by id.
      *
      * @param mixed $id The entity id
      *
@@ -255,7 +239,7 @@ class TbFinancasController extends Controller
     private function createDeleteForm($id)
     {
         return $this->createFormBuilder()
-            ->setAction($this->generateUrl('financas_delete', array('id' => $id)))
+            ->setAction($this->generateUrl('user_delete', array('id' => $id)))
             ->setMethod('DELETE')
             ->add('submit', 'submit', array('label' => 'Delete'))
             ->getForm()

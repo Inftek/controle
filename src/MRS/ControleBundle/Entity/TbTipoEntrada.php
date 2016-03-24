@@ -90,7 +90,7 @@ class TbTipoEntrada
      *
      * @return integer
      */
-    public function getTenCodigo()
+    public function getId()
     {
         return $this->tenCodigo;
     }

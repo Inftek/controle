@@ -10,7 +10,7 @@
         </div>
 
         <div class="panel-body">
-            <form class="form-inline" method="get" action="{{ path('financas') }}">
+            <form class="form-inline" method="post" action="{{ path('financas') }}">
                 <div class="form-group">
                     <label for="exampleInputName2">Data Inicial:</label>
                     <input type="date" name="dataInicial" value="{{ datas.dataInicial }}" class="form-control">
@@ -45,23 +45,16 @@
                     <table class="table table-bordered table-condensed table-hover table-striped">
                         <thead>
                         <tr>
+                            <th>#</th>
                             <th>Data</th>
                             <th>Valor</th>
                             <th>Descricao</th>
                             <th>Codigo</th>
-                            <th>#</th>
                         </tr>
                         </thead>
                         <tbody>
                         {% for entity in entities %}
                             <tr>
-                                <td><a href="{{ path('financas_show', { 'id': entity.finCodigo }) }}">
-                                        {{ entity.finDataCadastro | date('d/m/Y') }}
-                                    </a>
-                                </td>
-                                <td>{{ entity.finValor|number_format(2,',','.') }}</td>
-                                <td>{{ entity.finDescricao }}</td>
-                                <td>{{ entity.catCodigo }}</td>
                                 <td>
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -76,6 +69,14 @@
                                     </div>
 
                                 </td>
+                                <td><a href="{{ path('financas_show', { 'id': entity.finCodigo }) }}">
+                                        {{ entity.finDataCadastro | date('d/m/Y') }}
+                                    </a>
+                                </td>
+                                <td>{{ entity.finValor|number_format(2,',','.') }}</td>
+                                <td>{{ entity.finDescricao }}</td>
+                                <td>{{ entity.catCodigo }}</td>
+
                             </tr>
                         {% endfor %}
                         </tbody>

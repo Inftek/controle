@@ -48,11 +48,14 @@
             <button class="btn btn-primary">Listar</button>
         </a>
     </li>
+ {% if is_granted('ROLE_BLA_BLA_BLA') %}
     <li class="btn-group">
         <a href="{{ path('financas_edit', { 'id': entity.finCodigo }) }}">
             <button class="btn btn-primary">Edit</button>
         </a>
     </li>
+ {% endif %}
+
 {%  if is_granted('ROLE_SUPER_ADMIN') %}
     <li class="btn-group">
         {{ form(delete_form) }}
