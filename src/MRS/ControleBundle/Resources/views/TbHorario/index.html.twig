@@ -1,0 +1,53 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>TbHorario list</h1>
+
+    <table class="records_list">
+        <thead>
+            <tr>
+                <th>Hordiasemana</th>
+                <th>Hordata</th>
+                <th>Horentrada</th>
+                <th>Horalmocoida</th>
+                <th>Horalmocovolta</th>
+                <th>Horsaida</th>
+                <th>Horjustificativa</th>
+                <th>Horcodigo</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('horario_show', { 'id': entity.horCodigo }) }}">{{ entity.horDiaSemana }}</a></td>
+                <td>{% if entity.horData %}{{ entity.horData|date('Y-m-d') }}{% endif %}</td>
+                <td>{{ entity.horEntrada | date('H:i:s')}}</td>
+                <td>{{ entity.horAlmocoIda | date('H:i:s') }}</td>
+                <td>{{ entity.horAlmocoVolta | date('H:i:s') }}</td>
+                <td>{{ entity.horSaida | date('H:i:s') }}</td>
+                <td>{{ entity.horJustificativa }}</td>
+                <td>{{ entity.horCodigo }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('horario_show', { 'id': entity.horCodigo }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('horario_edit', { 'id': entity.horCodigo }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('horario_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

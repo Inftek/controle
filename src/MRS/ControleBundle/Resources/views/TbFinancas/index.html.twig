@@ -1,34 +1,36 @@
 {% extends '::base.html.twig' %}
 
+{% block title %} Lista de Finanças {% endblock %}
+
 {% block body -%}
 
     {{ include('@MRSControle/TbFinancas/Template/painel.html.twig') }}
 
     <div class="panel panel-default">
         <div class="panel-heading">
-            <h3 class="panel-title">Pesquisar</h3>
+            <h3 class="panel-title">Pesquisar | R$ {{ render(controller('MRSControleBundle:Serializer:viewTotalOnPeriod',{'dataInicial':datas.dataInicial, 'dataFinal': datas.dataFinal })) | number_format(2,',','.')}} </h3>
         </div>
 
         <div class="panel-body">
             <form class="form-inline" method="post" action="{{ path('financas') }}">
+
                 <div class="form-group">
-                    <label for="exampleInputName2">Data Inicial:</label>
+                   {# <label for="dataInicial">Data Inicial:</label>#}
                     <input type="date" name="dataInicial" value="{{ datas.dataInicial }}" class="form-control">
                 </div>
 
                 <div class="form-group">
-                    <label for="exampleInputEmail2">Data Inicial:</label>
+{#                    <label for="dataFinal">Data Final:</label>#}
                     <input type="date" name="dataFinal" value="{{ datas.dataFinal }}" class="form-control">
                 </div>
 
-                <div class="form-group">
-                    <label for="exampleInputEmail2"></label>
                     <button type="submit" class="btn btn-default">Procurar</button>
-                </div>
+
             </form>
         </div>
 
     </div>
+
 
 
     <div class="row">
@@ -49,10 +51,11 @@
                             <th>Data</th>
                             <th>Valor</th>
                             <th>Descricao</th>
-                            <th>Codigo</th>
+                            <th>Categoria</th>
                         </tr>
                         </thead>
                         <tbody>
+
                         {% for entity in entities %}
                             <tr>
                                 <td>
@@ -80,6 +83,7 @@
                             </tr>
                         {% endfor %}
                         </tbody>
+
                     </table>
                 </div>
             </div>

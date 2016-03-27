@@ -1,7 +1,7 @@
 <div class="panel panel-primary">
     <div class="panel-heading">
         <h3 class="panel-title">
-            Painel
+            {{ 'menu.panel' | trans({},'MyBundle') }}
         </h3>
     </div>
     <div class="panel-body">
@@ -13,7 +13,7 @@
             <li class="dropdown">
                 <div class="btn-group">
                     <button type="button" class="btn btn-primary">
-                        <span class="glyphicon glyphicon-plus"></span> Novo
+                        <span class="glyphicon glyphicon-plus"></span> {{ 'menusecunario'|trans({},'MyBundle') }}
                     </button>
                     <button type="button" class="btn btn-primary dropdown-toggle"
                             data-toggle="dropdown">
@@ -30,8 +30,8 @@
                         </li>
 
                         <li>
-                            <a href="{{ path('financas') }}">
-                                        <span class="glyphicon glyphicon-plus-sign">Listar Finanças<span>
+                            <a href="{{ path('financas') }}"><span class="glyphicon glyphicon-th-list"></span>
+                                Listar Finanças
                             </a>
                         </li>
 
