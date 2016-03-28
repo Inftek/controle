@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8" />
     <title>{% block title %}Welcome!{% endblock %}</title>
-    {% block stylesheets %}{% endblock %}
+    {% block stylesheets %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet" media="screen">
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    {% endblock %}
 </head>
+
+{% block menuprincipal %}
+
 <body>
 <div class="container-fluid">
 
@@ -24,18 +28,22 @@
 
             <div class="btn-group btn-lg">
                 <button class="btn btn-default btn-sm">
-                    <span class="glyphicon glyphicon-th-large"></span> NOME DO SISTEMA
+                    <span class="glyphicon glyphicon-th-large"></span> {{ 'menuprincipal' | trans({},'MyBundle') }}
                 </button>
                 <button data-toggle="dropdown"
                         class="btn btn-default btn-sm dropdown-toggle">
                     <span class="glyphicon glyphicon-arrow-down"></span>
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a href="{{ path('financas') }}"><span class="glyphicon glyphicon-home"></span> Finanças</a></li>
-                    <li><a href="{{ path('categoria') }}"><span class="glyphicon glyphicon-home"></span> Categoria</a></li>
+
+                    <li><a href="{{ path('financas') }}"><span class="glyphicon glyphicon-usd"></span> Financas</a></li>
+                    <li><a href="{{ path('horario') }}"><span class="glyphicon glyphicon-time"></span> Horário</a></li>
                     <li class="divider"></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Alterar Senha</a></li>
-                    <li><a href="/logout"><span class="glyphicon glyphicon-user"></span> Sair </a></li>
+                    <li><a href="{{ path('categoria') }}"><span class="glyphicon glyphicon-copyright-mark"></span> Categoria</a></li>
+                    <li><a href="{{ path('tipoentrada') }}"><span class="glyphicon glyphicon-text-width"></span> Tipo Entrada</a></li>
+                    <li class="divider"></li>
+{#                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Alterar Senha</a></li>#}
+                    <li><a href="/logout"><span class="glyphicon glyphicon-log-out"></span> Sair </a></li>
                 </ul>
             </div>
 
@@ -44,26 +52,20 @@
 
 
         <div class="nav navbar-left collapse navbar-collapse">
-            <p class="navbar-text">SISTEM NAME</p>
+            <p class="navbar-text">{{ 'systemName' | trans({},'MyBundle') }}</p>
         </div>
 
-{#        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Dashboard</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Dashboard</a></li>
-            </ul>
-        </div>#}
     </nav>
 
     <nav class="navbar navbar-default" role="navigation"></nav>
     <!-- Fim do Menu Principal -->
+    {% endblock %}
 
     {% block body %}
 
     {% endblock %}
 
+    {% block footer %}
     <footer>
         <nav class="navbar navbar-default navbar-fixed-bottom"
              role="navigation">
@@ -77,12 +79,12 @@
                 </button>
 
 
-                <p class="navbar-text">..:: Controle financeiro ::..</p>
+                <p class="navbar-text">{{ 'footer.name' | trans({},'MyBundle') }}</p>
 
             </div>
             <div class="nav navbar-right collapse navbar-collapse" id="este">
                 <button class="btn btn-default btn-lg">
-                    <span class="glyphicon glyphicon-user"></span> Usuário
+                    <span class="glyphicon glyphicon-user"></span> {{ 'footer.user'|trans({},'MyBundle') }}
                 </button>
             </div>
 
@@ -91,6 +93,8 @@
         <nav class="navbar navbar-default" role="navigation">
         </nav>
     </footer>
+    {% endblock %}
+
 </div>
 
 {% block javascripts %}

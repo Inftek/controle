@@ -1,0 +1,9 @@
+systemName: Controle Financeiro
+menu:
+  panel: Painel
+btnsave: Salvar
+menuprincipal: Modulos
+menusecunario: Menu
+footer:
+  name: ..:: Controle Financeiro ::..
+  user: Usuário

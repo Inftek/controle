@@ -10,3 +10,6 @@ app_financas:
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
+test_bundle:
+    resource: "@TesteBundle/Controller/"
+    type: annotation

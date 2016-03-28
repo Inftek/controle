@@ -19,6 +19,7 @@ class AppKernel extends Kernel
             new AppBundle\AppBundle(),
             new MRS\ControleBundle\MRSControleBundle(),
             new MRS\UserBundle\UserBundle(),
+            new TestBundle\TesteBundle(),
             new \Braincrafted\Bundle\BootstrapBundle\BraincraftedBootstrapBundle(),
             new JMS\SerializerBundle\JMSSerializerBundle(),
         );

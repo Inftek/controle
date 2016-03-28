@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * TbFinancas
  *
  * @ORM\Table(name="tb_financas", indexes={@ORM\Index(name="fk_tipo_entrada", columns={"ten_codigo"}), @ORM\Index(name="fk_categoria", columns={"cat_codigo"})})
- * @ORM\Entity(repositoryClass="MRS\ControleBundle\Repository\TbFinancasRepository")
+ * @ORM\Entity(repositoryClass="MRS\ControleBundle\Repository\FinancasRepository")
  */
 class TbFinancas
 {

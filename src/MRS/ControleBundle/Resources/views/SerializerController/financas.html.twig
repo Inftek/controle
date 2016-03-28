@@ -4,4 +4,6 @@
 
 {% block body %}
 <h1>Welcome to the SerializerController:financas page</h1>
+{{ 'error.message' | trans({},'messages') }}
+    {{  dump(entity) }}
 {% endblock %}

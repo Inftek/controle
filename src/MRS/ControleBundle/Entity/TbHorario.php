@@ -249,4 +249,9 @@ class TbHorario
     {
         return $this->horCodigo;
     }
+
+    public function getId()
+    {
+        return $this->horCodigo;
+    }
 }

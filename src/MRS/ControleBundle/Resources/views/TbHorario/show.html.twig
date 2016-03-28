@@ -1,0 +1,56 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>TbHorario</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Hordiasemana</th>
+                <td>{{ entity.horDiaSemana }}</td>
+            </tr>
+            <tr>
+                <th>Hordata</th>
+                <td>{{ entity.horData|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Horentrada</th>
+                <td>{{ entity.horEntrada | date('H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Horalmocoida</th>
+                <td>{{ entity.horAlmocoIda | date('H:i:s')}}</td>
+            </tr>
+            <tr>
+                <th>Horalmocovolta</th>
+                <td>{{ entity.horAlmocoVolta | date('H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Horsaida</th>
+                <td>{{ entity.horSaida | date('H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Horjustificativa</th>
+                <td>{{ entity.horJustificativa }}</td>
+            </tr>
+            <tr>
+                <th>Horcodigo</th>
+                <td>{{ entity.horCodigo }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('horario') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('horario_edit', { 'id': entity.horCodigo }) }}">
+            Edit
+        </a>
+    </li>
+    <li>{{ form(delete_form) }}</li>
+</ul>
+{% endblock %}
