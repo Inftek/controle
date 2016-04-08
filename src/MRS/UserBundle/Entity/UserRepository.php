@@ -28,6 +28,17 @@ class UserRepository extends \Doctrine\ORM\EntityRepository implements UserProvi
             ->getOneOrNullResult();
     }
 
+    public function getQUalquerCoisaQueEuQUero()
+    {
+        //return $this->findAll();
+
+        return $this->createQueryBuilder('U')
+            ->select('U.username','U.email')
+            ->getQuery()
+            ->getResult();
+
+    }
+
     /**
      * Loads the user for the given username.
      *

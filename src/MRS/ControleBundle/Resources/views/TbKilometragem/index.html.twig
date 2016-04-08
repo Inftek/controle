@@ -1,0 +1,63 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    {{ include('MRSControleBundle:TbKilometragem/Template:painel.html.twig') }}
+
+    {#{{ dump(entityUser) }}#}
+
+    <table class="table table-bordered table-condensed table-hover table-striped">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Kilometragem</th>
+                <th>Data Inicial</th>
+                <th>Data Atual</th>
+                <th>Dias</th>
+                <th>Média</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entityUser %}
+            <tr>
+                <td>
+
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Opções <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="{{ path('kilometragem_show', { 'id': entity.kiCodigo }) }}">
+                                    <span class="glyphicon glyphicon-list-alt"></span>
+                                    Mostrar
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ path('kilometragem_edit', { 'id': entity.kiCodigo }) }}">
+                                    <span  class="glyphicon glyphicon-edit"></span>
+                                    Editar
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </td>
+                <td><a href="{{ path('kilometragem_show', { 'id': entity.kiCodigo }) }}">{{ entity.kiKilometragem }}</a></td>
+                <td>{% if entity.kiDataInicial %}{{ entity.kiDataInicial|date('Y-m-d') }}{% endif %}</td>
+                <td>{% if entity.kiDataAtual %}{{ entity.kiDataAtual|date('Y-m-d') }}{% endif %}</td>
+                {#<td>{{ entity.kiCodigo }}</td>#}
+                <td>{{ entity.Dias }}</td>
+                <td>{{ entity.Media }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('kilometragem_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

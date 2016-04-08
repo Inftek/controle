@@ -1,0 +1,40 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    {{ include('MRSControleBundle:TbKilometragem/Template:painel.html.twig') }}
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Kikilometragem</th>
+                <td>{{ entity.kiKilometragem }}</td>
+            </tr>
+            <tr>
+                <th>Kidatainicial</th>
+                <td>{{ entity.kiDataInicial|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Kidataatual</th>
+                <td>{{ entity.kiDataAtual|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Kicodigo</th>
+                <td>{{ entity.kiCodigo }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('kilometragem') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('kilometragem_edit', { 'id': entity.kiCodigo }) }}">
+            Edit
+        </a>
+    </li>
+    <li>{{ form(delete_form) }}</li>
+</ul>
+{% endblock %}

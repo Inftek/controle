@@ -8,3 +8,8 @@ services:
     public: true
     tags:
       - { name: ServicoTeste }
+  horario.register:
+    class: MRS\ControleBundle\Service\HorarioService
+    arguments: ['@service_container','@doctrine.orm.entity_manager']
+    tags:
+      - { name: RegistroPonto }

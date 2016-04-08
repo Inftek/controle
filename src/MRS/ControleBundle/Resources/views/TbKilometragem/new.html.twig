@@ -1,0 +1,16 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+
+    {{ include('MRSControleBundle:TbKilometragem/Template:painel.html.twig') }}
+
+    {{ form(form) }}
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('kilometragem') }}">
+            Back to the list
+        </a>
+    </li>
+</ul>
+{% endblock %}

@@ -64,10 +64,18 @@
                                             Opções <span class="caret"></span>
                                         </button>
                                         <ul class="dropdown-menu">
-                                            <li><a href="{{ path('financas_show', { 'id': entity.finCodigo }) }}">Mostrar</a></li>
-                                            {% if is_granted('ROLE_SUPER_ADMIN') %}
-                                                <li><a href="{{ path('financas_edit', { 'id': entity.finCodigo }) }}">Editar</a></li>
-                                            {%  endif %}
+                                            <li>
+                                                <a href="{{ path('financas_show', { 'id': entity.finCodigo }) }}">
+                                                    <span class="glyphicon glyphicon-list-alt"></span>
+                                                    Mostrar
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="{{ path('financas_edit', { 'id': entity.finCodigo }) }}">
+                                                    <span  class="glyphicon glyphicon-edit"></span>
+                                                    Editar
+                                                </a>
+                                            </li>
                                         </ul>
                                     </div>
 
@@ -76,7 +84,7 @@
                                         {{ entity.finDataCadastro | date('d/m/Y') }}
                                     </a>
                                 </td>
-                                <td>{{ entity.finValor|number_format(2,',','.') }}</td>
+                                <td>R$ {{ entity.finValor|number_format(2,',','.') }}</td>
                                 <td>{{ entity.finDescricao }}</td>
                                 <td>{{ entity.catCodigo }}</td>
 

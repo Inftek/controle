@@ -7,50 +7,44 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
-use MRS\ControleBundle\Entity\TbFinancas;
-use MRS\ControleBundle\Form\TbFinancasType;
-use Symfony\Component\HttpFoundation\Response;
+use MRS\ControleBundle\Entity\Jogo;
+use MRS\ControleBundle\Form\JogoType;
 
 /**
- * TbFinancas controller.
+ * Jogo controller.
  *
- * @Route("/financas", defaults={"_locale":"pt_BR"}, requirements={"_locale":"pt_BR|en|fr"})
+ * @Route("/jogo")
  */
-class TbFinancasController extends Controller
+class JogoController extends Controller
 {
 
     /**
-     * Lists all TbFinancas entities.
+     * Lists all Jogo entities.
      *
-     * @Route("/", name="financas",defaults={"_locale":"pt_BR"})
-     * @Method("GET|POST")
+     * @Route("/", name="jogo")
+     * @Method("GET")
      * @Template()
      */
-    public function indexAction(Request $request)
+    public function indexAction()
     {
-        $date = new \DateTime();
-        $datas[0] = ($request->get('dataInicial') == '') ? $date->modify('-30 day')->format('Y-m-d') : $request->get('dataInicial');
+        $em = $this->getDoctrine()->getManager();
 
-        $datas[1] = ($request->get('dataFinal') == '') ? date('Y-m-d') : $request->get('dataFinal');
-
-        $entities = $this->get('financas.querynative')
-                         ->listarDadosFinanceirosPorPeriodo($datas[0],$datas[1]);
+        $entities = $em->getRepository('MRSControleBundle:Jogo')->findAll();
 
         return array(
             'entities' => $entities,
-            'datas' => array('dataInicial' => $datas[0], 'dataFinal' => $datas[1]),
         );
     }
     /**
-     * Creates a new TbFinancas entity.
+     * Creates a new Jogo entity.
      *
-     * @Route("/create", name="financas_create")
+     * @Route("/", name="jogo_create")
      * @Method("POST")
-     * @Template("MRSControleBundle:TbFinancas:new.html.twig")
+     * @Template("MRSControleBundle:Jogo:new.html.twig")
      */
     public function createAction(Request $request)
     {
-        $entity = new TbFinancas();
+        $entity = new Jogo();
         $form = $this->createCreateForm($entity);
         $form->handleRequest($request);
 
@@ -59,7 +53,7 @@ class TbFinancasController extends Controller
             $em->persist($entity);
             $em->flush();
 
-            return $this->redirect($this->generateUrl('financas_show', array('id' => $entity->getId())));
+            return $this->redirect($this->generateUrl('jogo_show', array('id' => $entity->getId())));
         }
 
         return array(
@@ -69,34 +63,34 @@ class TbFinancasController extends Controller
     }
 
     /**
-     * Creates a form to create a TbFinancas entity.
+     * Creates a form to create a Jogo entity.
      *
-     * @param TbFinancas $entity The entity
+     * @param Jogo $entity The entity
      *
      * @return \Symfony\Component\Form\Form The form
      */
-    private function createCreateForm(TbFinancas $entity)
+    private function createCreateForm(Jogo $entity)
     {
-        $form = $this->createForm(new TbFinancasType(), $entity, array(
-            'action' => $this->generateUrl('financas_create'),
+        $form = $this->createForm(new JogoType(), $entity, array(
+            'action' => $this->generateUrl('jogo_create'),
             'method' => 'POST',
         ));
 
-        $form->add('submit', 'submit', array('label' => 'Salvar'));
+        $form->add('submit', 'submit', array('label' => 'Create'));
 
         return $form;
     }
 
     /**
-     * Displays a form to create a new TbFinancas entity.
+     * Displays a form to create a new Jogo entity.
      *
-     * @Route("/new", name="financas_new")
+     * @Route("/new", name="jogo_new")
      * @Method("GET")
      * @Template()
      */
     public function newAction()
     {
-        $entity = new TbFinancas();
+        $entity = new Jogo();
         $form   = $this->createCreateForm($entity);
 
         return array(
@@ -106,9 +100,9 @@ class TbFinancasController extends Controller
     }
 
     /**
-     * Finds and displays a TbFinancas entity.
+     * Finds and displays a Jogo entity.
      *
-     * @Route("/{id}", name="financas_show")
+     * @Route("/{id}", name="jogo_show")
      * @Method("GET")
      * @Template()
      */
@@ -116,10 +110,10 @@ class TbFinancasController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
 
-        $entity = $em->getRepository('MRSControleBundle:TbFinancas')->find($id);
+        $entity = $em->getRepository('MRSControleBundle:Jogo')->find($id);
 
         if (!$entity) {
-            throw $this->createNotFoundException('Unable to find TbFinancas entity.');
+            throw $this->createNotFoundException('Unable to find Jogo entity.');
         }
 
         $deleteForm = $this->createDeleteForm($id);
@@ -131,9 +125,9 @@ class TbFinancasController extends Controller
     }
 
     /**
-     * Displays a form to edit an existing TbFinancas entity.
+     * Displays a form to edit an existing Jogo entity.
      *
-     * @Route("/{id}/edit", name="financas_edit")
+     * @Route("/{id}/edit", name="jogo_edit")
      * @Method("GET")
      * @Template()
      */
@@ -141,10 +135,10 @@ class TbFinancasController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
 
-        $entity = $em->getRepository('MRSControleBundle:TbFinancas')->find($id);
+        $entity = $em->getRepository('MRSControleBundle:Jogo')->find($id);
 
         if (!$entity) {
-            throw $this->createNotFoundException('Unable to find TbFinancas entity.');
+            throw $this->createNotFoundException('Unable to find Jogo entity.');
         }
 
         $editForm = $this->createEditForm($entity);
@@ -158,16 +152,16 @@ class TbFinancasController extends Controller
     }
 
     /**
-    * Creates a form to edit a TbFinancas entity.
+    * Creates a form to edit a Jogo entity.
     *
-    * @param TbFinancas $entity The entity
+    * @param Jogo $entity The entity
     *
     * @return \Symfony\Component\Form\Form The form
     */
-    private function createEditForm(TbFinancas $entity)
+    private function createEditForm(Jogo $entity)
     {
-        $form = $this->createForm(new TbFinancasType(), $entity, array(
-            'action' => $this->generateUrl('financas_update', array('id' => $entity->getId())),
+        $form = $this->createForm(new JogoType(), $entity, array(
+            'action' => $this->generateUrl('jogo_update', array('id' => $entity->getId())),
             'method' => 'PUT',
         ));
 
@@ -176,20 +170,20 @@ class TbFinancasController extends Controller
         return $form;
     }
     /**
-     * Edits an existing TbFinancas entity.
+     * Edits an existing Jogo entity.
      *
-     * @Route("/{id}", name="financas_update")
+     * @Route("/{id}", name="jogo_update")
      * @Method("PUT")
-     * @Template("MRSControleBundle:TbFinancas:edit.html.twig")
+     * @Template("MRSControleBundle:Jogo:edit.html.twig")
      */
     public function updateAction(Request $request, $id)
     {
         $em = $this->getDoctrine()->getManager();
 
-        $entity = $em->getRepository('MRSControleBundle:TbFinancas')->find($id);
+        $entity = $em->getRepository('MRSControleBundle:Jogo')->find($id);
 
         if (!$entity) {
-            throw $this->createNotFoundException('Unable to find TbFinancas entity.');
+            throw $this->createNotFoundException('Unable to find Jogo entity.');
         }
 
         $deleteForm = $this->createDeleteForm($id);
@@ -199,7 +193,7 @@ class TbFinancasController extends Controller
         if ($editForm->isValid()) {
             $em->flush();
 
-            return $this->redirect($this->generateUrl('financas_show', array('id' => $id)));
+            return $this->redirect($this->generateUrl('jogo_edit', array('id' => $id)));
         }
 
         return array(
@@ -209,9 +203,9 @@ class TbFinancasController extends Controller
         );
     }
     /**
-     * Deletes a TbFinancas entity.
+     * Deletes a Jogo entity.
      *
-     * @Route("/{id}", name="financas_delete")
+     * @Route("/{id}", name="jogo_delete")
      * @Method("DELETE")
      */
     public function deleteAction(Request $request, $id)
@@ -221,21 +215,21 @@ class TbFinancasController extends Controller
 
         if ($form->isValid()) {
             $em = $this->getDoctrine()->getManager();
-            $entity = $em->getRepository('MRSControleBundle:TbFinancas')->find($id);
+            $entity = $em->getRepository('MRSControleBundle:Jogo')->find($id);
 
             if (!$entity) {
-                throw $this->createNotFoundException('Unable to find TbFinancas entity.');
+                throw $this->createNotFoundException('Unable to find Jogo entity.');
             }
 
             $em->remove($entity);
             $em->flush();
         }
 
-        return $this->redirect($this->generateUrl('financas'));
+        return $this->redirect($this->generateUrl('jogo'));
     }
 
     /**
-     * Creates a form to delete a TbFinancas entity by id.
+     * Creates a form to delete a Jogo entity by id.
      *
      * @param mixed $id The entity id
      *
@@ -244,11 +238,10 @@ class TbFinancasController extends Controller
     private function createDeleteForm($id)
     {
         return $this->createFormBuilder()
-            ->setAction($this->generateUrl('financas_delete', array('id' => $id)))
+            ->setAction($this->generateUrl('jogo_delete', array('id' => $id)))
             ->setMethod('DELETE')
             ->add('submit', 'submit', array('label' => 'Delete'))
             ->getForm()
         ;
     }
-
 }

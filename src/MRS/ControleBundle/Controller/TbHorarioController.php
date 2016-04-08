@@ -9,6 +9,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use MRS\ControleBundle\Entity\TbHorario;
 use MRS\ControleBundle\Form\TbHorarioType;
+use Symfony\Component\HttpFoundation\Response;
 
 /**
  * TbHorario controller.
@@ -22,17 +23,26 @@ class TbHorarioController extends Controller
      * Lists all TbHorario entities.
      *
      * @Route("/", name="horario")
-     * @Method("GET")
+     * @Method("GET|POST")
      * @Template()
      */
-    public function indexAction()
+    public function indexAction(Request $request)
     {
+        $date = new \DateTime();
+        $datas[0] = ($request->get('dataInicial') == '') ? $date->modify('-30 day')->format('Y-m-d') : $request->get('dataInicial');
+
+        $datas[1] = ($request->get('dataFinal') == '') ? date('Y-m-d') : $request->get('dataFinal');
+
         $em = $this->getDoctrine()->getManager();
 
-        $entities = $em->getRepository('MRSControleBundle:TbHorario')->findAll();
+        $entities = $em->getRepository('MRSControleBundle:TbHorario')
+                       ->listarByPeriod($datas[0],$datas[1]);
+
+
 
         return array(
             'entities' => $entities,
+            'datas' => array('dataInicial' => $datas[0], 'dataFinal' => $datas[1]),
         );
     }
     /**
@@ -193,7 +203,7 @@ class TbHorarioController extends Controller
         if ($editForm->isValid()) {
             $em->flush();
 
-            return $this->redirect($this->generateUrl('horario_edit', array('id' => $id)));
+            return $this->redirect($this->generateUrl('horario_show', array('id' => $id)));
         }
 
         return array(
@@ -244,4 +254,6 @@ class TbHorarioController extends Controller
             ->getForm()
         ;
     }
+
+
 }

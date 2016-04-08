@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * TbKilometragem
  *
  * @ORM\Table(name="tb_kilometragem")
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="MRS\ControleBundle\Entity\KilometragemRepository")
  */
 class TbKilometragem
 {
@@ -122,6 +122,11 @@ class TbKilometragem
      * @return integer
      */
     public function getKiCodigo()
+    {
+        return $this->kiCodigo;
+    }
+
+    public function getId()
     {
         return $this->kiCodigo;
     }
