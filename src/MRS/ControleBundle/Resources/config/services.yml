@@ -13,3 +13,6 @@ services:
     arguments: ['@service_container','@doctrine.orm.entity_manager']
     tags:
       - { name: RegistroPonto }
+  send.message:
+    class: MRS\ControleBundle\Service\SendMailService
+    arguments: ['@service_container']

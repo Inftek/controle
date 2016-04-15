@@ -4,7 +4,7 @@ namespace MRS\ControleBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
-use Symfony\Component\OptionsResolver\OptionsResolverInterface;
+use Symfony\Component\OptionsResolver\OptionsResolver;
 
 class TbHorarioType extends AbstractType
 {
@@ -24,16 +24,22 @@ class TbHorarioType extends AbstractType
             ->add('horJustificativa')
         ;
     }
-    
-    /**
-     * @param OptionsResolverInterface $resolver
-     */
-    public function setDefaultOptions(OptionsResolverInterface $resolver)
+
+
+    public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
             'data_class' => 'MRS\ControleBundle\Entity\TbHorario'
         ));
     }
+
+//    /**
+//     * @param OptionsResolverInterface $resolver
+//     */
+//    public function setDefaultOptions(OptionsResolverInterface $resolver)
+//    {
+//
+//    }
 
     /**
      * @return string

@@ -30,11 +30,21 @@
 
     </div>
 
-
-    <a class="btn btn-primary btn-lg" href="{{ path('horario_register') }}" role="button">
-        <span class="glyphicon glyphicon-floppy-saved"></span>
-        Registrar Ponto
-    </a>
+    <div class="row">
+        <div class="col-lg-2">
+            <a class="btn btn-primary btn-lg" href="{{ path('horario_register') }}" role="button">
+                <span class="glyphicon glyphicon-floppy-saved"></span>
+                Registrar Ponto
+            </a>
+        </div>
+        <div class="col-lg-6">
+            {% for notice in app.session.flashBag.get('notice') %}
+                <div class="alert alert-info">
+                    {{ notice.notice }}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
 
     <table class="table table-bordered table-condensed table-hover table-striped">
         <thead>

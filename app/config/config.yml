@@ -105,3 +105,11 @@ braincrafted_bootstrap:
         variables_file: ~
         bootstrap_output: %kernel.root_dir%/Resources/less/bootstrap.less
         bootstrap_template: BraincraftedBootstrapBundle:Bootstrap:bootstrap.less.twig
+
+# Configuration on vich_uploader
+vich_uploader:
+    db_driver: orm
+    mappings:
+        product_image:
+            uri_prefix:   /images/products
+            upload_destination: %kernel.root_dir%/../web/images/products

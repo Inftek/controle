@@ -22,6 +22,7 @@ class AppKernel extends Kernel
             new TestBundle\TesteBundle(),
             new \Braincrafted\Bundle\BootstrapBundle\BraincraftedBootstrapBundle(),
             new JMS\SerializerBundle\JMSSerializerBundle(),
+            new Vich\UploaderBundle\VichUploaderBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

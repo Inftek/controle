@@ -23,19 +23,10 @@ class DefaultController extends Controller
     public function registerButtonAction()
     {
 
-        $entity = $this->get('horario.register')
-                      ->registerHorario();
+        $text = $this->get('horario.register')
+                     ->registerHorario();
 
-        /*
-        $response = $this->get('serializer')
-                         ->serialize($entity,'json');
-
-        return new Response($response);
-        */
-//
-//        if(!$entity){
-//
-//        }
+        $this->addFlash('notice',$text);
 
         return $this->redirect($this->generateUrl('horario'));
 
@@ -50,12 +41,23 @@ class DefaultController extends Controller
     public function sendMailAction()
     {
 
+        $attach = \Swift_Attachment::fromPath('/home/marcio/Imagens/fall.jpg');
+
+
         $Message = \Swift_Message::newInstance();
+
+        $Message->attach($attach);
 
             $Message->setSubject('Hello Marcio')
                 ->setFrom('marcio.santos@ceadis.org.br')
-                ->setTo('marcio.santos@ceadis.org.br')
-                ->setBody('TESTE TESTE TESTE');
+                ->setTo('vinicius.saraiva@ceadis.org.br')
+                ->addTo('marcio.santos@ceadis.org.br')
+                ->addTo('marciomrs4@hotmail.com')
+                ->addTo('marciomrs4@gmail.com')
+                ->setBody(
+                    $this->renderView('MRSControleBundle:Default:Email.html.twig',
+                                        array('name' => rand(1,1000))),
+                    'text/html');
 
 
         $Email = $this->get('mailer')->send($Message);

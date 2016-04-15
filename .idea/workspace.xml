@@ -2,25 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42de861a-5051-4ee6-b736-504beeef1b05" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/doctrine/Jogo.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbHorario/Template/painel.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/TbFinancasController.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/TbFinancasController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/TbHorarioController.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/TbHorarioController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Entity/TbKilometragem.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Entity/TbKilometragem.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/doctrine/TbFinancas.orm.xml" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/doctrine/TbFinancas.orm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/doctrine/TbHorario.orm.xml" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/doctrine/TbHorario.orm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/doctrine/TbKilometragem.orm.xml" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/doctrine/TbKilometragem.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Form/TbHorarioType.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Form/TbHorarioType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Repository/HorarioRepository.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Repository/HorarioRepository.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/services.yml" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/services.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/translations/MyBundle.pt_BR.yml" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/translations/MyBundle.pt_BR.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/index.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/index.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbHorario/index.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbHorario/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbTipoEntrada/index.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbTipoEntrada/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/UserBundle/Entity/UserRepository.php" afterPath="$PROJECT_DIR$/src/MRS/UserBundle/Entity/UserRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbHorario/show.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbHorario/show.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Service/HorarioService.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Service/HorarioService.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/UserBundle/Resources/views/Login/login.html.twig" afterPath="$PROJECT_DIR$/src/MRS/UserBundle/Resources/views/Login/login.html.twig" />
     </list>
     <ignored path="controle.iws" />
@@ -50,51 +45,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Controller/DefaultController.php">
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-26.416666">
-              <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.41493776">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
-                <element signature="e#49#106#0#PHP" expanded="true" />
+                <element signature="e#12#28#0#Twig" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="parameters.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TbHorarioController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Controller/TbHorarioController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.80801105">
-              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-              <folding>
-                <element signature="e#49#94#0#PHP" expanded="true" />
-                <element signature="e#1131#1160#1#PHP" expanded="true" />
-                <element signature="e#3349#3378#1#PHP" expanded="true" />
-                <element signature="e#4005#4034#1#PHP" expanded="true" />
-                <element signature="e#5348#5377#1#PHP" expanded="true" />
-                <element signature="e#6420#6449#1#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="86" column="19" selection-start-line="86" selection-start-column="19" selection-end-line="86" selection-end-column="19" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -114,25 +72,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Entity/TbFinancas.php" />
-        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/SerializerController/financas.html.twig" />
-        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Service/FinancasService.php" />
-        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Repository/FinancasRepository.php" />
-        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/SerializerController.php" />
-        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbHorario/show.html.twig" />
-        <option value="$PROJECT_DIR$/src/TestBundle/TesteBundle.php" />
-        <option value="$PROJECT_DIR$/app/AppKernel.php" />
-        <option value="$PROJECT_DIR$/app/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/TestBundle/Resources/view/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/TestBundle/Controller/TestController.php" />
-        <option value="$PROJECT_DIR$/src/TestBundle/Resources/views/Test/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/TestBundle/Command/TestCommand.php" />
-        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/Template/painel.html.twig" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbTipoEntrada/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/MRS/UserBundle/Resources/views/Login/login.html.twig" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/TbFinancasController.php" />
-        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/index.html.twig" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbKilometragem/new.html.twig" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbKilometragem/edit.html.twig" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbKilometragem/show.html.twig" />
@@ -140,7 +82,6 @@
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Entity/TbKilometragem.php" />
         <option value="$PROJECT_DIR$/src/MRS/UserBundle/Entity/UserRepository.php" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Repository/JogoRepository.php" />
-        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Entity/Jogo.php" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/OLD_doctrine_OLD/TbFinancas.orm.xml" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/doctrine/TbFinancas.orm.xml" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/doctrine/Jogo.xml" />
@@ -150,21 +91,38 @@
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbKilometragem/Template/painel.html.twig" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbKilometragem/index.html.twig" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbHorario/Template/painel.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/doctrine/TbHorario.orm.xml" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Entity/TbHorario.php" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Tests/Service/HorarioServiceTest.php" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/public/js/register-ponto.js" />
-        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Service/HorarioService.php" />
-        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/services.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
-        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Repository/HorarioRepository.php" />
-        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbHorario/index.html.twig" />
-        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
-        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/translations/MyBundle.pt_BR.yml" />
+        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Command/TestCommand.php" />
+        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Service/HorarioService.php" />
+        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Command/PontoCommand.php" />
+        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbHorario/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbHorario/show.html.twig" />
+        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Repository/HorarioRepository.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
+        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Default/Email.html.twig" />
+        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/services.yml" />
+        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Service/SendMailService.php" />
+        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Command/SendMailCommand.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/app/AppKernel.php" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/doctrine/Product.xml" />
+        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Entity/Jogo.php" />
+        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/doctrine_OLD/Product.orm.xml" />
+        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Form/AbstractType.php" />
+        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Entity/Product.php" />
+        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Form/ProductType.php" />
+        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Form/TbHorarioType.php" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/TbHorarioController.php" />
+        <option value="$PROJECT_DIR$/src/MRS/UserBundle/Resources/views/Login/login.html.twig" />
+        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/index.html.twig" />
       </list>
     </option>
   </component>
@@ -178,9 +136,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1439" />
-    <option name="width" value="1442" />
-    <option name="height" value="876" />
+    <option name="x" value="1440" />
+    <option name="width" value="1436" />
+    <option name="height" value="875" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -254,24 +212,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="TestBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="MRS" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -320,7 +260,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -334,7 +278,53 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MRS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ControleBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TbFinancas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MRS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ControleBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -616,19 +606,19 @@
     <property name="last_opened_file_path" value="/var/www/sga" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/MRS/ControleBundle/Tests/Service" />
-      <recent name="$PROJECT_DIR$/src/MRS/ControleBundle/Repository" />
-      <recent name="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbHorario/Template" />
-      <recent name="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/doctrine" />
-      <recent name="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbKilometragem/Template" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/MRS/ControleBundle/Entity" />
       <recent name="$PROJECT_DIR$/src/TestBundle/Resources/view/Test" />
       <recent name="$PROJECT_DIR$/src/MRS" />
       <recent name="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views" />
       <recent name="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/doctrine" />
+      <recent name="$PROJECT_DIR$/src/MRS/ControleBundle/Entity" />
+      <recent name="$PROJECT_DIR$/src/MRS/ControleBundle/Service" />
+      <recent name="$PROJECT_DIR$/src/MRS/ControleBundle/Command" />
+      <recent name="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Default" />
     </key>
   </component>
   <component name="RunManager">
@@ -679,10 +669,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1439" y="0" width="1442" height="876" extended-state="6" />
+    <frame x="1440" y="0" width="1436" height="875" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2048611" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22803347" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947233" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298611" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -694,7 +684,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39948454" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32818532" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -720,312 +710,130 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/AbstractQuery.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34392264">
-          <caret line="445" column="20" selection-start-line="445" selection-start-column="20" selection-end-line="445" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34392264">
-          <caret line="763" column="20" selection-start-line="763" selection-start-column="20" selection-end-line="763" selection-end-column="20" />
-          <folding>
-            <marker date="1452031872000" expanded="true" signature="17180:17223" placeholder="DELETE FROM " />
-            <marker date="1452031872000" expanded="true" signature="20394:20448" placeholder="INSERT INTO ${$tableExpression}... " />
-            <marker date="1452031872000" expanded="true" signature="20513:20674" placeholder="INSERT INTO ${$tableExpression}... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/doctrine/TbKilometragem.orm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08287293">
-          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Entity/TbKilometragem.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20718232">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/Template/painel.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8756906">
-          <caret line="45" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbKilometragem/Template/painel.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5593923">
-          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Controller/TbKilometragemController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68370163">
-          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58563536">
-          <caret line="95" column="13" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbKilometragem/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9737569">
-          <caret line="47" column="18" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManagerInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3107735">
-          <caret line="32" column="32" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34392264">
-          <caret line="61" column="17" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/doctrine/common/lib/Doctrine/Common/Persistence/ObjectRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.791666">
-          <caret line="72" column="20" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Entity/TbFinancas.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Controller/SerializerController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/doctrine/common/lib/Doctrine/Common/Persistence/ObjectManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34392264">
-          <caret line="119" column="20" selection-start-line="119" selection-start-column="20" selection-end-line="119" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34392264">
-          <caret line="79" column="20" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/doctrine/TbHorario.orm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.041436464">
-          <caret line="2" column="137" selection-start-line="2" selection-start-column="137" selection-end-line="2" selection-end-column="137" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/ContainerAwareTrait.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22790055">
-          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/ContainerInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.75">
-          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/EntityRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34392264">
-          <caret line="151" column="20" selection-start-line="151" selection-start-column="20" selection-end-line="151" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Tests/Service/HorarioServiceTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Entity/TbHorario.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.1381216">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12430939">
-          <caret line="6" column="65" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbHorario/Template/painel.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6629834">
-          <caret line="32" column="53" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3314917">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.020053476">
-          <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/public/js/register-ponto.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70187163">
-          <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/Request.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34392264">
-          <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/UserBundle/Resources/views/Login/login.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.49723756">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#12#28#0#Twig" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/UserBundle/Controller/LoginController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35220996">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Controller/TbFinancasController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53867406">
-          <caret line="33" column="100" selection-start-line="30" selection-start-column="7" selection-end-line="33" selection-end-column="100" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Service/FinancasService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.10359116">
+        <state vertical-scroll-proportion="0.39419088">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <marker date="1459168299841" expanded="true" signature="519:549" placeholder="SELECT * FRO... tb_financas" />
-            <marker date="1459168299841" expanded="true" signature="695:1007" placeholder="SELECT FIN.f... tb_financas" />
-            <marker date="1459168299841" expanded="true" signature="1326:1533" placeholder="SELECT sum(f... tb_financas" />
-            <marker date="1459168299841" expanded="true" signature="1918:2476" placeholder="SELECT FIN.f... tb_financas" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Service/HorarioService.php">
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/services.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17127071">
-          <caret line="45" column="20" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
-          <folding>
-            <element signature="e#6#86#0#PHP" expanded="false" />
-            <element signature="e#128#168#0#PHP" expanded="false" />
-            <element signature="e#733#762#1#PHP" expanded="false" />
-            <element signature="e#932#961#1#PHP" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.34136546">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Repository/JogoRepository.php">
+    <entry file="file://$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mailer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10359116">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Repository/FinancasRepository.php">
+    <entry file="file://$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Message.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26933703">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.186722">
+          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/MimePart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.186722">
+          <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Message.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.186722">
+          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/braincrafted/bootstrap-bundle/Braincrafted/Bundle/BootstrapBundle/Resources/views/Bootstrap/bootstrap.less.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0647482">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/twbs/bootstrap/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9401947">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3900415">
+          <caret line="68" column="20" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55186725">
+          <caret line="598" column="59" selection-start-line="598" selection-start-column="59" selection-end-line="598" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38589212">
+          <caret line="335" column="36" selection-start-line="335" selection-start-column="36" selection-end-line="335" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Command/SendMailCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.373444">
+          <caret line="40" column="47" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Service/SendMailService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41493776">
+          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Default/Email.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.041493777">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/vich/uploader-bundle/VichUploaderBundle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22821577">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/vich/uploader-bundle/Command/MappingListClassesCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64315355">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestBundle/Controller/TestController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Entity/KilometragemRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9792818">
+        <state vertical-scroll-proportion="1.099585">
           <caret line="59" column="28" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
           <folding>
-            <element signature="e#126#160#0#PHP" expanded="true" />
             <marker date="1459525410662" expanded="true" signature="683:731" placeholder="SELECT k FRO... MRSControleBundle" />
             <marker date="1459525410662" expanded="true" signature="885:914" placeholder="SELECT * FRO... tb_kilometragem" />
             <marker date="1459525410662" expanded="true" signature="1197:1568" placeholder="SELECT ki_co... tb_kilometragem" />
@@ -1033,130 +841,255 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mailer.php">
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/MRSControleBundle.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34392264">
-          <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Entity/Jogo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14522822">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbHorario/index.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/doctrine/TbAcesso.orm.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41436464">
-          <caret line="38" column="81" selection-start-line="38" selection-start-column="81" selection-end-line="38" selection-end-column="81" />
-          <folding />
+        <state vertical-scroll-proportion="0.373444">
+          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Repository/HorarioRepository.php">
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/doctrine/Product.orm.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7513812">
-          <caret line="93" column="21" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
-          <folding>
-            <element signature="e#131#165#0#PHP" expanded="true" />
-            <marker date="1460065506245" expanded="true" signature="433:457" placeholder="SELECT * FRO... tb_horario" />
-            <marker date="1460065506245" expanded="true" signature="433:464" placeholder="SELECT * FRO... tb_horario" />
-            <marker date="1460065506245" expanded="true" signature="433:477" placeholder="SELECT * FRO... tb_horario" />
-            <marker date="1460065506245" expanded="true" signature="706:1331" placeholder="SELECT hor_c... " />
-            <marker date="1460065506245" expanded="true" signature="1655:2430" placeholder="SELECT hor_c... " />
-          </folding>
+        <state vertical-scroll-proportion="0.3526971">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/services.yml">
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Entity/TbKilometragem.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28074867">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-          <folding />
+        <state vertical-scroll-proportion="0.20080322">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="86" column="19" selection-start-line="86" selection-start-column="19" selection-end-line="86" selection-end-column="19" />
-          <folding />
+        <state vertical-scroll-proportion="0.40160644">
+          <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Message.php">
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.4337018">
-          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
-          <folding />
+        <state vertical-scroll-proportion="0.45643154">
+          <caret line="23" column="59" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php">
+    <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18646409">
-          <caret line="15" column="78" selection-start-line="15" selection-start-column="78" selection-end-line="15" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Message.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18646409">
-          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/MimePart.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18646409">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/translations/MyBundle.pt_BR.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16042781">
-          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-          <folding />
+        <state vertical-scroll-proportion="0.4979253">
+          <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-26.416666">
-          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.67081606">
+          <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/vich/uploader-bundle/Form/Type/VichFileType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12448133">
+          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Form/FormTypeInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.560166">
+          <caret line="79" column="62" selection-start-line="79" selection-start-column="53" selection-end-line="79" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/OptionsResolver/OptionsResolverInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.78838176">
+          <caret line="47" column="20" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/OptionsResolver/OptionsResolver.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29045644">
+          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Command/LintCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.53526974">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Filesystem/Filesystem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26970956">
+          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sensio/generator-bundle/Sensio/Bundle/GeneratorBundle/Command/GeneratorCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5186722">
+          <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sensio/generator-bundle/Sensio/Bundle/GeneratorBundle/Generator/Generator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sensio/generator-bundle/Sensio/Bundle/GeneratorBundle/Resources/skeleton/form/FormType.php.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46058092">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sensio/generator-bundle/Sensio/Bundle/GeneratorBundle/Generator/DoctrineFormGenerator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6445367">
+          <caret line="76" column="21" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sensio/generator-bundle/Sensio/Bundle/GeneratorBundle/Command/GenerateDoctrineCrudCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.62655604">
+          <caret line="282" column="52" selection-start-line="282" selection-start-column="52" selection-end-line="282" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/doctrine/doctrine-bundle/Command/DoctrineCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Form/JogoType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.625">
+          <caret line="25" column="62" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="62" />
           <folding>
-            <element signature="e#49#106#0#PHP" expanded="true" />
+            <element signature="e#43#83#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/date_c.php">
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Form/ProductType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1519337">
-          <caret line="340" column="20" selection-start-line="340" selection-start-column="20" selection-end-line="340" selection-end-column="20" />
-          <folding />
+        <state vertical-scroll-proportion="0.373444">
+          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+          <folding>
+            <element signature="e#43#83#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Entity/Product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22821577">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding>
+            <element signature="e#45#77#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Form/AbstractType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33195022">
+          <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Controller/TbHorarioController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.80801105">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.6016598">
+          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Form/TbHorarioType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5228216">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
-            <element signature="e#49#94#0#PHP" expanded="true" />
-            <element signature="e#1131#1160#1#PHP" expanded="true" />
-            <element signature="e#3349#3378#1#PHP" expanded="true" />
-            <element signature="e#4005#4034#1#PHP" expanded="true" />
-            <element signature="e#5348#5377#1#PHP" expanded="true" />
-            <element signature="e#6420#6449#1#PHP" expanded="true" />
+            <element signature="e#43#83#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/favicon.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MRS/UserBundle/Resources/views/Login/login.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31120333">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding>
+            <element signature="e#12#28#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14522822">
+          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/Template/painel.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.058091287">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41493776">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="e#12#28#0#Twig" expanded="true" />
           </folding>
         </state>
       </provider>

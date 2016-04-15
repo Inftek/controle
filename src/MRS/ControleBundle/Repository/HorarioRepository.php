@@ -84,7 +84,8 @@ class HorarioRepository extends EntityRepository
 					(time_to_sec(hor_saida) - time_to_sec(hor_almoco_volta) ))) AS 'horasTrabalhas'
 
 					FROM tb_horario
-						WHERE hor_data BETWEEN ? AND ?";
+					WHERE hor_data BETWEEN ? AND ?
+					ORDER BY hor_data";
 
 
         $stmt = $this->getEntityManager()

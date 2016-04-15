@@ -7,54 +7,44 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
-use MRS\ControleBundle\Entity\TbHorario;
-use MRS\ControleBundle\Form\TbHorarioType;
-use Symfony\Component\HttpFoundation\Response;
+use MRS\ControleBundle\Entity\Product;
+use MRS\ControleBundle\Form\ProductType;
 
 /**
- * TbHorario controller.
+ * Product controller.
  *
- * @Route("/horario")
+ * @Route("/product")
  */
-class TbHorarioController extends Controller
+class ProductController extends Controller
 {
 
     /**
-     * Lists all TbHorario entities.
+     * Lists all Product entities.
      *
-     * @Route("/", name="horario")
-     * @Method("GET|POST")
+     * @Route("/", name="product")
+     * @Method("GET")
      * @Template()
      */
-    public function indexAction(Request $request)
+    public function indexAction()
     {
-        $date = new \DateTime();
-        $datas[0] = ($request->get('dataInicial') == '') ? $date->modify('-30 day')->format('Y-m-d') : $request->get('dataInicial');
-
-        $datas[1] = ($request->get('dataFinal') == '') ? date('Y-m-d') : $request->get('dataFinal');
-
         $em = $this->getDoctrine()->getManager();
 
-        $entities = $em->getRepository('MRSControleBundle:TbHorario')
-                       ->listarByPeriod($datas[0],$datas[1]);
-
-
+        $entities = $em->getRepository('MRSControleBundle:Product')->findAll();
 
         return array(
             'entities' => $entities,
-            'datas' => array('dataInicial' => $datas[0], 'dataFinal' => $datas[1]),
         );
     }
     /**
-     * Creates a new TbHorario entity.
+     * Creates a new Product entity.
      *
-     * @Route("/", name="horario_create")
+     * @Route("/", name="product_create")
      * @Method("POST")
-     * @Template("MRSControleBundle:TbHorario:new.html.twig")
+     * @Template("MRSControleBundle:Product:new.html.twig")
      */
     public function createAction(Request $request)
     {
-        $entity = new TbHorario();
+        $entity = new Product();
         $form = $this->createCreateForm($entity);
         $form->handleRequest($request);
 
@@ -63,7 +53,7 @@ class TbHorarioController extends Controller
             $em->persist($entity);
             $em->flush();
 
-            return $this->redirect($this->generateUrl('horario_show', array('id' => $entity->getId())));
+            return $this->redirect($this->generateUrl('product_show', array('id' => $entity->getId())));
         }
 
         return array(
@@ -73,35 +63,34 @@ class TbHorarioController extends Controller
     }
 
     /**
-     * Creates a form to create a TbHorario entity.
+     * Creates a form to create a Product entity.
      *
-     * @param TbHorario $entity The entity
+     * @param Product $entity The entity
      *
      * @return \Symfony\Component\Form\Form The form
      */
-    private function createCreateForm(TbHorario $entity)
+    private function createCreateForm(Product $entity)
     {
-        $form = $this->createForm(new TbHorarioType(), $entity, array(
-            'action' => $this->generateUrl('horario_create'),
+        $form = $this->createForm(new ProductType(), $entity, array(
+            'action' => $this->generateUrl('product_create'),
             'method' => 'POST',
         ));
 
         $form->add('submit', 'submit', array('label' => 'Create'));
 
-
         return $form;
     }
 
     /**
-     * Displays a form to create a new TbHorario entity.
+     * Displays a form to create a new Product entity.
      *
-     * @Route("/new", name="horario_new")
+     * @Route("/new", name="product_new")
      * @Method("GET")
      * @Template()
      */
     public function newAction()
     {
-        $entity = new TbHorario();
+        $entity = new Product();
         $form   = $this->createCreateForm($entity);
 
         return array(
@@ -111,9 +100,9 @@ class TbHorarioController extends Controller
     }
 
     /**
-     * Finds and displays a TbHorario entity.
+     * Finds and displays a Product entity.
      *
-     * @Route("/{id}", name="horario_show")
+     * @Route("/{id}", name="product_show")
      * @Method("GET")
      * @Template()
      */
@@ -121,10 +110,10 @@ class TbHorarioController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
 
-        $entity = $em->getRepository('MRSControleBundle:TbHorario')->find($id);
+        $entity = $em->getRepository('MRSControleBundle:Product')->find($id);
 
         if (!$entity) {
-            throw $this->createNotFoundException('Unable to find TbHorario entity.');
+            throw $this->createNotFoundException('Unable to find Product entity.');
         }
 
         $deleteForm = $this->createDeleteForm($id);
@@ -136,9 +125,9 @@ class TbHorarioController extends Controller
     }
 
     /**
-     * Displays a form to edit an existing TbHorario entity.
+     * Displays a form to edit an existing Product entity.
      *
-     * @Route("/{id}/edit", name="horario_edit")
+     * @Route("/{id}/edit", name="product_edit")
      * @Method("GET")
      * @Template()
      */
@@ -146,10 +135,10 @@ class TbHorarioController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
 
-        $entity = $em->getRepository('MRSControleBundle:TbHorario')->find($id);
+        $entity = $em->getRepository('MRSControleBundle:Product')->find($id);
 
         if (!$entity) {
-            throw $this->createNotFoundException('Unable to find TbHorario entity.');
+            throw $this->createNotFoundException('Unable to find Product entity.');
         }
 
         $editForm = $this->createEditForm($entity);
@@ -163,16 +152,16 @@ class TbHorarioController extends Controller
     }
 
     /**
-    * Creates a form to edit a TbHorario entity.
+    * Creates a form to edit a Product entity.
     *
-    * @param TbHorario $entity The entity
+    * @param Product $entity The entity
     *
     * @return \Symfony\Component\Form\Form The form
     */
-    private function createEditForm(TbHorario $entity)
+    private function createEditForm(Product $entity)
     {
-        $form = $this->createForm(new TbHorarioType(), $entity, array(
-            'action' => $this->generateUrl('horario_update', array('id' => $entity->getId())),
+        $form = $this->createForm(new ProductType(), $entity, array(
+            'action' => $this->generateUrl('product_update', array('id' => $entity->getId())),
             'method' => 'PUT',
         ));
 
@@ -181,20 +170,20 @@ class TbHorarioController extends Controller
         return $form;
     }
     /**
-     * Edits an existing TbHorario entity.
+     * Edits an existing Product entity.
      *
-     * @Route("/{id}", name="horario_update")
+     * @Route("/{id}", name="product_update")
      * @Method("PUT")
-     * @Template("MRSControleBundle:TbHorario:edit.html.twig")
+     * @Template("MRSControleBundle:Product:edit.html.twig")
      */
     public function updateAction(Request $request, $id)
     {
         $em = $this->getDoctrine()->getManager();
 
-        $entity = $em->getRepository('MRSControleBundle:TbHorario')->find($id);
+        $entity = $em->getRepository('MRSControleBundle:Product')->find($id);
 
         if (!$entity) {
-            throw $this->createNotFoundException('Unable to find TbHorario entity.');
+            throw $this->createNotFoundException('Unable to find Product entity.');
         }
 
         $deleteForm = $this->createDeleteForm($id);
@@ -204,9 +193,7 @@ class TbHorarioController extends Controller
         if ($editForm->isValid()) {
             $em->flush();
 
-            $this->addFlash('notice','Atualizado com sucesso!');
-
-            return $this->redirect($this->generateUrl('horario_show', array('id' => $id)));
+            return $this->redirect($this->generateUrl('product_edit', array('id' => $id)));
         }
 
         return array(
@@ -216,9 +203,9 @@ class TbHorarioController extends Controller
         );
     }
     /**
-     * Deletes a TbHorario entity.
+     * Deletes a Product entity.
      *
-     * @Route("/{id}", name="horario_delete")
+     * @Route("/{id}", name="product_delete")
      * @Method("DELETE")
      */
     public function deleteAction(Request $request, $id)
@@ -228,21 +215,21 @@ class TbHorarioController extends Controller
 
         if ($form->isValid()) {
             $em = $this->getDoctrine()->getManager();
-            $entity = $em->getRepository('MRSControleBundle:TbHorario')->find($id);
+            $entity = $em->getRepository('MRSControleBundle:Product')->find($id);
 
             if (!$entity) {
-                throw $this->createNotFoundException('Unable to find TbHorario entity.');
+                throw $this->createNotFoundException('Unable to find Product entity.');
             }
 
             $em->remove($entity);
             $em->flush();
         }
 
-        return $this->redirect($this->generateUrl('horario'));
+        return $this->redirect($this->generateUrl('product'));
     }
 
     /**
-     * Creates a form to delete a TbHorario entity by id.
+     * Creates a form to delete a Product entity by id.
      *
      * @param mixed $id The entity id
      *
@@ -251,12 +238,10 @@ class TbHorarioController extends Controller
     private function createDeleteForm($id)
     {
         return $this->createFormBuilder()
-            ->setAction($this->generateUrl('horario_delete', array('id' => $id)))
+            ->setAction($this->generateUrl('product_delete', array('id' => $id)))
             ->setMethod('DELETE')
             ->add('submit', 'submit', array('label' => 'Delete'))
             ->getForm()
         ;
     }
-
-
 }

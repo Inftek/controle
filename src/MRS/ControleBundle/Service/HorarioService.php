@@ -45,7 +45,7 @@ class HorarioService
 
     public function registerHorario()
     {
-        $horario = ['message' => 'Todos os horarios do dia ja foram cadastrados'];
+        $horario = ['notice' => 'Todos os horarios do dia ja foram cadastrados'];
 
         $horaObj = new \DateTime('now');
 
@@ -61,6 +61,8 @@ class HorarioService
             $this->entityManager->persist($horario);
             $this->entityManager->flush();
 
+            $horario = ['notice' => 'Inserido o primeiro horário do dia!'];
+
         } else {
 
             if (($entity['hor_entrada'] != '') and ($entity['hor_almoco_ida'] == '')) {
@@ -71,6 +73,8 @@ class HorarioService
 
                 $this->entityManager->flush();
 
+                $horario = ['notice' => 'Inserido saida do almoço!'];
+
             } else {
                 if (($entity['hor_almoco_ida'] != '') and ($entity['hor_almoco_volta'] == '')) {
 
@@ -78,6 +82,8 @@ class HorarioService
                     $horario = $this->getEntity($entity['hor_codigo']);
                     $horario->setHorAlmocoVolta($horaObj);
                     $this->entityManager->flush();
+
+                    $horario = ['notice' => 'Inserido retorno do almoço!'];
 
 
                 } else {
@@ -88,6 +94,8 @@ class HorarioService
                         $horario->setHorSaida($horaObj);
 
                         $this->entityManager->flush();
+
+                        $horario = ['notice' => 'Inserido saída no fim do dia!'];
                     }
                 }
             }
