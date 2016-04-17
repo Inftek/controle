@@ -59,6 +59,8 @@ class TbKilometragemController extends Controller
         $form = $this->createCreateForm($entity);
         $form->handleRequest($request);
 
+        //$this->container->get('validator')->validate($entity,null,array('create'));
+
         if ($form->isValid()) {
             $em = $this->getDoctrine()->getManager();
             $em->persist($entity);
@@ -83,6 +85,7 @@ class TbKilometragemController extends Controller
     private function createCreateForm(TbKilometragem $entity)
     {
         $form = $this->createForm(new TbKilometragemType(), $entity, array(
+            'grupo_de_validacao' => 'create',
             'action' => $this->generateUrl('kilometragem_create'),
             'method' => 'POST',
         ));
@@ -209,7 +212,7 @@ class TbKilometragemController extends Controller
         if ($editForm->isValid()) {
             $em->flush();
 
-            return $this->redirect($this->generateUrl('kilometragem_edit', array('id' => $id)));
+            return $this->redirect($this->generateUrl('kilometragem_show', array('id' => $id)));
         }
 
         return array(

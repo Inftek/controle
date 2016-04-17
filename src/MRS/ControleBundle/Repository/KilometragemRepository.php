@@ -6,7 +6,7 @@
  * Time: 18:30
  */
 
-namespace MRS\ControleBundle\Entity;
+namespace MRS\ControleBundle\Repository;
 
 use Doctrine\ORM\EntityRepository;
 use Doctrine\ORM\Query\ResultSetMapping;
@@ -57,7 +57,7 @@ class KilometragemRepository extends EntityRepository
 
     public function getCalcKilometragem()
     {
-        return $this->getConnection()->fetchAll('SELECT ki_codigo AS kiCodigo, concat(ki_kilometragem,\' KM\') AS kiKilometragem,
+        return $this->getConnection()->fetchAll('SELECT ki_codigo AS kiCodigo, concat(ki_kilometragem,\' KM\') AS kiKilometragem,ki_descricao AS kiDescricao,
 						date_format(ki_data_inicial,\'%d-%m-%Y\') AS kiDataInicial,
 						date_format(ki_data_atual,\'%d-%m-%Y\') AS kiDataAtual,
 						DATEDIFF(ki_data_atual,ki_data_inicial) Dias,

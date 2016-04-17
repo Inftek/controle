@@ -5,6 +5,7 @@ namespace MRS\ControleBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
 class DefaultController extends Controller
@@ -64,6 +65,22 @@ class DefaultController extends Controller
 
 
         return new Response('Lindo Funcionando '. $Message);
+    }
+
+    /**
+     * @return Response
+     * @Route("/testparameters", name="test_parameters")
+     * @Method({"POST|GET|PUT|DELETE|PATCH"})
+     */
+    public function parameterAction(Request $request)
+    {
+        $method = $request->getRealMethod();
+        $createdBy = $request->headers->get('X-Powered-By');
+        $dados[] = $request->get('name');
+        $dados[] = $request->get('idade');
+        $dados[] = $request->get('cpf');
+        $test = $this->container->getParameter('configuration.test.value');
+        return new Response('Hello Sf2 ' . $test . ' Method: ' .$method . ' # ' . $createdBy . ' Dados: ' . implode(' ',$dados));
     }
 
 }

@@ -3,6 +3,7 @@
 namespace MRS\ControleBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * TbKilometragem
@@ -41,6 +42,32 @@ class TbKilometragem
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $kiCodigo;
+
+    /**
+     * @var
+     * @ORM\Column(name="ki_descricao", type="string", nullable=true)
+     * @Assert\NotBlank(groups={"create"})
+     * @Assert\Length(groups={"update"}, min="3", maxMessage="Esse é o limite", minMessage="Esse é o minimo")
+     */
+    private $kiDescricao;
+
+    /**
+     * @return mixed
+     */
+    public function getKiDescricao()
+    {
+        return $this->kiDescricao;
+    }
+
+    /**
+     * @param mixed $kiDescricao
+     * @return TbKilometragem
+     */
+    public function setKiDescricao($kiDescricao)
+    {
+        $this->kiDescricao = $kiDescricao;
+        return $this;
+    }
 
 
 

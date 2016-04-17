@@ -38,6 +38,8 @@ twig:
     form:
         resources:
             - BraincraftedBootstrapBundle:Form:bootstrap.html.twig
+    globals:
+        test: Test Globals
 
 
 # Assetic Configuration

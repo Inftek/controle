@@ -15,6 +15,7 @@ class TbKilometragemType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
+            ->add('kiDescricao')
             ->add('kiKilometragem')
             ->add('kiDataInicial')
             ->add('kiDataAtual')
@@ -27,7 +28,8 @@ class TbKilometragemType extends AbstractType
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'MRS\ControleBundle\Entity\TbKilometragem'
+            'data_class' => 'MRS\ControleBundle\Entity\TbKilometragem',
+            'grupo_de_validacao' => array('create','update')
         ));
     }
 
@@ -38,4 +40,5 @@ class TbKilometragemType extends AbstractType
     {
         return 'mrs_controlebundle_tbkilometragem';
     }
+
 }

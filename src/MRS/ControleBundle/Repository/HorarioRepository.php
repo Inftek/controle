@@ -101,5 +101,62 @@ class HorarioRepository extends EntityRepository
 
 
     }
+/*
+
+    /**
+    * Query nativa do banco
+	public function listAllHorario()
+	{
+		$stmt = $this->getEntityManager()
+			->getConnection()
+			->prepare('SELECT * FROM tb_horario');
+
+			$stmt->execute();
+
+
+			return $stmt->fetchAll();
+	}
+*/
+
+/*
+	/**
+	 * @return array
+	 * Used DQL
+
+	public function listAllHorario()
+	{
+		return $this->getEntityManager()
+			->createQuery(
+				'SELECT h FROM MRSControleBundle:TbHorario h'
+			)
+			->getResult();
+	}
+*/
+
+	/**
+	 * @return array
+	 * Used QueryBuilder
+
+	public function listAllHorario()
+	{
+		return $this->getEntityManager()
+			->createQueryBuilder()
+			->select('h')
+			->from('MRSControleBundle:TbHorario','h')
+			->getQuery()
+			->getResult();
+	}
+*/
+
+	/**
+	 * @return \Doctrine\ORM\createQuery
+	 */
+	public function listAllHorario()
+	{
+		return $this->getEntityManager()
+			->createQuery('SELECT h FROM MRSControleBundle:TbHorario h ORDER BY h.horCodigo DESC')
+			->getResult();
+
+	}
 
 }
