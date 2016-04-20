@@ -3,6 +3,7 @@ namespace MRS\ControleBundle\Controller;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -30,13 +31,15 @@ class SerializerController extends Controller
         $Entity = $this->get('financas.querynative')
                        ->fazerUmtrampo();
 
-        $jsonEntity = $this->get('serializer')->serialize($Entity,'json');
+        //$jsonEntity = $this->get('serializer')->serialize($Entity,'json');
 
-        $response =  new Response($jsonEntity);
+//        $response =  new Response($jsonEntity);
+//
+//        $response->headers->set('Content-Type','Application/json');
+//
+//        return $response;
 
-        $response->headers->set('Content-Type','Application/json');
-
-        return $response;
+        return new JsonResponse($Entity);
 
     }
 

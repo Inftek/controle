@@ -84,9 +84,9 @@ class TbHorarioController extends Controller
         $form = $this->createForm(new TbHorarioType(), $entity, array(
             'action' => $this->generateUrl('horario_create'),
             'method' => 'POST',
-        ));
+    ));
 
-        $form->add('submit', 'submit', array('label' => 'Create'));
+        $form->add('submit', 'submit', array('label' => 'Novo'));
 
 
         return $form;
