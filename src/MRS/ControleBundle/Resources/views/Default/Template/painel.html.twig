@@ -1,0 +1,77 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            {{ 'menu.panel' | trans({},'MyBundle') }}
+        </h3>
+    </div>
+    <div class="panel-body">
+
+        <!-- Painel de a��es -->
+
+        <ul class="nav nav-pills">
+
+            <li class="dropdown">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary">
+                        <span class="glyphicon glyphicon-plus"></span> {{ 'menusecunario'|trans({},'MyBundle') }}
+                    </button>
+                    <button type="button" class="btn btn-primary dropdown-toggle"
+                            data-toggle="dropdown">
+                        <span class="caret"></span> <span class="sr-only">Toggle
+									Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+
+                        <li>
+                            <a href="{{ path('horario_new') }}">
+                                <span class="glyphicon glyphicon-plus-sign"></span>
+                                Novo
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="{{ path('horario') }}"><span class="glyphicon glyphicon-th-list"></span>
+                                Listar
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </li>
+
+
+            <li class="dropdown">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary">
+                        <span class="glyphicon glyphicon-th-list"></span> Relatórios
+                    </button>
+                    <button type="button" class="btn btn-primary dropdown-toggle"
+                            data-toggle="dropdown">
+                        <span class="caret"></span> <span class="sr-only">Toggle
+									Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+
+                        <li>
+                            <a href="{{ path('horario_new') }}">
+                                <span class="glyphicon glyphicon-plus-sign"></span>
+                                Novo
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="{{ path('horario') }}"><span class="glyphicon glyphicon-th-list"></span>
+                                Listar
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </li>
+
+        </ul>
+
+
+    </div>
+</div>
+

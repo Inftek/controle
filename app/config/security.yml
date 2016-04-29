@@ -24,7 +24,7 @@ security:
             form_login:
                 check_path: /login_check
                 login_path: /login
-                default_target_path: /financas
+                default_target_path: /dashboard
             logout:
                 path: /logout
                 target: /login

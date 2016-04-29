@@ -29,22 +29,30 @@ class TbHorarioController extends Controller
     public function indexAction(Request $request)
     {
         $date = new \DateTime();
-        $datas[0] = ($request->get('dataInicial') == '') ? $date->modify('-30 day')->format('Y-m-d') : $request->get('dataInicial');
 
-        $datas[1] = ($request->get('dataFinal') == '') ? date('Y-m-d') : $request->get('dataFinal');
+        $datasInicial = ($request->get('dataInicial') == '') ? $date->modify('-30 day')->format('Y-m-d') : $request->get('dataInicial');
 
-        $em = $this->getDoctrine()->getManager();
+        $datasFinal = ($request->get('dataFinal') == '') ? date('Y-m-d') : $request->get('dataFinal');
 
-        $entities = $em->getRepository('MRSControleBundle:TbHorario')
-                       ->listarByPeriod($datas[0],$datas[1]);
+        $repository = $this->getDoctrine()->getManager()
+                           ->getRepository('MRSControleBundle:TbHorario');
 
+        $entities = $repository->listarByPeriod($datasInicial, $datasFinal);
 
+        $entity = $repository->findByToday();
+
+        $paginator = $this->get('knp_paginator')->paginate(
+            $entities,
+            $request->query->getInt('page',1),TbHorario::NUM_ITENS
+        );
 
         return array(
-            'entities' => $entities,
-            'datas' => array('dataInicial' => $datas[0], 'dataFinal' => $datas[1]),
+            'entities' => $paginator,
+            'entity' => $entity,
+            'datas' => array('dataInicial' => $datasInicial, 'dataFinal' => $datasFinal),
         );
     }
+
     /**
      * Creates a new TbHorario entity.
      *

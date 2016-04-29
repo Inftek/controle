@@ -16,3 +16,7 @@ services:
   send.message:
     class: MRS\ControleBundle\Service\SendMailService
     arguments: ['@service_container']
+
+  charts.service:
+    class: MRS\ControleBundle\Service\ChartService
+    arguments: ['@service_container']

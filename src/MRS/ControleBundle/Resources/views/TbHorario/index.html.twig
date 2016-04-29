@@ -1,15 +1,10 @@
 {% extends '::base.html.twig' %}
-
 {% block body -%}
-
     {{ include('MRSControleBundle:TbHorario/Template:painel.html.twig') }}
-
-
     <div class="panel panel-default">
         <div class="panel-heading">
             <h3 class="panel-title">Pesquisar</h3>
         </div>
-
         <div class="panel-body">
             <form class="form-inline" method="post" action="{{ path('horario') }}">
 
@@ -31,10 +26,18 @@
     </div>
 
     <div class="row">
-        <div class="col-lg-2">
-            <a class="btn btn-primary btn-lg" href="{{ path('horario_register') }}" role="button">
+        <div class="col-lg-3">
+            <a href="{{ path('horario_register') }}" class="btn btn-primary btn-lg" id="button-register"
+               {% set nameButton = 'Registrar Ponto' %}
+                {% if entity %}
+                    {% if entity.horSaida is not null %}
+                        disabled="disabled"
+                    {% set nameButton = 'Todos Registros Efetuados' %}
+                    {% endif %}
+                 {% endif %}
+                    role="button">
                 <span class="glyphicon glyphicon-floppy-saved"></span>
-                Registrar Ponto
+                {{ nameButton }}
             </a>
         </div>
         <div class="col-lg-6">
@@ -49,7 +52,7 @@
     <table class="table table-bordered table-condensed table-hover table-striped">
         <thead>
             <tr>
-                <th>#</th>
+                <th>Linhas: {{ entities.getTotalItemCount }}</th>
                 <th>Dia Semana</th>
                 <th>Data</th>
                 <th>Entrada</th>
@@ -73,7 +76,7 @@
                     <ul class="dropdown-menu">
                         <li>
                             <a href="{{ path('horario_show', { 'id': entity.horCodigo}) }}">
-                                <span class="glyphicon glyphicon-list-alt"></span>
+                                <span class="glyphicon glyphicon-search"></span>
                                 Mostrar
                             </a>
                         </li>
@@ -81,6 +84,12 @@
                             <a href="{{ path('horario_edit', { 'id': entity.horCodigo }) }}">
                                 <span  class="glyphicon glyphicon-edit"></span>
                                 Editar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ path('pdf_horario', { 'id': entity.horCodigo }) }}">
+                                <span  class="glyphicon glyphicon-save"></span>
+                                Salvar PDF
                             </a>
                         </li>
                     </ul>
@@ -92,22 +101,36 @@
                 <td>{% if entity.horAlmocoIda %}{{ entity.horAlmocoIda | date('H:i:s') }}{% endif %}</td>
                 <td>{% if entity.horAlmocoVolta %}{{ entity.horAlmocoVolta | date('H:i:s') }}{% endif %}</td>
                 <td>{% if entity.horSaida %}{{ entity.horSaida | date('H:i:s') }} {% endif %}</td>
-
                 <td>{% if entity.totalDia %}{{ entity.totalDia | date('H:i:s') }} {% endif %}</td>
                 <td>{% if entity.horaAlmoco %}{{ entity.horaAlmoco | date('H:i:s') }} {% endif %}</td>
                 <td>{% if entity.horasTrabalhas %}{{ entity.horasTrabalhas | date('H:i:s') }} {% endif %}</td>
-
                 <td>{{ entity.horJustificativa }}</td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-    {#<button type="button" class="btn btn-primary btn-lg" id="registerponto">
-        <span class="glyphicon glyphicon-floppy-saved"></span>
-            Registrar Ponto
-    </button>#}
+    {{ knp_pagination_render(entities) }}
 
     <span class="error"></span>
 
-    {% endblock %}
+{% endblock %}
+
+{% block javascripts %}
+ {{ parent() }}
+
+<script src="{{ asset('bundles/mrscontrole/js/register-ponto.js') }}"></script>
+
+<script>
+    var $botton = jQuery.noConflict();
+
+    $botton("#button-register").click(function(){
+
+        $botton("#button-register").attr('disabled','disabled').
+        html('<span class="glyphicon glyphicon-floppy-open"></span> Registrando...');
+
+    });
+
+</script>
+
+{% endblock %}

@@ -27,22 +27,10 @@ class TbKilometragemController extends Controller
      */
     public function indexAction()
     {
-        $em = $this->getDoctrine()->getManager();
 
-        $data= '';
-
-        $entities = $em->getRepository('MRSControleBundle:TbKilometragem')
-                       ->souZicaMesmoEDai();
-
-        $entityUser = $em->getRepository('MRSControleBundle:TbKilometragem')
-                         ->getCalcKilometragem();
-
-        //$entityUser = $em->getRepository('MRSControleBundle:TbKilometragem')->getAllQueryBuilder();
-
-        //$entityUser = $em->getRepository('MRSControleBundle:TbKilometragem')->getAllDQL();
+        $entityUser = $this->getDoctrine()->getRepository('MRSControleBundle:TbKilometragem')->getCalcKilometragem();
 
         return array(
-            'entities' => $entities,
             'entityUser' => $entityUser
         );
     }

@@ -58,6 +58,13 @@
             Edit
         </a>
     </li>
+     <li>
+         <a href="{{ path('pdf_horario',{'id': entity.horCodigo }) }}" class="btn btn-primary">
+             <span class="glyphicon glyphicon-save"></span>
+             Exportar PDF
+         </a>
+     </li>
+
     <li>{{ form(delete_form) }}</li>
 </ul>
 {% endblock %}

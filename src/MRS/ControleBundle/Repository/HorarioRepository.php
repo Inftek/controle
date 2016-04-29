@@ -11,6 +11,7 @@ namespace MRS\ControleBundle\Repository;
 
 use Doctrine\ORM\EntityRepository;
 use Doctrine\ORM\Query\ResultSetMapping;
+use Symfony\Component\Validator\Constraints\DateTime;
 
 class HorarioRepository extends EntityRepository
 {
@@ -85,7 +86,7 @@ class HorarioRepository extends EntityRepository
 
 					FROM tb_horario
 					WHERE hor_data BETWEEN ? AND ?
-					ORDER BY hor_data";
+					ORDER BY hor_data DESC";
 
 
         $stmt = $this->getEntityManager()
@@ -158,5 +159,17 @@ class HorarioRepository extends EntityRepository
 			->getResult();
 
 	}
+
+    public function findByToday()
+    {
+        $toDay = new \DateTime('now');
+
+            return $this->createQueryBuilder('h')
+                ->where("h.horData = :today")
+                ->setParameter('today',$toDay->format('Y-m-d'))
+                ->getQuery()
+                ->getOneOrNullResult();
+
+    }
 
 }

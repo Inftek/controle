@@ -1,0 +1,115 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+
+    {{ include('MRSControleBundle:TbHorario/Template:painel.html.twig') }}
+
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Pesquisar</h3>
+        </div>
+
+        <div class="panel-body">
+            <form class="form-inline" method="post" action="{{ path('horario') }}">
+
+                <div class="form-group">
+                    {# <label for="dataInicial">Data Inicial:</label>#}
+                    <input type="date" name="dataInicial" value="{{ datas.dataInicial }}" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    {#                    <label for="dataFinal">Data Final:</label>#}
+                    <input type="date" name="dataFinal" value="{{ datas.dataFinal }}" class="form-control">
+                </div>
+
+                <button type="submit" class="btn btn-default">Procurar</button>
+
+            </form>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-lg-2">
+            <a class="btn btn-primary btn-lg" href="{{ path('horario_register') }}" role="button">
+                <span class="glyphicon glyphicon-floppy-saved"></span>
+                Registrar Ponto
+            </a>
+        </div>
+        <div class="col-lg-6">
+            {% for notice in app.session.flashBag.get('notice') %}
+                <div class="alert alert-info">
+                    {{ notice.notice }}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <table class="table table-bordered table-condensed table-hover table-striped">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Dia Semana</th>
+                <th>Data</th>
+                <th>Entrada</th>
+                <th>Almoco Saida</th>
+                <th>Almoco Volta</th>
+                <th>Saída</th>
+                <th>Total Dia</th>
+                <th>Total Almoço</th>
+                <th>Horas Trabalhadas</th>
+                <th>Justificativa</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Opções <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="{{ path('horario_show', { 'id': entity.horCodigo}) }}">
+                                <span class="glyphicon glyphicon-list-alt"></span>
+                                Mostrar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ path('horario_edit', { 'id': entity.horCodigo }) }}">
+                                <span  class="glyphicon glyphicon-edit"></span>
+                                Editar
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </td>
+                <td>{{ entity.horDiaSemana }}</td>
+                <td>{% if entity.horData %}{{ entity.horData|date('d-m-Y') }}{% endif %}</td>
+                <td>{% if entity.horEntrada %}{{ entity.horEntrada | date('H:i:s')}}{% endif %}</td>
+                <td>{% if entity.horAlmocoIda %}{{ entity.horAlmocoIda | date('H:i:s') }}{% endif %}</td>
+                <td>{% if entity.horAlmocoVolta %}{{ entity.horAlmocoVolta | date('H:i:s') }}{% endif %}</td>
+                <td>{% if entity.horSaida %}{{ entity.horSaida | date('H:i:s') }} {% endif %}</td>
+
+                <td>{% if entity.totalDia %}{{ entity.totalDia | date('H:i:s') }} {% endif %}</td>
+                <td>{% if entity.horaAlmoco %}{{ entity.horaAlmoco | date('H:i:s') }} {% endif %}</td>
+                <td>{% if entity.horasTrabalhas %}{{ entity.horasTrabalhas | date('H:i:s') }} {% endif %}</td>
+
+                <td>{{ entity.horJustificativa }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    {#<button type="button" class="btn btn-primary btn-lg" id="registerponto">
+        <span class="glyphicon glyphicon-floppy-saved"></span>
+            Registrar Ponto
+    </button>#}
+
+    {{ knp_pagination_render(entities) }}
+
+    <span class="error"></span>
+
+    {% endblock %}

@@ -12,6 +12,8 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class TbHorario
 {
+
+    const NUM_ITENS = 5;
     /**
      * @var string
      *

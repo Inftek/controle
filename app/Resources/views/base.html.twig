@@ -4,7 +4,7 @@
 
     <meta charset="UTF-8" />
 
-    <title>{% block title %}Welcome!{% endblock %}</title>
+    <title>{% block title %}SiControle{% endblock %}</title>
 
     {% block stylesheets %}
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -68,9 +68,9 @@
                 </button>
 
                 <div class="btn-group btn-lg">
-                    <button class="btn btn-default btn-sm">
+                    <a href="{{ path('dash_board') }}" class="btn btn-default btn-sm">
                         <span class="glyphicon glyphicon-th-large"></span> {{ 'menuprincipal' | trans({},'MyBundle') }}
-                    </button>
+                    </a>
                     <button data-toggle="dropdown" class="btn btn-default btn-sm dropdown-toggle">
                         <span class="glyphicon glyphicon-arrow-down"></span>
                     </button>
@@ -82,7 +82,7 @@
                         <li><a href="{{ path('categoria') }}"><span class="glyphicon glyphicon-copyright-mark"></span> Categoria</a></li>
                         <li><a href="{{ path('tipoentrada') }}"><span class="glyphicon glyphicon-text-width"></span> Tipo Entrada</a></li>
                         <li class="divider"></li>
-                        <li><a href="/logout"><span class="glyphicon glyphicon-log-out"></span> Sair </a></li>
+                        <li><a href="{{ path('user_logout') }}"><span class="glyphicon glyphicon-log-out"></span> Sair </a></li>
                     </ul>
                 </div>
 
@@ -94,7 +94,9 @@
         </div>
     </nav>
 
-    <nav class="navbar navbar-default" role="navigation"></nav>
+    {#<nav class="navbar"></nav>#}
+
+
 {% endblock %}
 
 <div class="container-fluid">
@@ -111,13 +113,14 @@
                     <span class="text-muted">{{ 'footer.name' | trans({},'MyBundle') }}</span>
                 </div>
 
-                <div class="col-md-7">
+                <div class="col-md-6">
                 </div>
 
-                <div class="col-md-1">
+                <div class="col-md-2">
                     <span class="text-muted">
                         <span class="glyphicon glyphicon-user"></span>
-                        {{ 'footer.user'|trans({},'MyBundle') }}
+                        {{ 'footer.user'|trans({},'MyBundle') }}:
+                        {{ app.user.username }}
                     </span>
                 </div>
 
@@ -129,7 +132,6 @@
 {% block javascripts %}
     <script src="{{ asset('js/jquery.js') }}"></script>
     <script src="{{ asset('js/bootstrap.js') }}"></script>
-    <script src="{{ asset('bundles/mrscontrole/js/register-ponto.js') }}"></script>
 {% endblock %}
 
 </body>

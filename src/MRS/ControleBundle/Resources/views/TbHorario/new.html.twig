@@ -1,6 +1,11 @@
 {% extends '::base.html.twig' %}
 
+{% block title %}Novo Horario{% endblock %}
+
 {% block body -%}
+
+    {% include('MRSControleBundle:TbHorario/Template:painel.html.twig') %}
+
     <h1>TbHorario creation</h1>
 
     {{ form(form) }}
