@@ -20,7 +20,6 @@ class AppKernel extends Kernel
             new MRS\ControleBundle\MRSControleBundle(),
             new MRS\UserBundle\UserBundle(),
             new TestBundle\TesteBundle(),
-            new \Braincrafted\Bundle\BootstrapBundle\BraincraftedBootstrapBundle(),
             new JMS\SerializerBundle\JMSSerializerBundle(),
             new Vich\UploaderBundle\VichUploaderBundle(),
             new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),

@@ -13,7 +13,7 @@ use Doctrine\ORM\Mapping as ORM;
 class TbHorario
 {
 
-    const NUM_ITENS = 5;
+    const NUM_ITENS = 10;
     /**
      * @var string
      *

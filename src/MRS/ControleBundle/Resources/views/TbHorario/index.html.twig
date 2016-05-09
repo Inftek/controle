@@ -1,6 +1,12 @@
 {% extends '::base.html.twig' %}
-{% block body -%}
-    {{ include('MRSControleBundle:TbHorario/Template:painel.html.twig') }}
+
+{% block title %}Lista de Horário {% endblock %}
+
+{% block contentheader %}{% endblock %}
+
+{% block content %}
+
+
     <div class="panel panel-default">
         <div class="panel-heading">
             <h3 class="panel-title">Pesquisar</h3>
@@ -25,7 +31,8 @@
 
     </div>
 
-    <div class="row">
+
+
         <div class="col-lg-3">
             <a href="{{ path('horario_register') }}" class="btn btn-primary btn-lg" id="button-register"
                {% set nameButton = 'Registrar Ponto' %}
@@ -47,7 +54,8 @@
                 </div>
             {% endfor %}
         </div>
-    </div>
+
+
 
     <table class="table table-bordered table-condensed table-hover table-striped">
         <thead>
@@ -114,23 +122,23 @@
 
     <span class="error"></span>
 
+
 {% endblock %}
 
 {% block javascripts %}
  {{ parent() }}
 
-<script src="{{ asset('bundles/mrscontrole/js/register-ponto.js') }}"></script>
 
-<script>
-    var $botton = jQuery.noConflict();
+{#<script>#}
+    {#var $botton = jQuery.noConflict();#}
 
-    $botton("#button-register").click(function(){
+    {#$botton("#button-register").click(function(){#}
 
-        $botton("#button-register").attr('disabled','disabled').
-        html('<span class="glyphicon glyphicon-floppy-open"></span> Registrando...');
+        {#$botton("#button-register").attr('disabled','disabled').#}
+        {#html('<span class="glyphicon glyphicon-floppy-open"></span> Registrando...');#}
 
-    });
+    {#});#}
 
-</script>
+{#</script>#}
 
 {% endblock %}

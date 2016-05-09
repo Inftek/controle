@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8" />
+
+    <title>{% block title %}SiControle{% endblock %}</title>
+
+    {% block stylesheets %}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet" media="screen">
+        <style>
+            /* Sticky footer styles
+-------------------------------------------------- */
+            html {
+                position: relative;
+                min-height: 100%;
+            }
+            body {
+                /* Margin bottom by footer height */
+                margin-bottom: 60px;
+            }
+            .footer {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                /* Set the fixed height of the footer here */
+                height: 17px;
+                background-color: #f5f5f5;
+            }
+
+
+            /* Custom page CSS
+            -------------------------------------------------- */
+            /* Not required for template or sticky footer method. */
+
+            body > .container {
+                padding: 60px 15px 0;
+            }
+            .container .text-muted {
+                margin: 20px 0;
+            }
+
+            .footer > .container {
+                padding-right: 10px;
+                padding-left: 10px;
+            }
+
+            code {
+                font-size: 80%;
+            }
+            </style>
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    {% endblock %}
+
+</head>
+
+<body>
+{% block menuprincipal %}
+    <nav class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <div class="btn-group btn-lg">
+                    <a href="{{ path('dash_board') }}" class="btn btn-default btn-sm">
+                        <span class="glyphicon glyphicon-th-large"></span> {{ 'menuprincipal' | trans({},'MyBundle') }}
+                    </a>
+                    <button data-toggle="dropdown" class="btn btn-default btn-sm dropdown-toggle">
+                        <span class="glyphicon glyphicon-arrow-down"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ path('financas') }}"><span class="glyphicon glyphicon-usd"></span> Financas</a></li>
+                        <li><a href="{{ path('horario') }}"><span class="glyphicon glyphicon-time"></span> Horário</a></li>
+                        <li><a href="{{ path('kilometragem') }}"><span class="glyphicon glyphicon-dashboard"></span> Kilometragem</a></li>
+                        <li class="divider"></li>
+                        <li><a href="{{ path('categoria') }}"><span class="glyphicon glyphicon-copyright-mark"></span> Categoria</a></li>
+                        <li><a href="{{ path('tipoentrada') }}"><span class="glyphicon glyphicon-text-width"></span> Tipo Entrada</a></li>
+                        <li class="divider"></li>
+                        <li><a href="{{ path('user_logout') }}"><span class="glyphicon glyphicon-log-out"></span> Sair </a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="nav navbar-left collapse navbar-collapse">
+                <p class="navbar-text">{{ 'systemName' | trans({},'MyBundle') }}</p>
+            </div>
+        </div>
+    </nav>
+
+    {#<nav class="navbar"></nav>#}
+
+
+{% endblock %}
+
+<div class="container-fluid">
+    {% block body %}
+
+    {% endblock %}
+</div>
+
+{% block footer %}
+    <footer class="footer">
+        <div class="container-fluid">
+
+                <div class="col-md-4">
+                    <span class="text-muted">{{ 'footer.name' | trans({},'MyBundle') }}</span>
+                </div>
+
+                <div class="col-md-6">
+                </div>
+
+                <div class="col-md-2">
+                    <span class="text-muted">
+                        <span class="glyphicon glyphicon-user"></span>
+                        {{ 'footer.user'|trans({},'MyBundle') }}:
+                        {{ app.user.username }}
+                    </span>
+                </div>
+
+            </div>
+
+    </footer>
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('js/jquery.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.js') }}"></script>
+{% endblock %}
+
+</body>
+</html>
