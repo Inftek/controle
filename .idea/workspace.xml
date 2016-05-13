@@ -2,47 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42de861a-5051-4ee6-b736-504beeef1b05" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/public/css/blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/public/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/public/fonts/fontawesome-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/public/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/public/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/public/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/public/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/public/fonts/ionicons.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/public/fonts/ionicons.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/public/fonts/ionicons.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/public/css/AdminLTE.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/public/css/AdminLTE.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/public/css/blue.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/public/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/public/css/bootstrap.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/public/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/public/css/bootstrap.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/public/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/public/css/ionicons.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/public/css/pace.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/public/css/skin-green.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/public/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/public/js/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/public/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/public/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/public/js/icheck.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/public/js/jQuery-2.2.0.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/public/js/jquery.slimscroll.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/public/js/npm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/public/js/pace.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config_dev.yml" afterPath="$PROJECT_DIR$/app/config/config_dev.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Entity/TbHorario.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Entity/TbHorario.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Default/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/template/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/template/base.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/services.yml" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/services.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbHorario/index.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbHorario/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/UserBundle/Resources/views/Login/login.html.twig" afterPath="$PROJECT_DIR$/src/MRS/UserBundle/Resources/views/Login/login.html.twig" />
     </list>
     <ignored path="controle.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,7 +33,113 @@
     <favorites_list name="controle" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="login.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MRS/UserBundle/Resources/views/Login/login.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.0">
+              <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+              <folding>
+                <element signature="e#12#32#0#Twig" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MRS/UserBundle/Controller/LoginController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-19.375">
+              <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+              <folding>
+                <element signature="e#565#932#0#PHP" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/MRS/UserBundle/Entity/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.50200266">
+              <caret line="219" column="7" selection-start-line="219" selection-start-column="7" selection-end-line="219" selection-end-column="7" />
+              <folding>
+                <element signature="e#140#245#0#PHP" expanded="false" />
+                <element signature="e#296#439#0#PHP" expanded="false" />
+                <element signature="e#462#562#0#PHP" expanded="false" />
+                <element signature="e#591#691#0#PHP" expanded="false" />
+                <element signature="e#720#816#0#PHP" expanded="false" />
+                <element signature="e#841#924#0#PHP" expanded="false" />
+                <element signature="e#950#1040#0#PHP" expanded="false" />
+                <element signature="e#1069#1166#0#PHP" expanded="false" />
+                <element signature="e#1192#1297#0#PHP" expanded="false" />
+                <element signature="e#1332#1409#0#PHP" expanded="false" />
+                <element signature="e#1415#1470#0#PHP" expanded="false" />
+                <element signature="e#1475#1536#0#PHP" expanded="false" />
+                <element signature="e#1542#1638#0#PHP" expanded="false" />
+                <element signature="e#1643#1753#0#PHP" expanded="false" />
+                <element signature="e#1759#1819#0#PHP" expanded="false" />
+                <element signature="e#1824#1897#0#PHP" expanded="false" />
+                <element signature="e#1903#1999#0#PHP" expanded="false" />
+                <element signature="e#2004#2114#0#PHP" expanded="false" />
+                <element signature="e#2120#2180#0#PHP" expanded="false" />
+                <element signature="e#2264#2352#0#PHP" expanded="false" />
+                <element signature="e#2357#2451#0#PHP" expanded="false" />
+                <element signature="e#2457#2513#0#PHP" expanded="false" />
+                <element signature="e#2518#2583#0#PHP" expanded="false" />
+                <element signature="e#2589#2678#0#PHP" expanded="false" />
+                <element signature="e#2683#2781#0#PHP" expanded="false" />
+                <element signature="e#2787#2843#0#PHP" expanded="false" />
+                <element signature="e#2848#2987#0#PHP" expanded="false" />
+                <element signature="e#2993#3090#0#PHP" expanded="false" />
+                <element signature="e#3095#3205#0#PHP" expanded="false" />
+                <element signature="e#3211#3272#0#PHP" expanded="false" />
+                <element signature="e#3277#3350#0#PHP" expanded="false" />
+                <element signature="e#3356#3446#0#PHP" expanded="false" />
+                <element signature="e#3451#3549#0#PHP" expanded="false" />
+                <element signature="e#3555#3612#0#PHP" expanded="false" />
+                <element signature="e#3617#3684#0#PHP" expanded="false" />
+                <element signature="e#3690#3796#0#PHP" expanded="false" />
+                <element signature="e#3801#3931#0#PHP" expanded="false" />
+                <element signature="e#3937#4002#0#PHP" expanded="false" />
+                <element signature="e#4007#4090#0#PHP" expanded="false" />
+                <element signature="e#4096#4436#0#PHP" expanded="false" />
+                <element signature="e#4441#4511#0#PHP" expanded="false" />
+                <element signature="e#4517#4817#0#PHP" expanded="false" />
+                <element signature="e#4822#4891#0#PHP" expanded="false" />
+                <element signature="e#4897#5264#0#PHP" expanded="false" />
+                <element signature="e#5269#5343#0#PHP" expanded="false" />
+                <element signature="e#5349#5651#0#PHP" expanded="false" />
+                <element signature="e#5738#5934#0#PHP" expanded="false" />
+                <element signature="e#5939#6024#0#PHP" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MRS/UserBundle/Entity/UserRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.083333">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding>
+                <element signature="e#169#240#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="security.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -113,7 +182,6 @@
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Default/Email.html.twig" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/SerializerController.php" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Service/ChartPieService.php" />
-        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/services.yml" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Service/ChartService.php" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/SerializerController/financas.html.twig" />
@@ -129,13 +197,14 @@
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/AdminTemplate/index.html.twig" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Default/index.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbHorario/index.html.twig" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Entity/TbHorario.php" />
         <option value="$PROJECT_DIR$/src/MRS/UserBundle/Resources/views/Login/login.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/template/base.html.twig" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
         <option value="$PROJECT_DIR$/src/MRS/UserBundle/Entity/User.php" />
         <option value="$PROJECT_DIR$/src/MRS/UserBundle/Entity/UserRepository.php" />
+        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbHorario/index.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/template/base.html.twig" />
+        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/services.yml" />
       </list>
     </option>
   </component>
@@ -149,10 +218,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1439" />
-    <option name="y" value="11" />
+    <option name="x" value="-1" />
     <option name="width" value="1442" />
-    <option name="height" value="871" />
+    <option name="height" value="901" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -194,6 +262,178 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="controle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MRS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UserBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MRS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UserBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MRS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ControleBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MRS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ControleBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MRS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ControleBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -474,7 +714,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="/var/www/sa" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/marcio/controle/src/MRS/ControleBundle/Resources/views/Default/index.html.twig&#10;De&#9;FILE&#9;file:///home/marcio/controle/src/MRS/ControleBundle/Controller/DefaultController.php&#10;Contr&#9;FILE&#9;file:///home/marcio/controle/src/MRS/ControleBundle/Controller/TbHorarioController.php&#10;hor&#9;FILE&#9;file:///home/marcio/controle/src/MRS/ControleBundle/Controller/TbHorarioController.php&#10;confi&#9;FILE&#9;file:///home/marcio/controle/app/config/config.yml&#10;base&#9;FILE&#9;file:///var/www/controle/app/Resources/views/base.html.twig&#10;Horario&#9;null&#9;null&#10;horar&#9;FILE&#9;file:///var/www/controle/src/MRS/ControleBundle/Controller/TbHorarioController.php&#10;config&#9;FILE&#9;file:///var/www/controle/app/config/config.yml&#10;Kil&#9;FILE&#9;file:///var/www/controle/src/MRS/ControleBundle/Controller/TbKilometragemController.php&#10;Kilometragem&#9;FILE&#9;file:///var/www/controle/src/MRS/ControleBundle/Form/TbKilometragemType.php" />
+    <property name="SearchEverywhereHistoryKey" value="User&#9;FILE&#9;file:///home/marcio/controle/src/MRS/UserBundle/Entity/User.php&#10;De&#9;FILE&#9;file:///home/marcio/controle/src/MRS/ControleBundle/Controller/DefaultController.php&#10;Contr&#9;FILE&#9;file:///home/marcio/controle/src/MRS/ControleBundle/Controller/TbHorarioController.php&#10;hor&#9;FILE&#9;file:///home/marcio/controle/src/MRS/ControleBundle/Controller/TbHorarioController.php&#10;confi&#9;FILE&#9;file:///home/marcio/controle/app/config/config.yml&#10;base&#9;FILE&#9;file:///var/www/controle/app/Resources/views/base.html.twig&#10;Horario&#9;null&#9;null&#10;horar&#9;FILE&#9;file:///var/www/controle/src/MRS/ControleBundle/Controller/TbHorarioController.php&#10;config&#9;FILE&#9;file:///var/www/controle/app/config/config.yml&#10;Kil&#9;FILE&#9;file:///var/www/controle/src/MRS/ControleBundle/Controller/TbKilometragemController.php&#10;Kilometragem&#9;FILE&#9;file:///var/www/controle/src/MRS/ControleBundle/Form/TbKilometragemType.php" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -540,10 +780,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1439" y="11" width="1442" height="871" extended-state="6" />
-    <editor active="false" />
+    <frame x="-1" y="0" width="1442" height="901" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19305556" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19305556" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947233" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298611" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -581,27 +821,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Controller/ApiHorarioController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34944752">
-          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/public/js/register-ponto.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.87967914">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/doctrine/common/lib/Doctrine/Common/Persistence/ObjectManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34392264">
-          <caret line="128" column="20" selection-start-line="128" selection-start-column="20" selection-end-line="128" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Repository/FinancasRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
@@ -698,13 +917,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.875">
           <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/services.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.421123">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -851,16 +1063,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbHorario/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64673156">
-          <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
-          <folding>
-            <element signature="e#12#28#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.29207233">
@@ -885,14 +1087,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Security/Core/User/AdvancedUserInterface.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20723227">
@@ -909,40 +1103,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/template/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.60500693">
-          <caret line="80" column="65" selection-start-line="80" selection-start-column="65" selection-end-line="80" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/UserBundle/Entity/UserRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6036161">
-          <caret line="30" column="48" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
-          <folding>
-            <element signature="e#169#240#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/UserBundle/Entity/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.02086231">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20188425">
-          <caret line="10" column="62" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/old_base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.1891516">
@@ -951,21 +1111,154 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/template/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2906815">
+          <caret line="275" column="18" selection-start-line="275" selection-start-column="18" selection-end-line="275" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="24" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbHorario/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4589708">
+          <caret line="61" column="16" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/MRS/UserBundle/Resources/views/Login/login.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2503477">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state vertical-scroll-proportion="-10.0">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
           <folding>
-            <element signature="e#12#32#0#Twig" expanded="true" />
+            <element signature="e#12#32#0#Twig" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MRS/UserBundle/Controller/LoginController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.85535467">
-          <caret line="47" column="52" selection-start-line="47" selection-start-column="52" selection-end-line="47" selection-end-column="52" />
+        <state vertical-scroll-proportion="-19.375">
+          <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+          <folding>
+            <element signature="e#565#932#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MRS/UserBundle/DataFixtures/ORM/LoadUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8598131">
+          <caret line="55" column="35" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="35" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Entity/TbAcesso.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11642949">
+          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MRS/UserBundle/Entity/UserRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.083333">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="e#169#240#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MRS/UserBundle/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.50200266">
+          <caret line="219" column="7" selection-start-line="219" selection-start-column="7" selection-end-line="219" selection-end-column="7" />
+          <folding>
+            <element signature="e#140#245#0#PHP" expanded="false" />
+            <element signature="e#296#439#0#PHP" expanded="false" />
+            <element signature="e#462#562#0#PHP" expanded="false" />
+            <element signature="e#591#691#0#PHP" expanded="false" />
+            <element signature="e#720#816#0#PHP" expanded="false" />
+            <element signature="e#841#924#0#PHP" expanded="false" />
+            <element signature="e#950#1040#0#PHP" expanded="false" />
+            <element signature="e#1069#1166#0#PHP" expanded="false" />
+            <element signature="e#1192#1297#0#PHP" expanded="false" />
+            <element signature="e#1332#1409#0#PHP" expanded="false" />
+            <element signature="e#1415#1470#0#PHP" expanded="false" />
+            <element signature="e#1475#1536#0#PHP" expanded="false" />
+            <element signature="e#1542#1638#0#PHP" expanded="false" />
+            <element signature="e#1643#1753#0#PHP" expanded="false" />
+            <element signature="e#1759#1819#0#PHP" expanded="false" />
+            <element signature="e#1824#1897#0#PHP" expanded="false" />
+            <element signature="e#1903#1999#0#PHP" expanded="false" />
+            <element signature="e#2004#2114#0#PHP" expanded="false" />
+            <element signature="e#2120#2180#0#PHP" expanded="false" />
+            <element signature="e#2264#2352#0#PHP" expanded="false" />
+            <element signature="e#2357#2451#0#PHP" expanded="false" />
+            <element signature="e#2457#2513#0#PHP" expanded="false" />
+            <element signature="e#2518#2583#0#PHP" expanded="false" />
+            <element signature="e#2589#2678#0#PHP" expanded="false" />
+            <element signature="e#2683#2781#0#PHP" expanded="false" />
+            <element signature="e#2787#2843#0#PHP" expanded="false" />
+            <element signature="e#2848#2987#0#PHP" expanded="false" />
+            <element signature="e#2993#3090#0#PHP" expanded="false" />
+            <element signature="e#3095#3205#0#PHP" expanded="false" />
+            <element signature="e#3211#3272#0#PHP" expanded="false" />
+            <element signature="e#3277#3350#0#PHP" expanded="false" />
+            <element signature="e#3356#3446#0#PHP" expanded="false" />
+            <element signature="e#3451#3549#0#PHP" expanded="false" />
+            <element signature="e#3555#3612#0#PHP" expanded="false" />
+            <element signature="e#3617#3684#0#PHP" expanded="false" />
+            <element signature="e#3690#3796#0#PHP" expanded="false" />
+            <element signature="e#3801#3931#0#PHP" expanded="false" />
+            <element signature="e#3937#4002#0#PHP" expanded="false" />
+            <element signature="e#4007#4090#0#PHP" expanded="false" />
+            <element signature="e#4096#4436#0#PHP" expanded="false" />
+            <element signature="e#4441#4511#0#PHP" expanded="false" />
+            <element signature="e#4517#4817#0#PHP" expanded="false" />
+            <element signature="e#4822#4891#0#PHP" expanded="false" />
+            <element signature="e#4897#5264#0#PHP" expanded="false" />
+            <element signature="e#5269#5343#0#PHP" expanded="false" />
+            <element signature="e#5349#5651#0#PHP" expanded="false" />
+            <element signature="e#5738#5934#0#PHP" expanded="false" />
+            <element signature="e#5939#6024#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

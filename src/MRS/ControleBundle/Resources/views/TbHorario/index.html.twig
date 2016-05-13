@@ -129,16 +129,16 @@
  {{ parent() }}
 
 
-{#<script>#}
-    {#var $botton = jQuery.noConflict();#}
+<script>
+    var $botton = jQuery.noConflict();
 
-    {#$botton("#button-register").click(function(){#}
+    $botton("#button-register").click(function(){
 
-        {#$botton("#button-register").attr('disabled','disabled').#}
-        {#html('<span class="glyphicon glyphicon-floppy-open"></span> Registrando...');#}
+    $botton("#button-register").attr('disabled','disabled').
+        html('<span class="glyphicon glyphicon-floppy-open"></span> Registrando...');
 
-    {#});#}
+    });
 
-{#</script>#}
+</script>
 
 {% endblock %}
