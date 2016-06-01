@@ -52,7 +52,7 @@ class SendMailCommand extends ContainerAwareCommand
 
         if($result){
             $io->block('E-mail enviado com sucesso!','', 'fg=white;bg=blue', '*', true);
-            $io->block('De: ' . var_dump($Message->getFrom()) .' Para' . var_dump($Message->getTo()),'*', 'fg=white;bg=blue', '*', true);
+            $io->block('De: ' . $Message->getFrom() .' Para' . $Message->getTo(),'*', 'fg=white;bg=blue', '*', true);
         }else{
             $io->block('Houve um erro ao tentar enviar!','', 'fg=white;bg=blue', '*', true);
         }

@@ -2,82 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42de861a-5051-4ee6-b736-504beeef1b05" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/about.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Command/JogoCommand.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/doctrine/Jogo.orm.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/public/css/select2-bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbCategoria/template/template.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Service/JogoService.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MRS/UserBundle/Resources/views/User/edit.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MRS/UserBundle/Resources/views/User/new.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MRS/UserBundle/Tests/Controller/UserControllerTest.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/new_base.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/logs/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/doctrine/Jogo.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/favicon.ico" afterPath="$PROJECT_DIR$/web/favicon.ico" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/symfony2.xml" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/template/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/template/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config_dev.yml" afterPath="$PROJECT_DIR$/app/config/config_dev.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config_prod.yml" afterPath="$PROJECT_DIR$/app/config/config_prod.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/parameters.yml.dist" afterPath="$PROJECT_DIR$/app/config/parameters.yml.dist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Tests/Controller/DefaultControllerTest.php" afterPath="$PROJECT_DIR$/src/AppBundle/Tests/Controller/DefaultControllerTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/JogoController.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/JogoController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/ProductController.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/ProductController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/TbCategoriaController.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/TbCategoriaController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/TbFinancasController.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/TbFinancasController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/TbKilometragemController.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/TbKilometragemController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Entity/Product.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Entity/Product.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Entity/TbCategoria.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Entity/TbCategoria.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Entity/TbFinancas.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Entity/TbFinancas.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Entity/TbKilometragem.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Entity/TbKilometragem.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Form/JogoType.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Form/JogoType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Form/ProductType.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Form/ProductType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Form/TbCategoriaType.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Form/TbCategoriaType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Form/TbFinancasType.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Form/TbFinancasType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Form/TbKilometragemType.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Form/TbKilometragemType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Repository/KilometragemRepository.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Repository/KilometragemRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/doctrine/Product.orm.xml" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/doctrine/Product.orm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/doctrine/TbCategoria.orm.xml" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/doctrine/TbCategoria.orm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/services.yml" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/services.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Default/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Jogo/index.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Jogo/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Product/edit.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Product/edit.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Product/index.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Product/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Product/show.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Product/show.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbCategoria/edit.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbCategoria/edit.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbCategoria/index.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbCategoria/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbCategoria/new.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbCategoria/new.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbCategoria/show.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbCategoria/show.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/edit.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/edit.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/index.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/new.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/new.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/show.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/show.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbHorario/Pdf/show.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbHorario/Pdf/show.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbHorario/index.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbHorario/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbKilometragem/Template/painel.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbKilometragem/Template/painel.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbKilometragem/edit.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbKilometragem/edit.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbKilometragem/index.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbKilometragem/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbKilometragem/new.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbKilometragem/new.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbKilometragem/show.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbKilometragem/show.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Service/FinancasService.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Service/FinancasService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Tests/Controller/DefaultControllerTest.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Tests/Controller/DefaultControllerTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Tests/Controller/JogoControllerTest.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Tests/Controller/JogoControllerTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Tests/Controller/TbKilometragemControllerTest.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Tests/Controller/TbKilometragemControllerTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/UserBundle/Controller/LoginController.php" afterPath="$PROJECT_DIR$/src/MRS/UserBundle/Controller/LoginController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/UserBundle/Controller/UserController.php" afterPath="$PROJECT_DIR$/src/MRS/UserBundle/Controller/UserController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/UserBundle/DataFixtures/ORM/LoadUser.php" afterPath="$PROJECT_DIR$/src/MRS/UserBundle/DataFixtures/ORM/LoadUser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/UserBundle/Resources/views/Login/login.html.twig" afterPath="$PROJECT_DIR$/src/MRS/UserBundle/Resources/views/Login/login.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/UserBundle/Resources/views/User/index.html.twig" afterPath="$PROJECT_DIR$/src/MRS/UserBundle/Resources/views/User/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Command/SendMailCommand.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Command/SendMailCommand.php" />
     </list>
     <ignored path="controle.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -106,41 +31,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="new.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/new.html.twig">
+      <file leaf-file-name="SendMailCommand.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Command/SendMailCommand.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.06403415">
-              <caret line="4" column="89" selection-start-line="4" selection-start-column="89" selection-end-line="4" selection-end-column="89" />
+            <state vertical-scroll-proportion="0.7043757">
+              <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/template/base.html.twig">
+      <file leaf-file-name="SendMailService.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Service/SendMailService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.875">
-              <caret line="11" column="91" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="91" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="select2-bootstrap.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/public/css/select2-bootstrap.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TbFinancasType.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Form/TbFinancasType.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.0">
-              <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+            <state vertical-scroll-proportion="-11.25">
+              <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -162,7 +67,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/MRS/UserBundle/Resources/views/Login/login.html.twig" />
         <option value="$PROJECT_DIR$/src/MRS/UserBundle/Controller/LoginController.php" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml.dist" />
@@ -213,6 +117,7 @@
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Form/TbFinancasType.php" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/public/css/select2-bootstrap.css" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/new.html.twig" />
+        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Command/SendMailCommand.php" />
       </list>
     </option>
   </component>
@@ -691,55 +596,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controle" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="MRS" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
+              <option name="myItemId" value="ControleBundle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
+              <option name="myItemId" value="Command" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -864,28 +733,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bridge/Monolog/Logger.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32051283">
-          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Entity/Jogo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12820514">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Controller/JogoController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.016025642">
@@ -1198,18 +1045,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Form/TbFinancasType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.0">
-          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="18" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32017076">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/template/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17609392">
+          <caret line="11" column="91" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="91" />
           <folding />
         </state>
       </provider>
@@ -1222,18 +1077,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/template/base.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Form/TbFinancasType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.875">
-          <caret line="11" column="91" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="91" />
+        <state vertical-scroll-proportion="0.5122732">
+          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/new.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Command/PontoCommand.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06403415">
-          <caret line="4" column="89" selection-start-line="4" selection-start-column="89" selection-end-line="4" selection-end-column="89" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Service/SendMailService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.25">
+          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Command/SendMailCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7043757">
+          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding />
         </state>
       </provider>
