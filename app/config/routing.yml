@@ -1,9 +1,9 @@
-mrs_controle:
-    resource: "@MRSControleBundle/Resources/config/routing.yml"
-    prefix:   /
+#mrs_user:
+#    resource: "@UserBundle/Controller/"
+#    type:   annotation
 mrs_user:
-    resource: "@UserBundle/Controller/"
-    type:   annotation
+    resource: "@UserBundle/Resources/config/routing.yml"
+
 app_financas:
     resource: "@MRSControleBundle/Controller/"
     type:     annotation

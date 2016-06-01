@@ -57,11 +57,16 @@ class KilometragemRepository extends EntityRepository
 
     public function getCalcKilometragem()
     {
-        return $this->getConnection()->fetchAll('SELECT ki_codigo AS kiCodigo, concat(ki_kilometragem,\' KM\') AS kiKilometragem,ki_descricao AS kiDescricao,
-						date_format(ki_data_inicial,\'%d-%m-%Y\') AS kiDataInicial,
-						date_format(ki_data_atual,\'%d-%m-%Y\') AS kiDataAtual,
-						DATEDIFF(ki_data_atual,ki_data_inicial) Dias,
-					    substr(ki_kilometragem / DATEDIFF(ki_data_atual,ki_data_inicial),1,7) Media
-					FROM tb_kilometragem');
+        return $this->getConnection()
+                    ->fetchAll('SELECT
+                                  ki_codigo AS kiCodigo,
+                                  concat(ki_kilometragem,\' KM\') AS kiKilometragem,
+                                  ki_descricao AS kiDescricao,
+                                  date_format(ki_data_inicial,\'%d-%m-%Y\') AS kiDataInicial,
+						          date_format(ki_data_atual,\'%d-%m-%Y\') AS kiDataAtual,
+						          DATEDIFF(ki_data_atual,ki_data_inicial) AS Dias,
+					              substr(ki_kilometragem / DATEDIFF(ki_data_atual,ki_data_inicial),1,7) AS Media
+					            FROM tb_kilometragem
+					            ORDER BY ki_codigo DESC');
     }
 }

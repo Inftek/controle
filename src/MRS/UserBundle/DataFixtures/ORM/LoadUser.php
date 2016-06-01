@@ -33,7 +33,7 @@ class LoadUser implements \Doctrine\Common\DataFixtures\FixtureInterface, \Symfo
         $usuario1->setUsername('admin')
             ->setPassword($this->encodePassword($usuario1,'admin'))
             ->setIsActive(true)
-            ->setRoles(array('ROLE_ADMIN','ROLE_USER','ROLE_BLA_BLA_BLA'))
+            ->setRoles(array('ROLE_SUPER_ADMIN','ROLE_ADMIN','ROLE_USER','ROLE_BLA_BLA_BLA'))
             ->setEmail('admin@mrs.com')
             ->setPlainPassword('admin');
 

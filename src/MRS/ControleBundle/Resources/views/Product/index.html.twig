@@ -1,43 +1,52 @@
 {% extends '::base.html.twig' %}
 
 {% block body -%}
+
+    <a href="{{ path('product_new') }}" class="btn btn-primary">
+        <i class="glyphicon glyphicon-plus"></i>
+        Novo
+    </a>
+
     <h1>Product list</h1>
 
-    <table class="records_list">
+    <table class="table table-bordered table-hover table-condensed table-striped">
         <thead>
-            <tr>
-                <th>Imagename</th>
-                <th>Updatedat</th>
-                <th>Id</th>
-                <th>Actions</th>
-            </tr>
+        <tr>
+            <th>Image</th>
+            <th>Update</th>
+            <th>Actions</th>
+        </tr>
         </thead>
         <tbody>
         {% for entity in entities %}
             <tr>
-                <td><a href="{{ path('product_show', { 'id': entity.id }) }}">{{ entity.imageName }}</a></td>
-                <td>{% if entity.updatedAt %}{{ entity.updatedAt|date('Y-m-d H:i:s') }}{% endif %}</td>
-                <td>{{ entity.id }}</td>
+
                 <td>
-                <ul>
-                    <li>
-                        <a href="{{ path('product_show', { 'id': entity.id }) }}">show</a>
-                    </li>
-                    <li>
-                        <a href="{{ path('product_edit', { 'id': entity.id }) }}">edit</a>
-                    </li>
-                </ul>
+
+                    <div class="col-md-2">
+
+                        <a href="{{ path('product_show', { 'id': entity.id }) }}" class="thumbnail">
+
+                            <img class="" src="{{ vich_uploader_asset(entity,'imageFile') }}">
+                        </a>
+                    </div>
+
+                </td>
+
+                <td>{% if entity.updatedAt %}{{ entity.updatedAt|date('d-m-Y H:i:s') }}{% endif %}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('product_show', { 'id': entity.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('product_edit', { 'id': entity.id }) }}">edit</a>
+                        </li>
+                    </ul>
                 </td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-        <ul>
-        <li>
-            <a href="{{ path('product_new') }}">
-                Create a new entry
-            </a>
-        </li>
-    </ul>
-    {% endblock %}
+{% endblock %}

@@ -13,10 +13,13 @@ use Symfony\Component\Validator\Constraints as Assert;
  */
 class TbKilometragem
 {
+
+    const NUM_LIMT = 5;
     /**
      * @var string
      *
      * @ORM\Column(name="ki_kilometragem", type="string", length=45, nullable=false)
+     * @Assert\Range(min=1,minMessage="Deve ser maior que um", groups={"create"})
      */
     private $kiKilometragem;
 
@@ -47,7 +50,7 @@ class TbKilometragem
      * @var
      * @ORM\Column(name="ki_descricao", type="string", nullable=true)
      * @Assert\NotBlank(groups={"create"})
-     * @Assert\Length(groups={"update"}, min="3", maxMessage="Esse é o limite", minMessage="Esse é o minimo")
+     * @Assert\Length(min="5", maxMessage="Esse é o limite", minMessage="Esse é o minimo", groups={"update"})
      */
     private $kiDescricao;
 

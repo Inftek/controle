@@ -1,38 +1,36 @@
-{% extends '::base.html.twig' %}
+{% extends 'MRSControleBundle:TbCategoria/template:template.html.twig' %}
 
-{% block body -%}
-    <h1>Categoria</h1>
+{% block panelhead %}
+
+    {{ include('MRSControleBundle:TbCategoria/template:painel.html.twig') }}
+
+{% endblock %}
+
+{% block panelbody %}
 
     <table class="record_properties">
         <tbody>
-            <tr>
-                <th>Catdescricao</th>
-                <td>{{ entity.catDescricao }}</td>
-            </tr>
-            <tr>
-                <th>Catativo</th>
-                <td>{{ entity.catAtivo }}</td>
-            </tr>
-            <tr>
-                <th>Catcodigo</th>
-                <td>{{ entity.catCodigo }}</td>
-            </tr>
+        <tr>
+            <th>Descricao: </th>
+            <td>{{ entity.catDescricao }}</td>
+        </tr>
+        <tr>
+            <th>Ativo: </th>
+            <td>{{ entity.catAtivo }}</td>
+        </tr>
+        <tr>
+            <th>Codigo: </th>
+            <td>{{ entity.catCodigo }}</td>
+        </tr>
         </tbody>
     </table>
 
-        <ul class="record_actions">
-    <li>
-        <a href="{{ path('categoria') }}">
-            Back to the list
-        </a>
-    </li>
-    <li>
-        <a href="{{ path('categoria_edit', { 'id': entity.catCodigo }) }}">
-            Edit
-        </a>
-    </li>
-     {% if is_granted('ROLE_SUPER_ADMIN') %}
-        <li>{{ form(delete_form) }}</li>
-     {% endif %}
-</ul>
+{% endblock %}
+
+{% block panelfooter %}
+    <div class="row">
+        <div class="col-md-2 pull-left">
+            {{ form(delete_form) }}
+        </div>
+    </div>
 {% endblock %}

@@ -1,144 +1,200 @@
 {% extends '::base.html.twig' %}
 
-{% block title %}Lista de Horário {% endblock %}
+    {% block title %}Lista de Horário {% endblock %}
 
-{% block contentheader %}{% endblock %}
+{% block stylesheets %}
+{{ parent() }}
+    <style type="text/css">
+    .alert-info{
+        margin: 0 0 0 0;
+    }
+        #button-register{
+            margin-bottom: 6px;
+        }
 
-{% block content %}
-
-
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h3 class="panel-title">Pesquisar</h3>
-        </div>
-        <div class="panel-body">
-            <form class="form-inline" method="post" action="{{ path('horario') }}">
-
-                <div class="form-group">
-                    {# <label for="dataInicial">Data Inicial:</label>#}
-                    <input type="date" name="dataInicial" value="{{ datas.dataInicial }}" class="form-control">
-                </div>
-
-                <div class="form-group">
-                    {#                    <label for="dataFinal">Data Final:</label>#}
-                    <input type="date" name="dataFinal" value="{{ datas.dataFinal }}" class="form-control">
-                </div>
-
-                <button type="submit" class="btn btn-default">Procurar</button>
-
-            </form>
-        </div>
-
-    </div>
-
-
-
-        <div class="col-lg-3">
-            <a href="{{ path('horario_register') }}" class="btn btn-primary btn-lg" id="button-register"
-               {% set nameButton = 'Registrar Ponto' %}
-                {% if entity %}
-                    {% if entity.horSaida is not null %}
-                        disabled="disabled"
-                    {% set nameButton = 'Todos Registros Efetuados' %}
-                    {% endif %}
-                 {% endif %}
-                    role="button">
-                <span class="glyphicon glyphicon-floppy-saved"></span>
-                {{ nameButton }}
-            </a>
-        </div>
-        <div class="col-lg-6">
-            {% for notice in app.session.flashBag.get('notice') %}
-                <div class="alert alert-info">
-                    {{ notice.notice }}
-                </div>
-            {% endfor %}
-        </div>
-
-
-
-    <table class="table table-bordered table-condensed table-hover table-striped">
-        <thead>
-            <tr>
-                <th>Linhas: {{ entities.getTotalItemCount }}</th>
-                <th>Dia Semana</th>
-                <th>Data</th>
-                <th>Entrada</th>
-                <th>Almoco Saida</th>
-                <th>Almoco Volta</th>
-                <th>Saída</th>
-                <th>Total Dia</th>
-                <th>Total Almoço</th>
-                <th>Horas Trabalhadas</th>
-                <th>Justificativa</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for entity in entities %}
-            <tr>
-            <td>
-                <div class="btn-group">
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Opções <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="{{ path('horario_show', { 'id': entity.horCodigo}) }}">
-                                <span class="glyphicon glyphicon-search"></span>
-                                Mostrar
-                            </a>
-                        </li>
-                        <li>
-                            <a href="{{ path('horario_edit', { 'id': entity.horCodigo }) }}">
-                                <span  class="glyphicon glyphicon-edit"></span>
-                                Editar
-                            </a>
-                        </li>
-                        <li>
-                            <a href="{{ path('pdf_horario', { 'id': entity.horCodigo }) }}">
-                                <span  class="glyphicon glyphicon-save"></span>
-                                Salvar PDF
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </td>
-                <td>{{ entity.horDiaSemana }}</td>
-                <td>{% if entity.horData %}{{ entity.horData|date('d-m-Y') }}{% endif %}</td>
-                <td>{% if entity.horEntrada %}{{ entity.horEntrada | date('H:i:s')}}{% endif %}</td>
-                <td>{% if entity.horAlmocoIda %}{{ entity.horAlmocoIda | date('H:i:s') }}{% endif %}</td>
-                <td>{% if entity.horAlmocoVolta %}{{ entity.horAlmocoVolta | date('H:i:s') }}{% endif %}</td>
-                <td>{% if entity.horSaida %}{{ entity.horSaida | date('H:i:s') }} {% endif %}</td>
-                <td>{% if entity.totalDia %}{{ entity.totalDia | date('H:i:s') }} {% endif %}</td>
-                <td>{% if entity.horaAlmoco %}{{ entity.horaAlmoco | date('H:i:s') }} {% endif %}</td>
-                <td>{% if entity.horasTrabalhas %}{{ entity.horasTrabalhas | date('H:i:s') }} {% endif %}</td>
-                <td>{{ entity.horJustificativa }}</td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
-
-    {{ knp_pagination_render(entities) }}
-
-    <span class="error"></span>
-
+    </style>
 
 {% endblock %}
 
-{% block javascripts %}
- {{ parent() }}
+    {% block contentheader %}{% endblock %}
+
+    {% block content %}
 
 
-<script>
-    var $botton = jQuery.noConflict();
+        <div class="row">
 
-    $botton("#button-register").click(function(){
+            <div class="col-md-12">
 
-    $botton("#button-register").attr('disabled','disabled').
-        html('<span class="glyphicon glyphicon-floppy-open"></span> Registrando...');
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <span class="glyphicon glyphicon-search"></span>
+                            Pesquisar
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <form class="form-inline" method="post" action="{{ path('horario') }}">
 
-    });
+                            <div class="form-group">
+                                {# <label for="dataInicial">Data Inicial:</label>#}
+                                <span class="glyphicon glyphicon-calendar"></span>
+                                <input type="date" name="dataInicial" value="{{ datas.dataInicial }}" class="form-control">
+                            </div>
 
-</script>
+                            <div class="form-group">
+                                {#                    <label for="dataFinal">Data Final:</label>#}
+                                <span class="glyphicon glyphicon-calendar"></span>
+                                <input type="date" name="dataFinal" value="{{ datas.dataFinal }}" class="form-control">
+                            </div>
 
-{% endblock %}
+                            <button type="submit" class="btn btn-default">
+                                <span class="glyphicon glyphicon-filter"></span>
+                                Filtrar
+                            </button>
+
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-3 col-xs-4">
+                <a href="{{ path('horario_register') }}" class="btn btn-primary btn-lg" id="button-register"
+                        {% set nameButton = 'Registrar Ponto' %}
+                        {% if entity %}
+                            {% if entity.horSaida is not null %}
+                                disabled="disabled"
+                                {% set nameButton = 'Todos Registros Efetuados' %}
+                            {% endif %}
+                        {% endif %}
+                   role="button">
+                    <span class="glyphicon glyphicon-floppy-saved"></span>
+                    {{ nameButton }}
+                </a>
+            </div>
+
+            <div class="col-md-4 col-xs-6 col-xs-offset-1">
+                {% for notice in app.session.flashBag.get('notice') %}
+                    <div class="alert alert-info" role="alert">
+                        <span class="glyphicon glyphicon-alert"></span>
+                        {{ notice.notice }}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-12 col-xs-12">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <span class="glyphicon glyphicon-list-alt"></span>
+                            Registros de Horários
+                        </h3>
+                    </div>
+
+                    <div class="panel-body">
+
+                        <table class="table table-bordered table-condensed table-hover table-striped">
+                            <thead>
+                            <tr>
+                                <th>Linhas: {{ entities.getTotalItemCount }}</th>
+                                <th>Dia Semana</th>
+                                <th>Data</th>
+                                <th>Entrada</th>
+                                <th>Almoco Saida</th>
+                                <th>Almoco Volta</th>
+                                <th>Saída</th>
+                                <th>Total Dia</th>
+                                <th>Total Almoço</th>
+                                <th>Horas Trabalhadas</th>
+                                <th>Justificativa</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for entity in entities %}
+                                <tr>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="glyphicon glyphicon-th-list"></span>
+                                                Opções <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a href="{{ path('horario_show', { 'id': entity.horCodigo}) }}">
+                                                        <span class="glyphicon glyphicon-eye-open"></span>
+                                                        Mostrar
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="{{ path('horario_edit', { 'id': entity.horCodigo }) }}">
+                                                        <span  class="glyphicon glyphicon-edit"></span>
+                                                        Editar
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="{{ path('pdf_horario', { 'id': entity.horCodigo }) }}">
+                                                        <span  class="glyphicon glyphicon-save"></span>
+                                                        Salvar PDF
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>{{ entity.horDiaSemana }}</td>
+                                    <td>{% if entity.horData %}{{ entity.horData|date('d-m-Y') }}{% endif %}</td>
+                                    <td>{% if entity.horEntrada %}{{ entity.horEntrada | date('H:i:s')}}{% endif %}</td>
+                                    <td>{% if entity.horAlmocoIda %}{{ entity.horAlmocoIda | date('H:i:s') }}{% endif %}</td>
+                                    <td>{% if entity.horAlmocoVolta %}{{ entity.horAlmocoVolta | date('H:i:s') }}{% endif %}</td>
+                                    <td>{% if entity.horSaida %}{{ entity.horSaida | date('H:i:s') }} {% endif %}</td>
+                                    <td>{% if entity.totalDia %}{{ entity.totalDia | date('H:i:s') }} {% endif %}</td>
+                                    <td>{% if entity.horaAlmoco %}{{ entity.horaAlmoco | date('H:i:s') }} {% endif %}</td>
+                                    <td>{% if entity.horasTrabalhas %}{{ entity.horasTrabalhas | date('H:i:s') }} {% endif %}</td>
+                                    <td>{{ entity.horJustificativa }}</td>
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="panel-footer">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        {{ knp_pagination_render(entities) }}
+
+    {% endblock %}
+
+    {% block javascripts %}
+        {{ parent() }}
+
+
+        <script language="JavaScript">
+
+          //  var $botton = jQuery.noConflict();
+
+          $(document).ready(function(){
+
+              $("#button-register").click(function(){
+
+                  $("#button-register").attr('disabled','disabled').
+                  html('<span class="glyphicon glyphicon-floppy-open"></span> Registrando...');
+              });
+
+          });
+
+
+        </script>
+
+    {% endblock %}

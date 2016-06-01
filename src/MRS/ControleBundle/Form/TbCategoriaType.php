@@ -4,7 +4,7 @@ namespace MRS\ControleBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
-use Symfony\Component\OptionsResolver\OptionsResolverInterface;
+use Symfony\Component\OptionsResolver\OptionsResolver;
 
 class TbCategoriaType extends AbstractType
 {
@@ -15,17 +15,18 @@ class TbCategoriaType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('catDescricao')
-            ->add('catAtivo')
+            ->add('catDescricao',null,['label' => 'Descrição:'])
+            //->add('catAtivo')
         ;
     }
     
     /**
      * @param OptionsResolverInterface $resolver
      */
-    public function setDefaultOptions(OptionsResolverInterface $resolver)
+    public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
+            'validation_groups' => array('create','update'),
             'data_class' => 'MRS\ControleBundle\Entity\TbCategoria'
         ));
     }
@@ -33,7 +34,7 @@ class TbCategoriaType extends AbstractType
     /**
      * @return string
      */
-    public function getName()
+    public function getBlockPrefix()
     {
         return 'mrs_controlebundle_tbcategoria';
     }

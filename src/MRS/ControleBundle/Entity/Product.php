@@ -3,13 +3,16 @@
 namespace MRS\ControleBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Gedmo\Mapping\Annotation as Gedmo;
 use Symfony\Component\HttpFoundation\File\File;
 use Vich\UploaderBundle\Mapping\Annotation as Vich;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Table(name="tb_produto")
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="MRS\ControleBundle\Repository\ProductRepository")
  * @Vich\Uploadable
+ * @Gedmo\Loggable
  */
 class Product
 {
@@ -25,9 +28,11 @@ class Product
     /**
      * NOTE: This is not a mapped field of entity metadata, just a simple property.
      *
-     * @Vich\UploadableField(mapping="product_image", fileNameProperty="imageName")
+     * @Vich\UploadableField(mapping="my_mapping", fileNameProperty="imageName")
      *
      * @var File
+     * @Assert\File(maxSize="2M", maxSizeMessage="Vc excedeu {{ size }} {{ suffix }} o limite de tamanho deviar ser {{ limit }} {{ suffix }} arquivo",
+     *              mimeTypes = {"image/png","image/jpeg"}, mimeTypesMessage = "Tipo de arquivo {{ type }} não é aceitável, envie somente {{ types }}")
      */
     private $imageFile;
 
@@ -35,6 +40,7 @@ class Product
      * @ORM\Column(type="string", length=255)
      *
      * @var string
+     * @Gedmo\Versioned
      */
     private $imageName;
 
@@ -128,8 +134,14 @@ class Product
     /**
      * @return string
      */
-    public function getImageName()
+public function getImageName()
     {
         return $this->imageName;
     }
+
+    public function getPathFileName()
+    {
+        return null;
+    }
+
 }

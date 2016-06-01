@@ -1,43 +1,89 @@
-{% extends '::base.html.twig' %}
+{% extends 'MRSControleBundle:TbCategoria/template:template.html.twig' %}
 
-{% block body -%}
-    <h1>TbCategoria list</h1>
+{% block stylesheets %}
+    {{ parent() }}
 
-    <table class="records_list">
+    <style type="text/css">
+        .pagination {
+            margin: 0px
+        }
+    </style>
+
+{% endblock %}
+
+
+
+{% block panelhead %}
+
+    <div class="row">
+
+        <div class="col-md-6 pull-left">
+            {{ knp_pagination_render(entities) }}
+        </div>
+
+        <div class=" col-md-3 pull-right">
+              <a href="{{ path('categoria_new') }}" class="btn btn-primary pull-right">
+                <span class="glyphicon glyphicon-plus"></span>
+                  Novo
+              </a>
+        </div>
+
+    </div>
+
+{% endblock %}
+
+{% block blockfilter %}
+    <div class="row">
+        <div class="col-md-12">
+            Filtros
+        </div>
+    </div>
+{% endblock %}
+
+{% block panelbody %}
+
+    <table class="table table-bordered table-hover table-condensed table-striped">
         <thead>
-            <tr>
-                <th>Catdescricao</th>
-                <th>Catativo</th>
-                <th>Catcodigo</th>
-                <th>Actions</th>
-            </tr>
+        <tr>
+            <th>#</th>
+            <th>Descricao</th>
+            <th>Ativo</th>
+        </tr>
         </thead>
         <tbody>
         {% for entity in entities %}
             <tr>
-                <td><a href="{{ path('categoria_show', { 'id': entity.catCodigo }) }}">{{ entity.catDescricao }}</a></td>
-                <td>{{ entity.catAtivo }}</td>
-                <td>{{ entity.catCodigo }}</td>
                 <td>
-                <ul>
-                    <li>
-                        <a href="{{ path('categoria_show', { 'id': entity.catCodigo }) }}">show</a>
-                    </li>
-                    <li>
-                        <a href="{{ path('categoria_edit', { 'id': entity.catCodigo }) }}">edit</a>
-                    </li>
-                </ul>
+
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-cog"></span>
+                            Opções
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="{{ path('categoria_show', { 'id': entity.catCodigo }) }}">
+                                    <span class="glyphicon glyphicon-eye-open"></span>
+                                    Mostrar
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ path('categoria_edit', { 'id': entity.catCodigo }) }}">
+                                    <span  class="glyphicon glyphicon-edit"></span>
+                                    Editar
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+
                 </td>
+                <td><a href="{{ path('categoria_show', { 'id': entity.catCodigo }) }}">{{ entity.catDescricao }}</a></td>
+                <td>{% if entity.catAtivo == 1 %}Sim{% else %}Não{% endif %}</td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-        <ul>
-        <li>
-            <a href="{{ path('categoria_new') }}">
-                Create a new entry
-            </a>
-        </li>
-    </ul>
-    {% endblock %}
+{% endblock %}

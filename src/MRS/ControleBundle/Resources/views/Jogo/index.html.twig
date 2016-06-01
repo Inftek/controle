@@ -2,7 +2,8 @@
 
 {% block body -%}
     <h1>Jogo list</h1>
-
+    <p>Inicio: {{ timer.inicio }} </p>
+    <p>{{ knp_pagination_render(entities) }}</p>
     <table class="records_list">
         <thead>
             <tr>
@@ -40,4 +41,7 @@
             </a>
         </li>
     </ul>
+
+    <p>Fim: {{ timer.fim }}</p>
+
     {% endblock %}

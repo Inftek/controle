@@ -1,19 +1,13 @@
-{% extends '::base.html.twig' %}
+{% extends 'MRSControleBundle:TbCategoria/template:template.html.twig' %}
 
+{% block panelhead %}
 
-{% block body -%}
-    <h1>TbCategoria edit</h1>
+    {{ include('MRSControleBundle:TbCategoria/template:painel.html.twig') }}
 
-    {{ form(edit_form) }}
+{% endblock %}
 
-        <ul class="record_actions">
-    <li>
-        <a href="{{ path('categoria') }}">
-            Back to the list
-        </a>
-    </li>
-    {% if is_granted('ROLE_SUPER_ADMIN') %}
-        <li>{{ form(delete_form) }}</li>
-    {% endif %}
-</ul>
+{% block panelbody %}
+
+    {{ form(edit_form, {'attr': {'novalidate': 'novalidate'}}) }}
+
 {% endblock %}

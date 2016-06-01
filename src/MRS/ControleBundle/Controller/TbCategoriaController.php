@@ -2,6 +2,7 @@
 
 namespace MRS\ControleBundle\Controller;
 
+use MRS\ControleBundle\MRSControleBundle;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
@@ -9,6 +10,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use MRS\ControleBundle\Entity\TbCategoria;
 use MRS\ControleBundle\Form\TbCategoriaType;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 
 /**
  * TbCategoria controller.
@@ -25,14 +27,21 @@ class TbCategoriaController extends Controller
      * @Method("GET")
      * @Template()
      */
-    public function indexAction()
+    public function indexAction(Request $request)
     {
         $em = $this->getDoctrine()->getManager();
 
         $entities = $em->getRepository('MRSControleBundle:TbCategoria')->findAll();
 
+        $entities = $this->get('knp_paginator')->paginate(
+            $entities,
+            $request->query->getInt('page',1),
+            5
+        );
+
         return array(
             'entities' => $entities,
+            'pageName' => 'Listar'
         );
     }
     /**
@@ -59,6 +68,7 @@ class TbCategoriaController extends Controller
         return array(
             'entity' => $entity,
             'form'   => $form->createView(),
+            'pageName' => 'Nova'
         );
     }
 
@@ -72,11 +82,12 @@ class TbCategoriaController extends Controller
     private function createCreateForm(TbCategoria $entity)
     {
         $form = $this->createForm(new TbCategoriaType(), $entity, array(
+            'validation_groups' => array('create'),
             'action' => $this->generateUrl('categoria_create'),
             'method' => 'POST',
         ));
 
-        $form->add('submit', 'submit', array('label' => 'Create'));
+        $form->add('submit', SubmitType::class, array('label' => 'Salvar', 'attr' => array('class' => 'btn btn-primary')));
 
         return $form;
     }
@@ -96,6 +107,7 @@ class TbCategoriaController extends Controller
         return array(
             'entity' => $entity,
             'form'   => $form->createView(),
+            'pageName' => 'Nova'
         );
     }
 
@@ -121,6 +133,7 @@ class TbCategoriaController extends Controller
         return array(
             'entity'      => $entity,
             'delete_form' => $deleteForm->createView(),
+            'pageName' => 'Mostrar'
         );
     }
 
@@ -148,6 +161,7 @@ class TbCategoriaController extends Controller
             'entity'      => $entity,
             'edit_form'   => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
+            'pageName' => 'Editar'
         );
     }
 
@@ -161,11 +175,12 @@ class TbCategoriaController extends Controller
     private function createEditForm(TbCategoria $entity)
     {
         $form = $this->createForm(new TbCategoriaType(), $entity, array(
+            'validation_groups' => array('update'),
             'action' => $this->generateUrl('categoria_update', array('id' => $entity->getId())),
             'method' => 'PUT',
         ));
 
-        $form->add('submit', 'submit', array('label' => 'Update'));
+        $form->add('submit', SubmitType::class, array('label' => 'Salvar','attr' => ['class' => 'btn btn-primary']));
 
         return $form;
     }
@@ -181,6 +196,7 @@ class TbCategoriaController extends Controller
         $em = $this->getDoctrine()->getManager();
 
         $entity = $em->getRepository('MRSControleBundle:TbCategoria')->find($id);
+        $entity->setCatAtivo(1);
 
         if (!$entity) {
             throw $this->createNotFoundException('Unable to find TbCategoria entity.');
@@ -193,13 +209,14 @@ class TbCategoriaController extends Controller
         if ($editForm->isValid()) {
             $em->flush();
 
-            return $this->redirect($this->generateUrl('categoria_edit', array('id' => $id)));
+            return $this->redirect($this->generateUrl('categoria_show', array('id' => $id)));
         }
 
         return array(
             'entity'      => $entity,
             'edit_form'   => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
+            'pageName' => 'Nova'
         );
     }
     /**
@@ -240,7 +257,8 @@ class TbCategoriaController extends Controller
         return $this->createFormBuilder()
             ->setAction($this->generateUrl('categoria_delete', array('id' => $id)))
             ->setMethod('DELETE')
-            ->add('submit', 'submit', array('label' => 'Delete'))
+            ->add('submit', SubmitType::class, array('label' => 'Remover',
+                'attr' => ['class' => 'btn btn-danger']))
             ->getForm()
         ;
     }

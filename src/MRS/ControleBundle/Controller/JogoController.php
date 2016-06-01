@@ -2,6 +2,7 @@
 
 namespace MRS\ControleBundle\Controller;
 
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
@@ -25,14 +26,37 @@ class JogoController extends Controller
      * @Method("GET")
      * @Template()
      */
-    public function indexAction()
+    public function indexAction(Request $request)
     {
-        $em = $this->getDoctrine()->getManager();
+        $logger = $this->get('logger');
 
-        $entities = $em->getRepository('MRSControleBundle:Jogo')->findAll();
+        $logger->info($this->getUser()->getuserName() . ' 1 - Acessando');
+        $logger->alert($this->getUser()->getuserName() . ' 2 - Acessando');
+        $logger->warning($this->getUser()->getuserName() . ' 3 - Acessando');
+        $logger->critical($this->getUser()->getuserName() . ' 4 - Acessando');
+        $logger->emergency($this->getUser()->getuserName() . ' 5 - Acessando');
+        $logger->debug($this->getUser()->getuserName() . ' 6 - Acessando');
+        $logger->error($this->getUser()->getuserName() . ' 7 - Acessando');
+        $logger->notice($this->getUser()->getuserName() . ' 8 - Acessando');
+
+
+        $inicio = date('d-m-Y H:i:s');
+
+        $entities = $this->getDoctrine()
+                         ->getManager()
+                         ->getRepository('MRSControleBundle:Jogo')
+                         ->findAll();
+
+        $fim = date('d-m-Y H:i:s');
+
+        $entities = $this->get('knp_paginator')
+                         ->paginate($entities,
+                                    $request->query->getInt('page',1),
+                                    10);
 
         return array(
             'entities' => $entities,
+            'timer' => [ 'inicio' => $inicio, 'fim' => $fim]
         );
     }
     /**
@@ -71,12 +95,12 @@ class JogoController extends Controller
      */
     private function createCreateForm(Jogo $entity)
     {
-        $form = $this->createForm(new JogoType(), $entity, array(
+        $form = $this->createForm(JogoType::class, $entity, array(
             'action' => $this->generateUrl('jogo_create'),
             'method' => 'POST',
         ));
 
-        $form->add('submit', 'submit', array('label' => 'Create'));
+        $form->add('submit', SubmitType::class, array('label' => 'Create'));
 
         return $form;
     }
@@ -160,12 +184,12 @@ class JogoController extends Controller
     */
     private function createEditForm(Jogo $entity)
     {
-        $form = $this->createForm(new JogoType(), $entity, array(
+        $form = $this->createForm(JogoType::class, $entity, array(
             'action' => $this->generateUrl('jogo_update', array('id' => $entity->getId())),
             'method' => 'PUT',
         ));
 
-        $form->add('submit', 'submit', array('label' => 'Update'));
+        $form->add('submit', SubmitType::class, array('label' => 'Update'));
 
         return $form;
     }
@@ -240,7 +264,7 @@ class JogoController extends Controller
         return $this->createFormBuilder()
             ->setAction($this->generateUrl('jogo_delete', array('id' => $id)))
             ->setMethod('DELETE')
-            ->add('submit', 'submit', array('label' => 'Delete'))
+            ->add('submit', SubmitType::class, array('label' => 'Delete'))
             ->getForm()
         ;
     }

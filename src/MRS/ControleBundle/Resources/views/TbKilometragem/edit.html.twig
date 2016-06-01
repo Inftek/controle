@@ -1,16 +1,28 @@
 {% extends '::base.html.twig' %}
 
+{% block contentheader %}
+    <section class="content-header">
+        <h1>
+            Kilometragem
+            <small>Editar</small>
+        </h1>
+    </section>
+{% endblock %}
+
 {% block body -%}
-    {{ include('MRSControleBundle:TbKilometragem/Template:painel.html.twig') }}
 
-    {{ form(edit_form) }}
+    <div class="panel panel-default">
+        <div class="panel-heading">
 
-        <ul class="record_actions">
-    <li>
-        <a href="{{ path('kilometragem') }}">
-            Back to the list
-        </a>
-    </li>
-    <li>{{ form(delete_form) }}</li>
-</ul>
+            {{ include('MRSControleBundle:TbKilometragem/Template:painel.html.twig') }}
+
+        </div>
+        <div class="panel-body">
+            {{ form(edit_form) }}
+        </div>
+
+        <div class="panel-footer">
+        </div>
+    </div>
+
 {% endblock %}

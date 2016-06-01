@@ -6,6 +6,21 @@ use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
 class TbKilometragemControllerTest extends WebTestCase
 {
+
+    public function testRequestBaseUri()
+    {
+        // Create a new client to browse the application
+        $client = static::createClient();
+
+        // Create a new entry in the database
+        $client->request('GET', '/kilometragem');
+        $uri = $client->getRequest()->getUri();
+        $code = $client->getResponse()->getStatusCode();
+        $this->assertEquals(200, $code, "Code: {$code} Unexpected HTTP status code for {$uri} GET");
+
+    }
+
+
     /*
     public function testCompleteScenario()
     {
@@ -13,9 +28,10 @@ class TbKilometragemControllerTest extends WebTestCase
         $client = static::createClient();
 
         // Create a new entry in the database
-        $crawler = $client->request('GET', '/kilometragem/');
-        $this->assertEquals(200, $client->getResponse()->getStatusCode(), "Unexpected HTTP status code for GET /kilometragem/");
-        $crawler = $client->click($crawler->selectLink('Create a new entry')->link());
+        $crawler = $client->request('GET', '/controle/dashboard');
+        $code = $client->getResponse()->getStatusCode();
+        $this->assertEquals(200, $client->getResponse()->getStatusCode(), "Code: {$code} Unexpected HTTP status code for GET");
+        $crawler = $client->click($crawler->selectLink('Novo')->link());
 
         // Fill in the form and submit it
         $form = $crawler->selectButton('Create')->form(array(
@@ -50,6 +66,6 @@ class TbKilometragemControllerTest extends WebTestCase
         // Check the entity has been delete on the list
         $this->assertNotRegExp('/Foo/', $client->getResponse()->getContent());
     }
+*/
 
-    */
 }

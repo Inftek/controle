@@ -36,6 +36,11 @@ class TbFinancasController extends Controller
         $entities = $this->get('financas.querynative')
                          ->listarDadosFinanceirosPorPeriodo($datas[0],$datas[1]);
 
+        $entities = $this->get('knp_paginator')
+                         ->paginate($entities,
+                                    $request->query->getInt('page',1),
+                                    2);
+
         return array(
             'entities' => $entities,
             'datas' => array('dataInicial' => $datas[0], 'dataFinal' => $datas[1]),
@@ -77,12 +82,14 @@ class TbFinancasController extends Controller
      */
     private function createCreateForm(TbFinancas $entity)
     {
+        $entity->setFinDataCadastro(new \DateTime('now'));
         $form = $this->createForm(new TbFinancasType(), $entity, array(
+            'validation_groups' => array('create'),
             'action' => $this->generateUrl('financas_create'),
             'method' => 'POST',
         ));
 
-        $form->add('submit', 'submit', array('label' => 'Salvar'));
+       //$form->add('submit', 'submit', array('label' => 'Salvar', 'attr' => array('class' => 'btn btn-primary')));
 
         return $form;
     }
@@ -167,11 +174,12 @@ class TbFinancasController extends Controller
     private function createEditForm(TbFinancas $entity)
     {
         $form = $this->createForm(new TbFinancasType(), $entity, array(
+            'validation_groups' => array('update'),
             'action' => $this->generateUrl('financas_update', array('id' => $entity->getId())),
             'method' => 'PUT',
         ));
 
-        $form->add('submit', 'submit', array('label' => 'Update'));
+        //$form->add('submit', 'submit', array('label' => 'Salvar', 'attr' => array('class' => 'btn btn-primary')));
 
         return $form;
     }
@@ -246,7 +254,6 @@ class TbFinancasController extends Controller
         return $this->createFormBuilder()
             ->setAction($this->generateUrl('financas_delete', array('id' => $id)))
             ->setMethod('DELETE')
-            ->add('submit', 'submit', array('label' => 'Delete'))
             ->getForm()
         ;
     }

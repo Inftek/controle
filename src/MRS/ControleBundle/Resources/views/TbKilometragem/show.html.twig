@@ -1,44 +1,65 @@
 {% extends '::base.html.twig' %}
 
+{% block contentheader %}
+    <section class="content-header">
+        <h1>
+            Kilometragem
+            <small>Mostrar</small>
+        </h1>
+    </section>
+{% endblock %}
+
 {% block body -%}
-    {{ include('MRSControleBundle:TbKilometragem/Template:painel.html.twig') }}
 
-    <table class="record_properties">
-        <tbody>
-            <tr>
-                <th>Descrição</th>
-                <td>{{ entity.kiDescricao }}</td>
-            </tr>
-            <tr>
-                <th>Kikilometragem</th>
-                <td>{{ entity.kiKilometragem }}</td>
-            </tr>
-            <tr>
-                <th>Kidatainicial</th>
-                <td>{{ entity.kiDataInicial|date('Y-m-d H:i:s') }}</td>
-            </tr>
-            <tr>
-                <th>Kidataatual</th>
-                <td>{{ entity.kiDataAtual|date('Y-m-d H:i:s') }}</td>
-            </tr>
-            <tr>
-                <th>Kicodigo</th>
-                <td>{{ entity.kiCodigo }}</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="panel panel-default">
+        <div class="panel-heading">
 
-        <ul class="record_actions">
-    <li>
-        <a href="{{ path('kilometragem') }}">
-            Back to the list
-        </a>
-    </li>
-    <li>
-        <a href="{{ path('kilometragem_edit', { 'id': entity.kiCodigo }) }}">
-            Edit
-        </a>
-    </li>
-    <li>{{ form(delete_form) }}</li>
-</ul>
+            {{ include('MRSControleBundle:TbKilometragem/Template:painel.html.twig') }}
+
+        </div>
+        <div class="panel-body">
+
+            <table class="record_properties">
+                <tbody>
+                <tr>
+                    <th>Descrição:</th>
+                    <td>{{ entity.kiDescricao }}</td>
+                </tr>
+                <tr>
+                    <th>Kilometragem:</th>
+                    <td>{{ entity.kiKilometragem }}</td>
+                </tr>
+                <tr>
+                    <th>Data Inicial:</th>
+                    <td>{{ entity.kiDataInicial|date('Y-m-d H:i:s') }}</td>
+                </tr>
+                <tr>
+                    <th>Data Atual</th>
+                    <td>{{ entity.kiDataAtual|date('Y-m-d H:i:s') }}</td>
+                </tr>
+                {% if is_granted('ROLE_ADMIN') %}
+                    <tr>
+                        <th>Codigo</th>
+                        <td>{{ entity.kiCodigo }}</td>
+                    </tr>
+                {% endif %}
+                </tbody>
+            </table>
+        </div>
+        <div class="panel-footer">
+            <div class="row">
+                <div class="col-md-2 pull-left">
+                    {{ form_start(delete_form) }}
+                        {{ form_widget(delete_form.submit, {
+                            'label': 'Remover',
+                            'attr': {
+                                'class':'btn btn-danger remover-form'}}) }}
+                    {{ form_end(delete_form) }}
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
 {% endblock %}

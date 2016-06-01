@@ -1,15 +1,12 @@
-{% extends '::base.html.twig' %}
+{% extends 'MRSControleBundle:TbCategoria/template:template.html.twig' %}
 
-{% block body -%}
-    <h1>TbCategoria creation</h1>
 
-    {{ form(form) }}
+{% block panelhead %}
+    {{ include('MRSControleBundle:TbCategoria/template:painel.html.twig') }}
+{% endblock %}
 
-        <ul class="record_actions">
-    <li>
-        <a href="{{ path('categoria') }}">
-            Back to the list
-        </a>
-    </li>
-</ul>
+{% block panelbody %}
+
+    {{ form(form, {'attr': {'novalidate': 'novalidate'}}) }}
+
 {% endblock %}

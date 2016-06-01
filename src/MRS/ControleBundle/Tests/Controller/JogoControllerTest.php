@@ -6,6 +6,7 @@ use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
 class JogoControllerTest extends WebTestCase
 {
+
     /*
     public function testCompleteScenario()
     {
@@ -51,5 +52,5 @@ class JogoControllerTest extends WebTestCase
         $this->assertNotRegExp('/Foo/', $client->getResponse()->getContent());
     }
 
-    */
+*/
 }

@@ -22,12 +22,17 @@ security:
         secured_area:
             pattern: ^/
             form_login:
-                check_path: /login_check
+                check_path: /logincheck
                 login_path: /login
                 default_target_path: /dashboard
             logout:
                 path: /logout
                 target: /login
+            remember_me:
+                secret: "%secret%"
+                name: SiControle
+                lifetime: 86400
+                always_remember_me: true
             anonymous: ~
         # disables authentication for assets and the profiler, adapt it according to your needs
         dev:
@@ -43,6 +48,8 @@ security:
             # form_login
             # http://symfony.com/doc/current/cookbook/security/form_login_setup.html
     access_control:
+           #- { path: ^/admin, roles: ROLE_ADMIN }
+           - { path: ^/horario, roles: ROLE_ADMIN }
            - { path: ^/financas, roles: ROLE_ADMIN }
            - { path: ^/categoria, roles: ROLE_ADMIN }
            - { path: ^/tipoentrada, roles: ROLE_ADMIN }

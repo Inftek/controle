@@ -1,3 +1,38 @@
+{% extends 'MRSControleBundle:TbCategoria/template:template.html.twig' %}
+
+ {% block contentheader %}
+     <section class="content-header">
+         <h1>
+             User
+             <small>User</small>
+         </h1>
+
+     </section>
+ {% endblock %}
+
+
+
+{% block panelbody %}
+
+    {% for entity in entities  %}
+
+        <a href="{{ path('user_edit',{'id': entity.id}) }}">
+            Edit
+        </a>
+
+        {{ entity.id }}
+
+        {{ entity.email }}
+
+        {{ entity.username }} <br>
+
+    {% endfor %}
+
+
+{% endblock %}
+
+
+{#
 {% extends '::base.html.twig' %}
 
 {% block body %}
@@ -27,7 +62,7 @@
     </div>
 </div>
 
-{#
+
 <div class="container">
     <form class="form-signin">
         <h2 class="form-signin-heading">Please sign in</h2>
@@ -43,6 +78,8 @@
         <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
     </form>
 </div>
-#}
+
 
 {% endblock %}
+
+#}

@@ -3,6 +3,7 @@
 namespace MRS\ControleBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * TbFinancas
@@ -30,6 +31,7 @@ class TbFinancas
      * @var string
      *
      * @ORM\Column(name="fin_descricao", type="string", length=45, nullable=true)
+     * @Assert\Length(min=5, minMessage="Precisa ter mais de 5 pra atualizar", groups={"update"})
      */
     private $finDescricao;
 
@@ -49,6 +51,7 @@ class TbFinancas
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="ten_codigo", referencedColumnName="ten_codigo")
      * })
+     * @Assert\NotBlank(message="Nao pode ser vazio", groups={"create"})
      */
     private $tenCodigo;
 
@@ -59,6 +62,7 @@ class TbFinancas
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="cat_codigo", referencedColumnName="cat_codigo")
      * })
+     * @Assert\NotBlank(message="Nao pode ser vazio", groups={"update"})
      */
     private $catCodigo;
 

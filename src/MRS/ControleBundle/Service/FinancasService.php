@@ -22,7 +22,6 @@ class FinancasService
 
     public function pegarFinancasResultQuery()
     {
-
         return $this->container->get('database_connection')
                                ->fetchAll('SELECT * FROM tb_financas AS F');
     }

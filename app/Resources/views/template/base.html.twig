@@ -3,48 +3,61 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{% block title %}Sistema de Atendimento{% endblock %}</title>
+    <title>{% block title %}Si-Controle{% endblock %}</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    {% block stylesheets %}
+        <!-- Bootstrap 3.3.6 -->
+        <link rel="stylesheet" href="{{ asset('bundles/mrscontrole/css/bootstrap.css') }}">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="{{ asset('bundles/mrscontrole/css/font-awesome.min.css') }}">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="{{ asset('bundles/mrscontrole/css/ionicons.min.css') }}">
+        <!-- Theme style -->
+        <link rel="stylesheet" href="{{ asset('bundles/mrscontrole/css/AdminLTE.css') }}">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+             folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="{{ asset('bundles/mrscontrole/css/skin-blue.css') }}">
+        <!-- pace.css -->
+        <link rel="stylesheet" href="{{ asset('bundles/mrscontrole/css/pace.css') }}">
 
-{% block stylesheets %}
-    <!-- Bootstrap 3.3.6 -->
-    <link rel="stylesheet" href="{{ asset('bundles/mrscontrole/css/bootstrap.css') }}">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="{{ asset('bundles/mrscontrole/css/font-awesome.min.css') }}">
-    <!-- Ionicons -->
-    <link rel="stylesheet" href="{{ asset('bundles/mrscontrole/css/ionicons.min.css') }}">
-    <!-- Theme style -->
-    <link rel="stylesheet" href="{{ asset('bundles/mrscontrole/css/AdminLTE.css') }}">
-    <!-- AdminLTE Skins. Choose a skin from the css/skins
-         folder instead of downloading all of them to reduce the load. -->
-    <link rel="stylesheet" href="{{ asset('bundles/mrscontrole/css/skin-green.css') }}">
-    <!-- pace.css -->
-    <link rel="stylesheet" href="{{ asset('bundles/mrscontrole/css/pace.css') }}">
+        <style type="text/css">
 
-{% endblock %}
+            .pagination {
+                display: inline;
+            }
 
-{#
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-#}
+
+        </style>
+
+    {% endblock %}
+
+    {#
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    #}
 
 </head>
-<body class="hold-transition skin-green sidebar-mini fixed sidebar-collapse">
+<body class="hold-transition skin-blue sidebar-mini fixed sidebar-collapse">
 
 <div class="wrapper">
 
     <header class="main-header">
         <!-- Logo -->
-        <a href="index.html" class="logo">
+        <a href="{{ path('app_about') }}" class="logo">
             <!-- mini logo for sidebar mini 50x50 pixels -->
-            <span class="logo-mini"><b>SA</b></span>
+            <span class="logo-mini">
+                    <img src="{{ asset('control.png') }}" alt="..." class="img-rounded img-responsive">
+            </span>
             <!-- logo for regular state and mobile devices -->
-            <span class="logo-lg">UDTP - Atendimento</span>
+            <span class="logo-lg">
+                <strong>Si Controle</strong>
+            </span>
         </a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top">
@@ -58,27 +71,34 @@
 
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-
-                            <span class="hidden-xs">Usuário</span>
+                            <span class="glyphicon glyphicon-user"></span>
+                            <span class="hidden-xs">
+                                {{ app.user.username }}
+                            </span>
                         </a>
                         <ul class="dropdown-menu">
                             <!-- User image -->
                             <li class="user-header">
-
-
+                                <img src="{{ asset('control.png') }}" class="img-rounded">
                                 <p>
-                                    Alexander Pierce - Web Developer
-                                    <small>Member since Nov. 2012</small>
+                                    {{ app.user.username }}
+                                    <small>{{ app.user.email }}</small>
                                 </p>
                             </li>
 
                             <!-- Menu Footer-->
                             <li class="user-footer">
                                 <div class="pull-left">
-                                    <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                    <a href="{{ path('dash_board') }}" class="btn btn-default btn-flat">
+                                        <span class="glyphicon glyphicon-home"></span>
+                                        Home
+                                    </a>
                                 </div>
                                 <div class="pull-right">
-                                    <a href="{{ path('user_logout') }}" class="btn btn-default btn-flat">Sign out</a>
+                                    <a href="{{ path('user_logout') }}" class="btn btn-default btn-flat">
+                                        <span class="glyphicon glyphicon-off"></span>
+                                        Sair
+                                    </a>
                                 </div>
                             </li>
                         </ul>
@@ -87,7 +107,6 @@
             </div>
         </nav>
     </header>
-
 
     <!-- Left side column. contains the logo and sidebar -->
     <aside class="main-sidebar">
@@ -104,56 +123,58 @@
                     </a>
                 </li>
 
-                <li class="header">MÓDULOS</li>
-
                 <li class="treeview">
                     <a href="#">
-                        <i class="fa fa-dashboard"></i> <span>Atendimento</span> <i class="fa fa-angle-left pull-right"></i>
+                        <i class="glyphicon glyphicon-th-large"></i> <span>Modulos</span> <i class="fa fa-angle-left pull-right"></i>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="{{ path('admintemplate',{ 'name' : 'marcio'}) }}"><i class="fa fa-circle-o"></i> Novo Atendimento</a></li>
-                        <li><a href="#"><i class="fa fa-circle-o"></i> Pesquisar</a></li>
-                        <li>
-                            <a href="#"><i class="fa fa-circle-o"></i> Relatórios <i class="fa fa-angle-left pull-right"></i></a>
-                            <ul class="treeview-menu">
-                                <li><a href="#"><i class="fa fa-circle-o"></i> Relatório x</a></li>
-                                <li><a href="#"><i class="fa fa-circle-o"></i> Relatório y</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="{{ path('horario') }}"><i class="glyphicon glyphicon-time"></i>Registro de Horário</a></li>
+                        <li><a href="{{ path('kilometragem') }}"><i class="fa fa-car"></i>Kilometragem</a></li>
+                        <li><a href="{{ path('financas') }}"><i class="glyphicon glyphicon-piggy-bank"></i>Finanças</a></li>
                     </ul>
                 </li>
 
+                {#                <li class="treeview">
+                                    <a href="#">
+                                        <i class="fa fa-reorder"></i>
+                                        <span>Relatórios</span>
+                                    </a>
+                                    <ul class="treeview-menu">
+                                        <li><a href="#"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
+                                        <li><a href="#"><i class="fa fa-circle-o"></i> Boxed</a></li>
+                                        <li><a href="#"><i class="fa fa-circle-o"></i> Fixed</a></li>
+                                    </ul>
+                                </li>
+                #}
                 <li class="treeview">
                     <a href="#">
-                        <i class="fa fa-files-o"></i>
-                        <span>Relatórios</span>
-                        <span class="label label-primary pull-right">3</span>
-                    </a>
-                    <ul class="treeview-menu">
-                        <li><a href="#"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
-                        <li><a href="#"><i class="fa fa-circle-o"></i> Boxed</a></li>
-                        <li><a href="#"><i class="fa fa-circle-o"></i> Fixed</a></li>
-                    </ul>
-                </li>
-
-                <li class="header">ADMINISTRAÇÃO</li>
-                <li class="treeview">
-                    <a href="#">
-                        <i class="fa fa-share"></i> <span>Administração</span>
+                        <i class="glyphicon glyphicon-cog"></i> <span>Administração</span>
                         <i class="fa fa-angle-left pull-right"></i>
                     </a>
                     <ul class="treeview-menu">
                         <li>
-                            <a href="#"><i class="fa fa-circle-o"></i> Departamentos </a>
-                            <a href="{{ path('user') }}"><i class="fa fa-circle-o"></i> Usuário </a>
-                            <a href="#"><i class="fa fa-circle-o"></i> Direcionamento </a>
-                            <a href="#"><i class="fa fa-circle-o"></i> Tipo Atendimento </a>
-                            <a href="#"><i class="fa fa-circle-o"></i> Tipo Resposta </a>
-                            <a href="#"><i class="fa fa-circle-o"></i> Tipo Apontamento </a>
-                            <a href="#"><i class="fa fa-circle-o"></i> Tipo Processo </a>
+                            <a href="{{ path('user') }}"><i class="glyphicon glyphicon-user"></i>Usuário</a>
+                            <a href="{{ path('tipoentrada') }}"><i class="fa fa-filter"></i>Tipo de Entrada</a>
+                            <a href="{{ path('categoria') }}"><i class="fa fa-list-ul"></i>Categoria</a>
                         </li>
                     </ul>
                 </li>
+
+                <li class="treeview">
+                    <a href="#">
+                        <i class="glyphicon glyphicon-adjust"></i>
+                        <span>Feacture</span>
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a href="{{ path('jogo') }}"><i class="fa fa-gamepad"></i>Jogos</a>
+                            <a href="{{ path('product') }}"><i class="fa fa-product-hunt"></i>Produtos</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
 
         </section>
         <!-- /.sidebar -->
@@ -164,13 +185,13 @@
         <!-- Content Header (Page header) -->
 
         {% block contentheader %}
-        <section class="content-header">
-            <h1>
-                Dashboard
-                <small>Control panel</small>
-            </h1>
+            <section class="content-header">
+                <h1>
+                    Dashboard
+                    <small>Control panel</small>
+                </h1>
 
-        </section>
+            </section>
         {% endblock %}
 
         <!-- Main content -->
@@ -179,101 +200,101 @@
 
             {% block content %}
 
-            <div class="row">
-                <div class="col-lg-3 col-xs-6">
-                    <!-- small box -->
-                    <div class="small-box bg-aqua">
-                        <div class="inner">
-                            <h3>150</h3>
+                <div class="row">
+                    <div class="col-lg-3 col-xs-6">
+                        <!-- small box -->
+                        <div class="small-box bg-aqua">
+                            <div class="inner">
+                                <h3>150</h3>
 
-                            <p>New Orders</p>
-                        </div>
-                        <div class="icon">
-                            <i class="ion ion-bag"></i>
-                        </div>
-                        <a href="index.html" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-                    </div>
-                </div>
-                <!-- ./col -->
-                <div class="col-lg-3 col-xs-6">
-                    <!-- small box -->
-                    <div class="small-box bg-green">
-                        <div class="inner">
-                            <h3>53<sup style="font-size: 20px">%</sup></h3>
-
-                            <p>Bounce Rate</p>
-                        </div>
-                        <div class="icon">
-                            <i class="ion ion-stats-bars"></i>
-                        </div>
-                        <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-                    </div>
-                </div>
-                <!-- ./col -->
-                <div class="col-lg-3 col-xs-6">
-                    <!-- small box -->
-                    <div class="small-box bg-yellow">
-                        <div class="inner">
-                            <h3>44</h3>
-
-                            <p>User Registrations</p>
-                        </div>
-                        <div class="icon">
-                            <i class="ion ion-person-add"></i>
-                        </div>
-                        <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-                    </div>
-                </div>
-                <!-- ./col -->
-                <div class="col-lg-3 col-xs-6">
-                    <!-- small box -->
-                    <div class="small-box bg-red">
-                        <div class="inner">
-                            <h3>65</h3>
-
-                            <p>Unique Visitors</p>
-                        </div>
-                        <div class="icon">
-                            <i class="ion ion-pie-graph"></i>
-                        </div>
-                        <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-                    </div>
-                </div>
-                <!-- ./col -->
-            </div>
-
-
-            <div class="row">
-                <div class="col-lg-6 col-xs-6">
-
-                    <div class="box box-solid box-default">...</div>
-
-                    <div class="panel panel-heading">
-                        <div class="panel panel-body">
-                            <p>Direita</p>
-                            <button class="btn btn-primary" id="click">
-                                <span class="glyphicon glyphicon-thumbs-up"></span>
-                                Hello
-                            </button>
+                                <p>New Orders</p>
+                            </div>
+                            <div class="icon">
+                                <i class="ion ion-bag"></i>
+                            </div>
+                            <a href="index.html" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                         </div>
                     </div>
+                    <!-- ./col -->
+                    <div class="col-lg-3 col-xs-6">
+                        <!-- small box -->
+                        <div class="small-box bg-green">
+                            <div class="inner">
+                                <h3>53<sup style="font-size: 20px">%</sup></h3>
+
+                                <p>Bounce Rate</p>
+                            </div>
+                            <div class="icon">
+                                <i class="ion ion-stats-bars"></i>
+                            </div>
+                            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- ./col -->
+                    <div class="col-lg-3 col-xs-6">
+                        <!-- small box -->
+                        <div class="small-box bg-yellow">
+                            <div class="inner">
+                                <h3>44</h3>
+
+                                <p>User Registrations</p>
+                            </div>
+                            <div class="icon">
+                                <i class="ion ion-person-add"></i>
+                            </div>
+                            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- ./col -->
+                    <div class="col-lg-3 col-xs-6">
+                        <!-- small box -->
+                        <div class="small-box bg-red">
+                            <div class="inner">
+                                <h3>65</h3>
+
+                                <p>Unique Visitors</p>
+                            </div>
+                            <div class="icon">
+                                <i class="ion ion-pie-graph"></i>
+                            </div>
+                            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- ./col -->
+                </div>
+
+
+                <div class="row">
+                    <div class="col-lg-6 col-xs-6">
+
+                        <div class="box box-solid box-default">...</div>
+
+                        <div class="panel panel-heading">
+                            <div class="panel panel-body">
+                                <p>Direita</p>
+                                <button class="btn btn-primary" id="click">
+                                    <span class="glyphicon glyphicon-thumbs-up"></span>
+                                    Hello
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
 
                 </div>
 
-            </div>
 
-
-            <div class="row">
-                <div class="col-lg-12 col-xs-6">
-                    <div class="box box-solid box-info">...</div>
-                    <div class="panel panel-heading">
-                        <div class="panel panel-body">
-                            <p id="text">Esquerda</p>
-                            <button class="btn btn-primary" data-toggle="modal" data-target="#mymodal">Modal</button>
+                <div class="row">
+                    <div class="col-lg-12 col-xs-6">
+                        <div class="box box-solid box-info">...</div>
+                        <div class="panel panel-heading">
+                            <div class="panel panel-body">
+                                <p id="text">Esquerda</p>
+                                <button class="btn btn-primary" data-toggle="modal" data-target="#mymodal">Modal</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
             {% endblock %}
 
@@ -285,108 +306,145 @@
         <div class="pull-right hidden-xs">
             <b><small>IP: {{ app.request.clientIp }}</small></b>
         </div>
-        <small>UDTP - Sistema de Atendimento</small>
-        <strong>&copy; 2016.</strong> All rights reserved.
+        <small>Si Controle</small>
+        <strong>&copy; {{ "now"|date('Y') }}.</strong>
     </footer>
-
 
 </div>
 <!-- ./wrapper -->
 
 {% block javascripts %}
-<!-- jQuery 2.2.0 -->
-<script src="{{ asset('bundles/mrscontrole/js/jQuery-2.2.0.min.js') }}"></script>
-<!-- Bootstrap 3.3.6 -->
-<script src="{{ asset('bundles/mrscontrole/js/bootstrap.js') }}"></script>
-<!-- jquery.slimscroll -->
-<script src="{{ asset('bundles/mrscontrole/js/jquery.slimscroll.js') }}"></script>
-<!-- AdminLTE App -->
-<script src="{{ asset('bundles/mrscontrole/js/app.js') }}"></script>
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="{{ asset('bundles/mrscontrole/js/pace.min.js') }}"></script>
+    <!-- jQuery 2.2.0 -->
+    <script src="{{ asset('bundles/mrscontrole/js/jQuery-2.2.0.min.js') }}"></script>
+    <!-- Bootstrap 3.3.6 -->
+    <script src="{{ asset('bundles/mrscontrole/js/bootstrap.js') }}"></script>
+    <!-- jquery.slimscroll -->
+    <script src="{{ asset('bundles/mrscontrole/js/jquery.slimscroll.js') }}"></script>
+    <!-- AdminLTE App -->
+    <script src="{{ asset('bundles/mrscontrole/js/app.js') }}"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="{{ asset('bundles/mrscontrole/js/pace.min.js') }}"></script>
+    <!-- jQueryConfirm -->
+    <script src="{{ asset('bundles/mrscontrole/js/jquery.confirm.js') }}"></script>
 
-<script>
+    <script>
 
-    $(document).ajaxStart(function() { Pace.restart(); });
+        $(document).ajaxStart(function() { Pace.restart(); });
 
 
-    var ajaxAPI = {
+        $(".remover-form").confirm({
+            title: "É necessário confirmar essa ação",
+            text: "Quer mesmo remover esse item ?",
 
-        ajaxAPISucess: function(data){
-            $(ajaxAPI.options.putText).html(data);
-        },
+            confirm: function(button){
+                form.submit();
+            },
+            cancel: function(button) {
+                // nothing to do
+            },
+            confirmButton: "Sim",
+            submitForm: true,
+            post: true,
+            cancelButton: "Não",
+            confirmButtonClass: "btn-danger",
+            cancelButtonClass: "btn-primary",
+            dialogClass: "modal-dialog modal-lg" // Bootstrap classes for large modal
+        });
 
-        clickAction: function(){
+        $(".remover-link").confirm({
+            title: "É necessário confirmar essa ação",
+            text: "Quer mesmo remover esse item ?",
 
-            ajaxAPI.validationFuncion();
-        },
+            cancel: function(button) {
+                // nothing to do
+            },
+            confirmButton: "Sim",
+            cancelButton: "Não",
+            confirmButtonClass: "btn-danger",
+            cancelButtonClass: "btn-primary",
+            dialogClass: "modal-dialog modal-lg" // Bootstrap classes for large modal
+        });
 
-        validationFuncion: function(){
 
-            var text =  prompt('What do you want ?');
-            if(text){
-                ajaxAPI.text = text;
-            }
 
-            ajaxAPI.ajaxFunction();
 
-        },
+        var ajaxAPI = {
 
-        ajaxFunction: function(){
-
-            $.ajax({
-                url: ajaxAPI.options.url+ajaxAPI.text,
-                type: ajaxAPI.options.type,
-
-                success: function(result){
-                    ajaxAPI.ajaxAPISucess(result);
-                },
-
-                beforeSend: function(){
-                    $(ajaxAPI.options.buttonClick).hide();
-                },
-
-                complete: function(){
-                    $(ajaxAPI.options.buttonClick).show();
-                },
-                error: function(){
-                    $(ajaxAPI.options.putText).html(ajaxAPI.options.phrasePutText);
-                }
-
-            });
-        },
-
-        start: function(){
-            ajaxAPI.options = {
-                url: 'http://localhost/blog/web/hello/',
-                type: 'GET',
-                putText: '#text',
-                buttonClick: '#click',
-                phrasePutText: 'Nao encontrado, vish mano ñ tem',
+            ajaxAPISucess: function(data){
+                $(ajaxAPI.options.putText).html(data);
             },
 
-                    ajaxAPI.clickFunction();
-            ajaxAPI.clickNewButton();
-        },
+            clickAction: function(){
 
-        clickFunction: function(){
-            $(ajaxAPI.options.buttonClick).click(function(){
-                ajaxAPI.clickAction();
-            });
-        },
+                ajaxAPI.validationFuncion();
+            },
 
-        clickNewButton: function(){
+            validationFuncion: function(){
 
-            $("#mymodal").click(function(){
-                $(".modal-body").html("Carregou o Modal");
-            });
-        }
+                var text =  prompt('What do you want ?');
+                if(text){
+                    ajaxAPI.text = text;
+                }
 
-    };
+                ajaxAPI.ajaxFunction();
 
-    $(document).on("ready",ajaxAPI.start);
+            },
 
-</script>
+            ajaxFunction: function(){
+
+                $.ajax({
+                    url: ajaxAPI.options.url+ajaxAPI.text,
+                    type: ajaxAPI.options.type,
+
+                    success: function(result){
+                        ajaxAPI.ajaxAPISucess(result);
+                    },
+
+                    beforeSend: function(){
+                        $(ajaxAPI.options.buttonClick).hide();
+                    },
+
+                    complete: function(){
+                        $(ajaxAPI.options.buttonClick).show();
+                    },
+                    error: function(){
+                        $(ajaxAPI.options.putText).html(ajaxAPI.options.phrasePutText);
+                    }
+
+                });
+            },
+
+            start: function(){
+                ajaxAPI.options = {
+                    url: 'http://localhost/blog/web/hello/',
+                    type: 'GET',
+                    putText: '#text',
+                    buttonClick: '#click',
+                    phrasePutText: 'Nao encontrado, vish mano ñ tem',
+                },
+
+                        ajaxAPI.clickFunction();
+                ajaxAPI.clickNewButton();
+            },
+
+            clickFunction: function(){
+                $(ajaxAPI.options.buttonClick).click(function(){
+                    ajaxAPI.clickAction();
+                });
+            },
+
+            clickNewButton: function(){
+
+                $("#mymodal").click(function(){
+                    $(".modal-body").html("Carregou o Modal");
+                });
+            }
+
+        };
+
+        $(document).on("ready",ajaxAPI.start);
+
+    </script>
 
 {% endblock %}
 

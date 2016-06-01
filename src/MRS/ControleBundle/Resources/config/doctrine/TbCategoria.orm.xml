@@ -4,7 +4,7 @@
     <id name="catCodigo" type="integer" column="cat_codigo">
       <generator strategy="IDENTITY"/>
     </id>
-    <field name="catDescricao" type="string" column="cat_descricao" length="45" nullable="false">
+    <field name="catDescricao" type="string" column="cat_descricao" length="45" nullable="true">
       <options>
         <option name="fixed"/>
       </options>

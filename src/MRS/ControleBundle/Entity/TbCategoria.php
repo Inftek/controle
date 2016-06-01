@@ -3,6 +3,7 @@
 namespace MRS\ControleBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * TbCategoria
@@ -15,7 +16,9 @@ class TbCategoria
     /**
      * @var string
      *
-     * @ORM\Column(name="cat_descricao", type="string", length=45, nullable=false)
+     * @ORM\Column(name="cat_descricao", type="string", length=45, nullable=true)
+     * @Assert\NotBlank(message="Nao pode ser vazio to CREATE", groups={"create","update"})
+     * @Assert\Length(min=3,minMessage="Nao pode ser menor to UPDATE", groups={"create","update"})
      */
     private $catDescricao;
 
@@ -23,6 +26,7 @@ class TbCategoria
      * @var string
      *
      * @ORM\Column(name="cat_ativo", type="string", length=1, nullable=false)
+     * @Assert\NotBlank(message="Nao vazio",groups={"update","create"})
      */
     private $catAtivo = '1';
 

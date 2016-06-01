@@ -2,6 +2,7 @@
 
 namespace MRS\ControleBundle\Controller;
 
+use Symfony\Component\BrowserKit\Tests\ClientTest;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
@@ -9,6 +10,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use MRS\ControleBundle\Entity\TbKilometragem;
 use MRS\ControleBundle\Form\TbKilometragemType;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 
 /**
  * TbKilometragem controller.
@@ -25,10 +27,17 @@ class TbKilometragemController extends Controller
      * @Method("GET")
      * @Template()
      */
-    public function indexAction()
+    public function indexAction(Request $request)
     {
 
-        $entityUser = $this->getDoctrine()->getRepository('MRSControleBundle:TbKilometragem')->getCalcKilometragem();
+        $entityUser = $this->getDoctrine()
+                           ->getRepository('MRSControleBundle:TbKilometragem')
+                           ->getCalcKilometragem();
+
+        $entityUser = $this->get('knp_paginator')
+                           ->paginate($entityUser,
+                                      $request->query->getInt('page',1),
+                                      TbKilometragem::NUM_LIMT);
 
         return array(
             'entityUser' => $entityUser
@@ -72,15 +81,16 @@ class TbKilometragemController extends Controller
      */
     private function createCreateForm(TbKilometragem $entity)
     {
-        $form = $this->createForm(new TbKilometragemType(), $entity, array(
-            'grupo_de_validacao' => 'create',
+        $form = $this->createForm(TbKilometragemType::class, $entity, array(
+            'validation_group' => array('create'),
             'action' => $this->generateUrl('kilometragem_create'),
             'method' => 'POST',
         ));
 
-        $form->add('submit', 'submit', array('label' => 'Create'));
+        //$form->add('submit', 'submit');
 
         return $form;
+
     }
 
     /**
@@ -155,6 +165,7 @@ class TbKilometragemController extends Controller
             'entity'      => $entity,
             'edit_form'   => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
+            'errors' => 'true'
         );
     }
 
@@ -167,12 +178,15 @@ class TbKilometragemController extends Controller
     */
     private function createEditForm(TbKilometragem $entity)
     {
-        $form = $this->createForm(new TbKilometragemType(), $entity, array(
+        $form = $this->createForm(TbKilometragemType::class, $entity, array(
+            'validation_group' => array('update'),
             'action' => $this->generateUrl('kilometragem_update', array('id' => $entity->getId())),
             'method' => 'PUT',
         ));
 
-        $form->add('submit', 'submit', array('label' => 'Update'));
+        $form->add('submit', SubmitType::class, ['label' => 'Salvar',
+                                        'attr' => ['class' => 'btn btn-primary']
+                                        ]);
 
         return $form;
     }
@@ -197,6 +211,8 @@ class TbKilometragemController extends Controller
         $editForm = $this->createEditForm($entity);
         $editForm->handleRequest($request);
 
+        $errors = $this->container->get('validator')->validate($editForm,null,array('create'));
+
         if ($editForm->isValid()) {
             $em->flush();
 
@@ -207,6 +223,7 @@ class TbKilometragemController extends Controller
             'entity'      => $entity,
             'edit_form'   => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
+            'errors' => $errors
         );
     }
     /**
@@ -247,7 +264,7 @@ class TbKilometragemController extends Controller
         return $this->createFormBuilder()
             ->setAction($this->generateUrl('kilometragem_delete', array('id' => $id)))
             ->setMethod('DELETE')
-            ->add('submit', 'submit', array('label' => 'Delete'))
+            ->add('submit', SubmitType::class)
             ->getForm()
         ;
     }

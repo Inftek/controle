@@ -20,3 +20,11 @@ services:
   charts.service:
     class: MRS\ControleBundle\Service\ChartService
     arguments: ['@service_container']
+
+  number.generate:
+    class: MRS\ControleBundle\Service\JogoService
+    arguments: ['@service_container']
+
+  dir.generate:
+    class: MRS\ControleBundle\Service\GenerateDirService
+    arguments: ['@service_container']

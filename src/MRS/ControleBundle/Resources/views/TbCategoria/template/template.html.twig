@@ -1,0 +1,42 @@
+{% extends '::base.html.twig' %}
+
+
+ {% block contentheader %}
+     <section class="content-header">
+         <h1>
+             Categoria
+             <small>{{ pageName }}</small>
+         </h1>
+
+     </section>
+ {% endblock %}
+
+
+{% block body -%}
+
+    {% block blockfilter %}
+
+    {% endblock %}
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            {% block panelhead %}
+
+            {% endblock %}
+        </div>
+        <div class="panel-body">
+
+            {% block panelbody %}
+
+            {% endblock %}
+
+        </div>
+        <div class="panel-footer">
+            {% block panelfooter %}
+
+            {% endblock %}
+        </div>
+
+    </div>
+
+{% endblock %}

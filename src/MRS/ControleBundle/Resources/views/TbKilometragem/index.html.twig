@@ -2,63 +2,104 @@
 
 {% block title %} Lista {% endblock %}
 
+{% block stylesheets %}
+    {{ parent() }}
+
+<style type="text/css">
+    .pagination {
+        margin: 0px
+    }
+</style>
+
+{% endblock %}
+
+{% block contentheader %}
+    <section class="content-header">
+        <h1>
+            Kilometragem
+            <small>Listagem</small>
+
+        </h1>
+    </section>
+{% endblock %}
+
 {% block body -%}
-    {{ include('MRSControleBundle:TbKilometragem/Template:painel.html.twig') }}
 
-    <table class="table table-bordered table-condensed table-hover table-striped">
-        <thead>
-            <tr>
-                <th>#</th>
-                <th>Kilometragem</th>
-                <th>Data Inicial</th>
-                <th>Data Atual</th>
-                <th>Dias</th>
-                <th>Média</th>
-                <th>Descrição</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for entity in entityUser %}
-            <tr>
-                <td>
+    <div class="panel panel-default">
+        <div class="panel-heading">
 
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Opções <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="{{ path('kilometragem_show', { 'id': entity.kiCodigo }) }}">
-                                    <span class="glyphicon glyphicon-list-alt"></span>
-                                    Mostrar
-                                </a>
-                            </li>
-                            <li>
-                                <a href="{{ path('kilometragem_edit', { 'id': entity.kiCodigo }) }}">
-                                    <span  class="glyphicon glyphicon-edit"></span>
-                                    Editar
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+            <div class="row">
+                <div class="col-md-3 pull-right">
 
-                </td>
-                <td><a href="{{ path('kilometragem_show', { 'id': entity.kiCodigo }) }}">{{ entity.kiKilometragem }}</a></td>
-                <td>{% if entity.kiDataInicial %}{{ entity.kiDataInicial|date('Y-m-d') }}{% endif %}</td>
-                <td>{% if entity.kiDataAtual %}{{ entity.kiDataAtual|date('Y-m-d') }}{% endif %}</td>
-                <td>{{ entity.Dias }}</td>
-                <td>{{ entity.Media }}</td>
-                <td>{{ entity.kiDescricao }}</td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
+                    <a href="{{ path('kilometragem_new') }}" class="btn btn-primary pull-right">
+                        <span class="glyphicon glyphicon-plus"></span>
+                        Novo
+                    </a>
+                </div>
+                <div class="col-md-6 pull-left">
+                    {{ knp_pagination_render(entityUser) }}
+                </div>
+            </div>
 
-        <ul>
-        <li>
-            <a href="{{ path('kilometragem_new') }}" class="btn btn-primary">
-                Novo
-            </a>
-        </li>
-    </ul>
-    {% endblock %}
+        </div>
+        <div class="panel-body">
+
+            <div class="">
+
+                <table class="table table-bordered table-condensed table-hover table-striped">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Kilometragem</th>
+                        <th>Data Inicial</th>
+                        <th>Data Atual</th>
+                        <th>Dias</th>
+                        <th>Média</th>
+                        <th>Descrição</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for entity in entityUser %}
+                        <tr>
+                            <td>
+
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="glyphicon glyphicon-cog"></span>
+                                        <span class="divider"></span>
+
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="{{ path('kilometragem_show', { 'id': entity.kiCodigo }) }}">
+                                                <span class="glyphicon glyphicon-eye-open"></span>
+                                                Mostrar
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{{ path('kilometragem_edit', { 'id': entity.kiCodigo }) }}">
+                                                <span  class="glyphicon glyphicon-edit"></span>
+                                                Editar
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </td>
+                            <td><a href="{{ path('kilometragem_show', { 'id': entity.kiCodigo }) }}">{{ entity.kiKilometragem }}</a></td>
+                            <td>{% if entity.kiDataInicial %}{{ entity.kiDataInicial|date('d-m-Y') }}{% endif %}</td>
+                            <td>{% if entity.kiDataAtual %}{{ entity.kiDataAtual|date('d-m-Y') }}{% endif %}</td>
+                            <td>{{ entity.Dias }}</td>
+                            <td>{{ entity.Media }}</td>
+                            <td>{{ entity.kiDescricao }}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="panel-footer">
+        </div>
+    </div>
+
+{% endblock %}

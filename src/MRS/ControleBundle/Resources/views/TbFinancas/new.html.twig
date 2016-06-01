@@ -1,24 +1,73 @@
 {% extends '::base.html.twig' %}
 
+{% block stylesheets %}
+{{ parent() }}
+    <link rel="stylesheet" href="{{ asset('bundles/mrscontrole/css/select2-bootstrap.css') }}">
+{% endblock %}
+
+{% block contentheader %}
+
+    <section class="content-header">
+        <h1>
+            Finanças
+            <small>Novo</small>
+        </h1>
+
+    </section>
+
+{% endblock %}
+
 {% block body -%}
 
-    {{ include('@MRSControle/TbFinancas/Template/painel.html.twig') }}
 
     <div class="panel panel-default">
         <div class="panel-heading">
-            <h3 class="panel-title">Pesquisar</h3>
+
+            <div class="row">
+
+                <div class="col-md-1 col-sm-1 col-xs-2">
+                    <a href="{{ path('financas') }}" class="btn btn-primary btn-sm">
+                        <span class="fa fa-reply"></span>
+                    </a>
+                </div>
+
+            </div>
+
         </div>
 
         <div class="panel-body">
 
-            {{ form(form) }}
+            {{ form_start(form) }}
+            {{ form_widget(form) }}
+
         </div>
+        <div class="panel-footer">
+            <button type="submit" class="btn btn-primary">
+                <span class="glyphicon glyphicon-floppy-disk"></span>
+                {#{{ template.buttons.buttonSave }}#}
+            </button>
+
+        </div>
+        {{ form_end(form) }}
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-            <a href="{{ path('financas') }}">
-                <button class="btn btn-primary">Voltar</button>
-            </a>
-        </li>
-    </ul>
+
+{% endblock %}
+
+{% block javascripts %}
+{{ parent() }}
+
+<script src="{{ asset('bundles/mrscontrole/js/select2.js') }}"></script>
+
+    <script>
+        $(document).ready(function(){
+
+            $(".select2").select2({
+                theme: "bootstrap"
+            });
+
+        });
+
+
+    </script>
+
 {% endblock %}

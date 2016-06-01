@@ -2,29 +2,39 @@
 
 {% block title %} Lista de Finanças {% endblock %}
 
-{% block body -%}
+{% block contentheader %}
+    <section class="content-header">
+        <h1>
+            Finanças
+            <small>Listar</small>
+        </h1>
 
-    {{ include('@MRSControle/TbFinancas/Template/painel.html.twig') }}
+    </section>
+{% endblock %}
+
+{% block body -%}
 
     <div class="panel panel-default">
         <div class="panel-heading">
-            <h3 class="panel-title">Pesquisar | R$ {{ render(controller('MRSControleBundle:Serializer:viewTotalOnPeriod',{'dataInicial':datas.dataInicial, 'dataFinal': datas.dataFinal })) | number_format(2,',','.')}} </h3>
+
         </div>
 
         <div class="panel-body">
             <form class="form-inline" method="post" action="{{ path('financas') }}">
 
                 <div class="form-group">
-                   {# <label for="dataInicial">Data Inicial:</label>#}
+                    {# <label for="dataInicial">Data Inicial:</label>#}
                     <input type="date" name="dataInicial" value="{{ datas.dataInicial }}" class="form-control">
                 </div>
 
                 <div class="form-group">
-{#                    <label for="dataFinal">Data Final:</label>#}
+                    {#                    <label for="dataFinal">Data Final:</label>#}
                     <input type="date" name="dataFinal" value="{{ datas.dataFinal }}" class="form-control">
                 </div>
 
-                    <button type="submit" class="btn btn-default">Procurar</button>
+                <button type="submit" class="btn btn-default">
+                    <span class="glyphicon glyphicon-filter"></span>
+                </button>
 
             </form>
         </div>
@@ -38,61 +48,75 @@
 
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Lista</h3>
+
+                    <div class="row">
+                        <div class="col-md-12 col-xs-12">
+
+                            <div class="navigation pull-left">
+                                {{ knp_pagination_render(entities) }}
+                            </div>
+
+                            <div class="pull-right">
+                                <a href="{{ path('financas_new') }}" class="btn btn-primary btn-sm">
+                                    <span class="glyphicon glyphicon-plus"></span>
+
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
                 </div>
 
                 <div class="panel-body">
 
 
-                    <table class="table table-bordered table-condensed table-hover table-striped">
-                        <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Data</th>
-                            <th>Valor</th>
-                            <th>Descricao</th>
-                            <th>Categoria</th>
-                        </tr>
-                        </thead>
-                        <tbody>
+                    <div class="table table-responsive">
 
-                        {% for entity in entities %}
+                        <table class="table table-bordered table-condensed table-hover table-striped">
+                            <thead>
                             <tr>
-                                <td>
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Opções <span class="caret"></span>
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li>
-                                                <a href="{{ path('financas_show', { 'id': entity.finCodigo }) }}">
-                                                    <span class="glyphicon glyphicon-list-alt"></span>
-                                                    Mostrar
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="{{ path('financas_edit', { 'id': entity.finCodigo }) }}">
-                                                    <span  class="glyphicon glyphicon-edit"></span>
-                                                    Editar
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                </td>
-                                <td><a href="{{ path('financas_show', { 'id': entity.finCodigo }) }}">
-                                        {{ entity.finDataCadastro | date('d/m/Y') }}
-                                    </a>
-                                </td>
-                                <td>R$ {{ entity.finValor|number_format(2,',','.') }}</td>
-                                <td>{{ entity.finDescricao }}</td>
-                                <td>{{ entity.catCodigo }}</td>
-
+                                <th>Ações</th>
+                                <th>Data</th>
+                                <th>Valor</th>
+                                <th>Descricao</th>
+                                <th>Categoria</th>
                             </tr>
-                        {% endfor %}
-                        </tbody>
+                            </thead>
+                            <tbody>
 
-                    </table>
+                            {% for entity in entities %}
+                                <tr>
+                                    <td>
+
+                                        <a href="{{ path('financas_show', { 'id': entity.finCodigo }) }}" class="btn btn-primary btn-sm">
+                                            <span class="glyphicon glyphicon-eye-open"></span>
+                                        </a>
+
+                                        <a href="{{ path('financas_edit', { 'id': entity.finCodigo }) }}" class="btn btn-primary btn-sm">
+                                            <span  class="glyphicon glyphicon-edit"></span>
+                                        </a>
+
+                                    </td>
+                                    <td><a href="{{ path('financas_show', { 'id': entity.finCodigo }) }}">
+                                            {{ entity.finDataCadastro | date('d/m/Y') }}
+                                        </a>
+                                    </td>
+                                    <td>R$ {{ entity.finValor|number_format(2,',','.') }}</td>
+                                    <td>{{ entity.finDescricao }}</td>
+                                    <td>{{ entity.catCodigo }}</td>
+
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <h3 class="panel-title">Saldo no Período | R$ {{ render(controller('MRSControleBundle:Serializer:viewTotalOnPeriod',{'dataInicial':datas.dataInicial, 'dataFinal': datas.dataFinal })) | number_format(2,',','.')}} </h3>
                 </div>
             </div>
         </div>

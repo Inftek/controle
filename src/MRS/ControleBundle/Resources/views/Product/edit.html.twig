@@ -1,16 +1,40 @@
 {% extends '::base.html.twig' %}
 
 {% block body -%}
-    <h1>Product edit</h1>
 
-    {{ form(edit_form) }}
+    <div class="row">
+        <div class="col-sm-10 col-md-6">
+            <div class="thumbnail">
 
-        <ul class="record_actions">
-    <li>
-        <a href="{{ path('product') }}">
-            Back to the list
-        </a>
-    </li>
-    <li>{{ form(delete_form) }}</li>
-</ul>
+                <a href="{{ vich_uploader_asset(entity, 'imageFile') }}">
+                    <img src="{{ vich_uploader_asset(entity, 'imageFile') }}" alt="{{ entity.imageName }}" />
+                </a>
+
+                <p>
+                    {{ form(edit_form) }}
+                </p>
+
+                <div class="caption">
+                    <h3>Atualizado</h3>
+                    <p>{{ entity.updatedAt|date('Y-m-d H:i:s') }}</p>
+                    <p>
+                        <a href="{{ path('product') }}" class="btn btn-primary" role="button">
+                            Voltar
+                        </a>
+
+                        {{ form_start(delete_form) }}
+                        {{ form_widget(delete_form.submit,
+                            { 'label': 'Remover',
+                              'attr' : {'class': 'btn btn-danger'}
+                                       })
+                        }}
+
+                        {{ form_end(delete_form) }}
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 {% endblock %}

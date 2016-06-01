@@ -1,17 +1,78 @@
 {% extends '::base.html.twig' %}
 
+{% block contentheader %}
+    <section class="content-header">
+        <h1>
+            Finanças
+            <small>Mostrar</small>
+        </h1>
+
+    </section>
+
+{% endblock %}
+
 {% block body -%}
 
 
-    {{ include('MRSControleBundle:TbFinancas/Template:painel.html.twig') }}
-
     <div class="panel panel-default">
         <div class="panel-heading">
-           {{ entity.finDescricao }}
+
+            <div class="row">
+
+                <div class="col-md-1 col-sm-1 col-xs-2">
+                    <!-- Single button -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-cog"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="{{ path('financas_edit',{ 'id': entity.id }) }}">
+                                    <span class="glyphicon glyphicon-edit"></span>
+                                    Editar
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ path('financas') }}">
+                                    <span class="glyphicon glyphicon-list"></span>
+                                    Listar
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="col-md-1 col-sm-1 col-xs-2">
+                    <a href="{{ path('financas') }}" class="btn btn-primary btn-sm">
+                        <span class="fa fa-reply"></span>
+                    </a>
+                </div>
+
+                <div class="col-md-1 col-sm-1 col-xs-2">
+                    <a href="{{ path('financas_edit', { 'id': entity.finCodigo }) }}" class="btn btn-primary btn-sm">
+                        <span class="glyphicon glyphicon-edit"></span>
+                    </a>
+                </div>
+
+                <div class="col-md-1 col-sm-1 col-xs-2">
+                    {%  if is_granted('ROLE_ADMIN') %}
+
+                        {{ form_start(delete_form) }}
+                        <button type="submit" class="btn btn-danger btn-sm remover-form">
+                            <span class="glyphicon glyphicon-trash"></span>
+                        </button>
+                        {{ form_end(delete_form) }}
+
+                    {%  endif %}
+                </div>
+
+            </div>
+
         </div>
         <div class="panel-body">
 
-            <table class="jumbotron">
+            <table>
                 <tbody>
                 <tr>
                     <th>Data Criacao:</th>
@@ -42,24 +103,4 @@
         </div>
     </div>
 
-  <ul class="btn-toolbar">
-    <li class="btn-group">
-        <a href="{{ path('financas') }}">
-            <button class="btn btn-primary">Listar</button>
-        </a>
-    </li>
- {% if is_granted('ROLE_BLA_BLA_BLA') %}
-    <li class="btn-group">
-        <a href="{{ path('financas_edit', { 'id': entity.finCodigo }) }}">
-            <button class="btn btn-primary">Edit</button>
-        </a>
-    </li>
- {% endif %}
-
-{%  if is_granted('ROLE_SUPER_ADMIN') %}
-    <li class="btn-group">
-        {{ form(delete_form) }}
-    </li>
-{%  endif %}
-</ul>
 {% endblock %}
