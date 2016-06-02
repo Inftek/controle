@@ -65,7 +65,7 @@ class HorarioService
 
         } else {
 
-            if (($entity['hor_entrada'] != '') and ($entity['hor_almoco_ida'] == '')) {
+            if (($entity['hor_entrada'] != '') && ($entity['hor_almoco_ida'] == '')) {
 
                 $horario = $this->getEntity($entity['hor_codigo']);
 
@@ -76,7 +76,7 @@ class HorarioService
                 $horario = ['notice' => 'Inserido saida do almoço!'];
 
             } else {
-                if (($entity['hor_almoco_ida'] != '') and ($entity['hor_almoco_volta'] == '')) {
+                if (($entity['hor_almoco_ida'] != '') && ($entity['hor_almoco_volta'] == '')) {
 
 
                     $horario = $this->getEntity($entity['hor_codigo']);
@@ -87,7 +87,7 @@ class HorarioService
 
 
                 } else {
-                    if (($entity['hor_almoco_volta'] != '') and ($entity['hor_saida'] == '')) {
+                    if (($entity['hor_almoco_volta'] != '') && ($entity['hor_saida'] == '')) {
 
                         $horario = $this->getEntity($entity['hor_codigo']);
 

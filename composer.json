@@ -2,6 +2,7 @@
     "name": "marcio/controle",
     "license": "proprietary",
     "type": "project",
+    "description":"SiControle is a project ",
     "autoload": {
         "psr-4": {
             "": "src/"

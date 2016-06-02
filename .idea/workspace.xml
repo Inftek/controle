@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42de861a-5051-4ee6-b736-504beeef1b05" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Command/SendMailCommand.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Command/SendMailCommand.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/config.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Service/HorarioService.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Service/HorarioService.php" />
     </list>
     <ignored path="controle.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,21 +34,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SendMailCommand.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Command/SendMailCommand.php">
+      <file leaf-file-name="PontoCommand.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Command/PontoCommand.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7043757">
-              <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+            <state vertical-scroll-proportion="-21.25">
+              <caret line="44" column="28" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SendMailService.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Service/SendMailService.php">
+      <file leaf-file-name="HorarioService.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Service/HorarioService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.25">
-              <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+            <state vertical-scroll-proportion="-7.5">
+              <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="composer.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.06586169">
+              <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -67,8 +80,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/MRS/UserBundle/Controller/LoginController.php" />
-        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml.dist" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Product/index.html.twig" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Form/ProductType.php" />
@@ -118,6 +129,8 @@
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/public/css/select2-bootstrap.css" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/new.html.twig" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Command/SendMailCommand.php" />
+        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Service/HorarioService.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
       </list>
     </option>
   </component>
@@ -452,6 +465,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -625,7 +652,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/sa" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/mrs4/controle/app/config/config.yml&#10;sec&#9;FILE&#9;file:///home/mrs4/controle/app/config/security.yml&#10;TEST&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Tests/Controller/JogoControllerTest.php&#10;TbFin&#9;null&#9;null&#10;secury&#9;FILE&#9;file:///home/mrs4/controle/app/config/security.yml&#10;kil&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Controller/TbKilometragemController.php&#10;con&#9;FILE&#9;file:///home/mrs4/controle/app/config/config.yml&#10;contro&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Controller/JogoController.php&#10;show&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Resources/views/Jogo/show.html.twig&#10;config.y&#9;FILE&#9;file:///home/mrs4/controle/app/config/config.yml&#10;conf&#9;FILE&#9;file:///home/mrs4/controle/app/config/config.yml&#10;AppKer&#9;null&#9;null&#10;App&#9;null&#9;null&#10;Pro&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Entity/Product.php&#10;composer&#9;FILE&#9;file:///home/mrs4/controle/composer.json&#10;service&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Service/GenerateDirService.php&#10;jo&#9;null&#9;null&#10;pRod&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Entity/Product.php&#10;Prod&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Controller/ProductController.php&#10;ser&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Resources/config/services.yml&#10;confi&#9;FILE&#9;file:///home/mrs4/controle/app/config/config.yml&#10;inde&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Resources/views/TbKilometragem/index.html.twig&#10;parameter.yml&#9;FILE&#9;file:///home/mrs4/controle/app/config/parameters.yml&#10;co&#9;FILE&#9;file:///home/mrs4/controle/app/config/config.yml&#10;Login&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/UserBundle/Controller/LoginController.php&#10;MRS&#9;null&#9;null&#10;UserCon&#9;null&#9;null&#10;Kil&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Controller/TbKilometragemController.php&#10;Kilo&#9;null&#9;null&#10;in&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Resources/views/TbKilometragem/index.html.twig&#10;new&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Resources/views/TbCategoria/new.html.twig&#10;COn&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Controller/TbCategoriaController.php&#10;cate&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Entity/TbCategoria.php&#10;ki&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Form/TbKilometragemType.php&#10;CategoriaT&#9;null&#9;null&#10;Fina&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Form/TbFinancasType.php&#10;fin&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Entity/TbFinancas.php&#10;categoria&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Controller/TbCategoriaController.php&#10;FinancasT&#9;null&#9;null&#10;catego&#9;null&#9;null&#10;TbCa&#9;null&#9;null&#10;secu&#9;FILE&#9;file:///home/mrs4/controle/app/config/security.yml&#10;tb&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Entity/TbKilometragem.php&#10;financas&#9;null&#9;null&#10;ed&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Resources/views/TbKilometragem/edit.html.twig&#10;edi&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Resources/views/TbKilometragem/edit.html.twig&#10;pain&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Resources/views/TbKilometragem/Template/painel.html.twig&#10;sliding.html.twig&#9;FILE&#9;file:///home/mrs4/controle/vendor/knplabs/knp-paginator-bundle/Resources/views/Pagination/sliding.html.twig&#10;twitter_bootstrap_v3_pagination.html.twig&#9;FILE&#9;file:///home/mrs4/controle/vendor/knplabs/knp-paginator-bundle/Resources/views/Pagination/twitter_bootstrap_v3_pagination.html.twig&#10;index.&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Resources/views/TbKilometragem/index.html.twig" />
+    <property name="SearchEverywhereHistoryKey" value="composer&#9;FILE&#9;file:///home/mrs4/controle/composer.json&#10;sec&#9;FILE&#9;file:///home/mrs4/controle/app/config/security.yml&#10;TEST&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Tests/Controller/JogoControllerTest.php&#10;TbFin&#9;null&#9;null&#10;secury&#9;FILE&#9;file:///home/mrs4/controle/app/config/security.yml&#10;kil&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Controller/TbKilometragemController.php&#10;con&#9;FILE&#9;file:///home/mrs4/controle/app/config/config.yml&#10;contro&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Controller/JogoController.php&#10;show&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Resources/views/Jogo/show.html.twig&#10;config.y&#9;FILE&#9;file:///home/mrs4/controle/app/config/config.yml&#10;conf&#9;FILE&#9;file:///home/mrs4/controle/app/config/config.yml&#10;AppKer&#9;null&#9;null&#10;App&#9;null&#9;null&#10;Pro&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Entity/Product.php&#10;service&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Service/GenerateDirService.php&#10;jo&#9;null&#9;null&#10;pRod&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Entity/Product.php&#10;Prod&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Controller/ProductController.php&#10;ser&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Resources/config/services.yml&#10;confi&#9;FILE&#9;file:///home/mrs4/controle/app/config/config.yml&#10;inde&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Resources/views/TbKilometragem/index.html.twig&#10;parameter.yml&#9;FILE&#9;file:///home/mrs4/controle/app/config/parameters.yml&#10;co&#9;FILE&#9;file:///home/mrs4/controle/app/config/config.yml&#10;Login&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/UserBundle/Controller/LoginController.php&#10;MRS&#9;null&#9;null&#10;UserCon&#9;null&#9;null&#10;Kil&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Controller/TbKilometragemController.php&#10;Kilo&#9;null&#9;null&#10;in&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Resources/views/TbKilometragem/index.html.twig&#10;new&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Resources/views/TbCategoria/new.html.twig&#10;COn&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Controller/TbCategoriaController.php&#10;cate&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Entity/TbCategoria.php&#10;ki&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Form/TbKilometragemType.php&#10;CategoriaT&#9;null&#9;null&#10;Fina&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Form/TbFinancasType.php&#10;fin&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Entity/TbFinancas.php&#10;categoria&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Controller/TbCategoriaController.php&#10;FinancasT&#9;null&#9;null&#10;catego&#9;null&#9;null&#10;TbCa&#9;null&#9;null&#10;secu&#9;FILE&#9;file:///home/mrs4/controle/app/config/security.yml&#10;tb&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Entity/TbKilometragem.php&#10;financas&#9;null&#9;null&#10;ed&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Resources/views/TbKilometragem/edit.html.twig&#10;edi&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Resources/views/TbKilometragem/edit.html.twig&#10;pain&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Resources/views/TbKilometragem/Template/painel.html.twig&#10;sliding.html.twig&#9;FILE&#9;file:///home/mrs4/controle/vendor/knplabs/knp-paginator-bundle/Resources/views/Pagination/sliding.html.twig&#10;twitter_bootstrap_v3_pagination.html.twig&#9;FILE&#9;file:///home/mrs4/controle/vendor/knplabs/knp-paginator-bundle/Resources/views/Pagination/twitter_bootstrap_v3_pagination.html.twig&#10;index.&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Resources/views/TbKilometragem/index.html.twig" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
@@ -695,7 +722,7 @@
     <frame x="2880" y="0" width="961" height="1081" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31803963" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31803963" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947233" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912722" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -733,13 +760,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Controller/JogoController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.016025642">
-          <caret line="38" column="75" selection-start-line="38" selection-start-column="75" selection-end-line="38" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbKilometragem/new.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -864,13 +884,6 @@
         <state vertical-scroll-proportion="-1.0352564">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Service/HorarioService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22435898">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1085,26 +1098,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Command/PontoCommand.php">
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Command/SendMailCommand.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.19210246">
+          <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Service/SendMailService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.25">
+        <state vertical-scroll-proportion="0.28815368">
           <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Command/SendMailCommand.php">
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Command/PontoCommand.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7043757">
-          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+        <state vertical-scroll-proportion="-21.25">
+          <caret line="44" column="28" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Service/HorarioService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.5">
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06586169">
+          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
           <folding />
         </state>
       </provider>
