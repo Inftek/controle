@@ -11,4 +11,4 @@ before_script:
   - "composer install -v"
 
 after_script:
-  - "phpunit --testdox"
+  - "phpunit -c app/phpunit.xml.dist"
