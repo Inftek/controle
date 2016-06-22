@@ -2,7 +2,12 @@
 
 namespace MRS\ControleBundle\Form;
 
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
+use Symfony\Component\Form\Extension\Core\Type\DateType;
+use Symfony\Component\Form\Extension\Core\Type\MoneyType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Validator\Constraints\DateTime;
@@ -21,17 +26,17 @@ class TbFinancasType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('finDataCadastro','date',array('label' => 'Data'))
-            ->add('finValor','money', array('currency' => 'BRL', 'scale' => 2,'label' => 'Valor'))
-            ->add('finDescricao','text',array('label' => 'Descrição'))
-            ->add('tenCodigo','entity', array('label'=> 'Tipo',
+            ->add('finDataCadastro',DateType::class,array('label' => 'Data',
+                                                          'widget'=>'single_text'))
+            ->add('finValor',MoneyType::class, array('currency' => 'BRL', 'scale' => 2,'label' => 'Valor'))
+            ->add('finDescricao',TextType::class,array('label' => 'Descrição'))
+            ->add('tenCodigo',EntityType::class, array('label'=> 'Tipo',
                                               'class' => 'MRSControleBundle:TbTipoEntrada',
                                               'placeholder' => false
                                              )
                 )
-            ->add('catCodigo','entity',array('label' => 'Categoria',
-                                             'attr' => array('class' => 'select2'),
-                                             'class' => 'MRS\ControleBundle\Entity\TbCategoria'))
+            ->add('catCodigo',null,array('label'=>'Categoria',
+                                         'attr'=> array('class'=>'select2')))
         ;
     }
     

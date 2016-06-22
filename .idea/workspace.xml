@@ -2,7 +2,161 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42de861a-5051-4ee6-b736-504beeef1b05" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Procfile" afterPath="$PROJECT_DIR$/Procfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/blade.xml" afterPath="$PROJECT_DIR$/.idea/blade.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/symfony2.xml" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.json" afterPath="$PROJECT_DIR$/app.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/.htaccess" afterPath="$PROJECT_DIR$/app/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppCache.php" afterPath="$PROJECT_DIR$/app/AppCache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/about.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/about.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/old_base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/old_base.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/template/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/template/base.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/template/twitter_bootstrap_v3_pagination.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/template/twitter_bootstrap_v3_pagination.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/autoload.php" afterPath="$PROJECT_DIR$/app/autoload.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config_dev.yml" afterPath="$PROJECT_DIR$/app/config/config_dev.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config_prod.yml" afterPath="$PROJECT_DIR$/app/config/config_prod.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config_test.yml" afterPath="$PROJECT_DIR$/app/config/config_test.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/parameters.yml.dist" afterPath="$PROJECT_DIR$/app/config/parameters.yml.dist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing_dev.yml" afterPath="$PROJECT_DIR$/app/config/routing_dev.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/services.yml" afterPath="$PROJECT_DIR$/app/config/services.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/phpunit.xml.dist" afterPath="$PROJECT_DIR$/app/phpunit.xml.dist" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/.htaccess" afterPath="$PROJECT_DIR$/src/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/AppBundle.php" afterPath="$PROJECT_DIR$/src/AppBundle/AppBundle.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Command/JogoCommand.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Command/JogoCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Command/PontoCommand.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Command/PontoCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Command/SendMailCommand.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Command/SendMailCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/AdminTemplateController.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/AdminTemplateController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/ApiHorarioController.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/ApiHorarioController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/DefaultController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/JogoController.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/JogoController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/PdfController.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/PdfController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/ProductController.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/ProductController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/SerializerController.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/SerializerController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/TbCategoriaController.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/TbCategoriaController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/TbFinancasController.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/TbFinancasController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/TbHorarioController.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/TbHorarioController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/TbKilometragemController.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/TbKilometragemController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/TbTipoEntradaController.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/TbTipoEntradaController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/DependencyInjection/Configuration.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/DependencyInjection/Configuration.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/DependencyInjection/MRSControleExtension.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/DependencyInjection/MRSControleExtension.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Entity/Jogo.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Entity/Jogo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Entity/Product.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Entity/Product.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Entity/TbAcesso.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Entity/TbAcesso.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Entity/TbCategoria.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Entity/TbCategoria.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Entity/TbFinancas.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Entity/TbFinancas.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Entity/TbHorario.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Entity/TbHorario.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Entity/TbKilometragem.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Entity/TbKilometragem.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Entity/TbTipoEntrada.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Entity/TbTipoEntrada.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Form/JogoType.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Form/JogoType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Form/ProductType.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Form/ProductType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Form/TbCategoriaType.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Form/TbCategoriaType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Form/TbFinancasType.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Form/TbFinancasType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Form/TbHorarioType.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Form/TbHorarioType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Form/TbKilometragemType.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Form/TbKilometragemType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Form/TbTipoEntradaType.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Form/TbTipoEntradaType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/MRSControleBundle.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/MRSControleBundle.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Repository/FinancasRepository.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Repository/FinancasRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Repository/HorarioRepository.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Repository/HorarioRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Repository/JogoRepository.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Repository/JogoRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Repository/KilometragemRepository.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Repository/KilometragemRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Repository/ProductRepository.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Repository/ProductRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/doctrine/Jogo.orm.xml" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/doctrine/Jogo.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/doctrine/Product.orm.xml" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/doctrine/Product.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/doctrine/TbAcesso.orm.xml" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/doctrine/TbAcesso.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/doctrine/TbCategoria.orm.xml" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/doctrine/TbCategoria.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/doctrine/TbFinancas.orm.xml" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/doctrine/TbFinancas.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/doctrine/TbHorario.orm.xml" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/doctrine/TbHorario.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/doctrine/TbKilometragem.orm.xml" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/doctrine/TbKilometragem.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/doctrine/TbTipoEntrada.orm.xml" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/doctrine/TbTipoEntrada.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/services.yml" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/services.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/public/css/select2-bootstrap.css" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/public/css/select2-bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/public/js/select2.js" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/public/js/select2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/translations/MyBundle.en.yml" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/translations/MyBundle.en.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/translations/MyBundle.fr.yml" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/translations/MyBundle.fr.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/translations/MyBundle.pt_BR.yml" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/translations/MyBundle.pt_BR.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/AdminTemplate/index.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/AdminTemplate/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/ApiHorario/listHorario.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/ApiHorario/listHorario.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Default/Email.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Default/Email.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Default/Template/painel.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Default/Template/painel.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Default/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Jogo/edit.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Jogo/edit.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Jogo/index.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Jogo/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Jogo/new.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Jogo/new.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Jogo/show.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Jogo/show.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Product/edit.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Product/edit.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Product/index.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Product/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Product/new.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Product/new.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Product/show.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Product/show.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/SerializerController/financas.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/SerializerController/financas.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbCategoria/edit.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbCategoria/edit.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbCategoria/index.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbCategoria/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbCategoria/new.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbCategoria/new.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbCategoria/show.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbCategoria/show.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbCategoria/template/painel.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbCategoria/template/painel.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbCategoria/template/template.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbCategoria/template/template.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/Template/painel.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/Template/painel.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/edit.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/edit.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/index.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/new.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/new.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/show.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/show.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbHorario/Pdf/show.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbHorario/Pdf/show.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbHorario/Template/painel.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbHorario/Template/painel.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbHorario/edit.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbHorario/edit.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbHorario/index.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbHorario/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbHorario/index2.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbHorario/index2.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbHorario/new.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbHorario/new.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbHorario/show.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbHorario/show.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbKilometragem/Template/painel.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbKilometragem/Template/painel.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbKilometragem/edit.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbKilometragem/edit.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbKilometragem/index.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbKilometragem/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbKilometragem/new.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbKilometragem/new.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbKilometragem/show.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbKilometragem/show.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbTipoEntrada/edit.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbTipoEntrada/edit.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbTipoEntrada/index.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbTipoEntrada/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbTipoEntrada/new.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbTipoEntrada/new.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbTipoEntrada/show.html.twig" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbTipoEntrada/show.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Service/ChartService.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Service/ChartService.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Service/FinancasService.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Service/FinancasService.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Service/GenerateDirService.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Service/GenerateDirService.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Service/HorarioService.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Service/HorarioService.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Service/JogoService.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Service/JogoService.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/ControleBundle/Service/SendMailService.php" afterPath="$PROJECT_DIR$/src/MRS/ControleBundle/Service/SendMailService.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/UserBundle/Controller/LoginController.php" afterPath="$PROJECT_DIR$/src/MRS/UserBundle/Controller/LoginController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/UserBundle/Controller/UserController.php" afterPath="$PROJECT_DIR$/src/MRS/UserBundle/Controller/UserController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/UserBundle/Entity/User.php" afterPath="$PROJECT_DIR$/src/MRS/UserBundle/Entity/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/UserBundle/Entity/UserRepository.php" afterPath="$PROJECT_DIR$/src/MRS/UserBundle/Entity/UserRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/UserBundle/Form/UserType.php" afterPath="$PROJECT_DIR$/src/MRS/UserBundle/Form/UserType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/UserBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/MRS/UserBundle/Resources/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/UserBundle/Resources/translations/messages.pt_BR.yml" afterPath="$PROJECT_DIR$/src/MRS/UserBundle/Resources/translations/messages.pt_BR.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/UserBundle/Resources/views/Login/login.html.twig" afterPath="$PROJECT_DIR$/src/MRS/UserBundle/Resources/views/Login/login.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/UserBundle/Resources/views/User/edit.html.twig" afterPath="$PROJECT_DIR$/src/MRS/UserBundle/Resources/views/User/edit.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/UserBundle/Resources/views/User/index.html.twig" afterPath="$PROJECT_DIR$/src/MRS/UserBundle/Resources/views/User/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/UserBundle/Resources/views/User/new.html.twig" afterPath="$PROJECT_DIR$/src/MRS/UserBundle/Resources/views/User/new.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MRS/UserBundle/UserBundle.php" afterPath="$PROJECT_DIR$/src/MRS/UserBundle/UserBundle.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TestBundle/Command/TestCommand.php" afterPath="$PROJECT_DIR$/src/TestBundle/Command/TestCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TestBundle/Controller/TestController.php" afterPath="$PROJECT_DIR$/src/TestBundle/Controller/TestController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TestBundle/Resources/views/Test/index.html.twig" afterPath="$PROJECT_DIR$/src/TestBundle/Resources/views/Test/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TestBundle/TesteBundle.php" afterPath="$PROJECT_DIR$/src/TestBundle/TesteBundle.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/.htaccess" afterPath="$PROJECT_DIR$/web/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app.php" afterPath="$PROJECT_DIR$/web/app.php" />
     </list>
     <ignored path="controle.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,31 +185,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/composer.json">
+      <file leaf-file-name="new.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/new.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.6">
-              <caret line="41" column="49" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
+            <state vertical-scroll-proportion="-28.791666">
+              <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/app.php">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46474358">
-              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app_dev.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/app_dev.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.2248394">
+              <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -77,9 +221,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Form/ProductType.php" />
-        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Product/edit.html.twig" />
-        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/doctrine/Jogo.xml" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/config/doctrine/Jogo.orm.xml" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Command/JogoCommand.php" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Service/JogoService.php" />
@@ -91,9 +232,7 @@
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbHorario/Pdf/show.html.twig" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/ProductController.php" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Jogo/index.html.twig" />
-        <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Entity/Product.php" />
-        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Form/JogoType.php" />
         <option value="$PROJECT_DIR$/app/config/config_prod.yml" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/JogoController.php" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbKilometragem/show.html.twig" />
@@ -102,7 +241,6 @@
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Tests/Controller/DefaultControllerTest.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Tests/Controller/DefaultControllerTest.php" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Default/index.html.twig" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Tests/Controller/JogoControllerTest.php" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/TbKilometragemController.php" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbKilometragem/index.html.twig" />
@@ -111,7 +249,6 @@
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/index.html.twig" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/show.html.twig" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbCategoria/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/TbFinancasController.php" />
         <option value="$PROJECT_DIR$/app/phpunit.xml.dist" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/MRS/UserBundle/Resources/config/routing.yml" />
@@ -120,14 +257,21 @@
         <option value="$PROJECT_DIR$/app/config/config_dev.yml" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
         <option value="$PROJECT_DIR$/src/MRS/UserBundle/Tests/Controller/UserControllerTest.php" />
-        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Form/TbFinancasType.php" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/public/css/select2-bootstrap.css" />
-        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/new.html.twig" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Command/SendMailCommand.php" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Service/HorarioService.php" />
         <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Command/PontoCommand.php" />
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/app/AppKernel.php" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Controller/TbFinancasController.php" />
+        <option value="$PROJECT_DIR$/web/bundles/mrscontrole/js/select2.js" />
+        <option value="$PROJECT_DIR$/web/bundles/mrscontrole/css/select2-bootstrap.css" />
+        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Form/TbFinancasType.php" />
+        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/new.html.twig" />
+        <option value="$PROJECT_DIR$/src/MRS/ControleBundle/Form/JogoType.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -170,6 +314,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -218,270 +363,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="controle">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="controle">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="controle">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="MRS">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="controle">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="MRS">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="ControleBundle">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="controle">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="MRS">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="ControleBundle">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Resources">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="views">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="TbTipoEntrada">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="controle">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="MRS">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="ControleBundle">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Resources">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="views">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="controle">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="MRS">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="ControleBundle">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Resources">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="controle">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="MRS">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="ControleBundle">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Controller">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="controle">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="app">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="controle">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="app">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="cache">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="controle">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="app">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="cache">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="dev">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="controle">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="app">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="cache">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="dev">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="assetic">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scratches" />
     </panes>
   </component>
@@ -492,8 +373,8 @@
     <property name="settings.editor.selected.configurable" value="fr.adrienbrault.idea.symfony2plugin.ui.TwigSettingsForm" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/symfony_heroku" />
-    <property name="SearchEverywhereHistoryKey" value="composer&#9;FILE&#9;file:///home/mrs4/controle/composer.json&#10;sec&#9;FILE&#9;file:///home/mrs4/controle/app/config/security.yml&#10;TEST&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Tests/Controller/JogoControllerTest.php&#10;TbFin&#9;null&#9;null&#10;secury&#9;FILE&#9;file:///home/mrs4/controle/app/config/security.yml&#10;kil&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Controller/TbKilometragemController.php&#10;con&#9;FILE&#9;file:///home/mrs4/controle/app/config/config.yml&#10;contro&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Controller/JogoController.php&#10;show&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Resources/views/Jogo/show.html.twig&#10;config.y&#9;FILE&#9;file:///home/mrs4/controle/app/config/config.yml&#10;conf&#9;FILE&#9;file:///home/mrs4/controle/app/config/config.yml&#10;AppKer&#9;null&#9;null&#10;App&#9;null&#9;null&#10;Pro&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Entity/Product.php&#10;service&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Service/GenerateDirService.php&#10;jo&#9;null&#9;null&#10;pRod&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Entity/Product.php&#10;Prod&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Controller/ProductController.php&#10;ser&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Resources/config/services.yml&#10;confi&#9;FILE&#9;file:///home/mrs4/controle/app/config/config.yml&#10;inde&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Resources/views/TbKilometragem/index.html.twig&#10;parameter.yml&#9;FILE&#9;file:///home/mrs4/controle/app/config/parameters.yml&#10;co&#9;FILE&#9;file:///home/mrs4/controle/app/config/config.yml&#10;Login&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/UserBundle/Controller/LoginController.php&#10;MRS&#9;null&#9;null&#10;UserCon&#9;null&#9;null&#10;Kil&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Controller/TbKilometragemController.php&#10;Kilo&#9;null&#9;null&#10;in&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Resources/views/TbKilometragem/index.html.twig&#10;new&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Resources/views/TbCategoria/new.html.twig&#10;COn&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Controller/TbCategoriaController.php&#10;cate&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Entity/TbCategoria.php&#10;ki&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Form/TbKilometragemType.php&#10;CategoriaT&#9;null&#9;null&#10;Fina&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Form/TbFinancasType.php&#10;fin&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Entity/TbFinancas.php&#10;categoria&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Controller/TbCategoriaController.php&#10;FinancasT&#9;null&#9;null&#10;catego&#9;null&#9;null&#10;TbCa&#9;null&#9;null&#10;secu&#9;FILE&#9;file:///home/mrs4/controle/app/config/security.yml&#10;tb&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Entity/TbKilometragem.php&#10;financas&#9;null&#9;null&#10;ed&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Resources/views/TbKilometragem/edit.html.twig&#10;edi&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Resources/views/TbKilometragem/edit.html.twig&#10;pain&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Resources/views/TbKilometragem/Template/painel.html.twig&#10;sliding.html.twig&#9;FILE&#9;file:///home/mrs4/controle/vendor/knplabs/knp-paginator-bundle/Resources/views/Pagination/sliding.html.twig&#10;twitter_bootstrap_v3_pagination.html.twig&#9;FILE&#9;file:///home/mrs4/controle/vendor/knplabs/knp-paginator-bundle/Resources/views/Pagination/twitter_bootstrap_v3_pagination.html.twig&#10;index.&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Resources/views/TbKilometragem/index.html.twig" />
+    <property name="last_opened_file_path" value="$USER_HOME$/sa" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Form/TbFinancasType.php&#10;composer&#9;FILE&#9;file:///home/mrs4/controle/composer.json&#10;sec&#9;FILE&#9;file:///home/mrs4/controle/app/config/security.yml&#10;TEST&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Tests/Controller/JogoControllerTest.php&#10;TbFin&#9;null&#9;null&#10;secury&#9;FILE&#9;file:///home/mrs4/controle/app/config/security.yml&#10;kil&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Controller/TbKilometragemController.php&#10;con&#9;FILE&#9;file:///home/mrs4/controle/app/config/config.yml&#10;contro&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Controller/JogoController.php&#10;show&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Resources/views/Jogo/show.html.twig&#10;config.y&#9;FILE&#9;file:///home/mrs4/controle/app/config/config.yml&#10;conf&#9;FILE&#9;file:///home/mrs4/controle/app/config/config.yml&#10;AppKer&#9;null&#9;null&#10;App&#9;null&#9;null&#10;Pro&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Entity/Product.php&#10;service&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Service/GenerateDirService.php&#10;jo&#9;null&#9;null&#10;pRod&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Entity/Product.php&#10;Prod&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Controller/ProductController.php&#10;ser&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Resources/config/services.yml&#10;confi&#9;FILE&#9;file:///home/mrs4/controle/app/config/config.yml&#10;inde&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Resources/views/TbKilometragem/index.html.twig&#10;parameter.yml&#9;FILE&#9;file:///home/mrs4/controle/app/config/parameters.yml&#10;co&#9;FILE&#9;file:///home/mrs4/controle/app/config/config.yml&#10;Login&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/UserBundle/Controller/LoginController.php&#10;MRS&#9;null&#9;null&#10;UserCon&#9;null&#9;null&#10;Kil&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Controller/TbKilometragemController.php&#10;Kilo&#9;null&#9;null&#10;in&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Resources/views/TbKilometragem/index.html.twig&#10;new&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Resources/views/TbCategoria/new.html.twig&#10;COn&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Controller/TbCategoriaController.php&#10;cate&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Entity/TbCategoria.php&#10;ki&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Form/TbKilometragemType.php&#10;CategoriaT&#9;null&#9;null&#10;Fina&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Form/TbFinancasType.php&#10;fin&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Entity/TbFinancas.php&#10;categoria&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Controller/TbCategoriaController.php&#10;FinancasT&#9;null&#9;null&#10;catego&#9;null&#9;null&#10;TbCa&#9;null&#9;null&#10;secu&#9;FILE&#9;file:///home/mrs4/controle/app/config/security.yml&#10;tb&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Entity/TbKilometragem.php&#10;financas&#9;null&#9;null&#10;ed&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Resources/views/TbKilometragem/edit.html.twig&#10;edi&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Resources/views/TbKilometragem/edit.html.twig&#10;pain&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Resources/views/TbKilometragem/Template/painel.html.twig&#10;sliding.html.twig&#9;FILE&#9;file:///home/mrs4/controle/vendor/knplabs/knp-paginator-bundle/Resources/views/Pagination/sliding.html.twig&#10;twitter_bootstrap_v3_pagination.html.twig&#9;FILE&#9;file:///home/mrs4/controle/vendor/knplabs/knp-paginator-bundle/Resources/views/Pagination/twitter_bootstrap_v3_pagination.html.twig&#10;index.&#9;FILE&#9;file:///home/mrs4/controle/src/MRS/ControleBundle/Resources/views/TbKilometragem/index.html.twig" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
@@ -563,7 +444,7 @@
     <frame x="2880" y="0" width="953" height="1080" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31756046" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3112513" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947233" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912722" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -601,125 +482,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbKilometragem/show.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="12" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Tests/Service/HorarioServiceTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/old_base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8333333">
-          <caret line="52" column="81" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/Default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.048076924">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/template/twitter_bootstrap_v3_pagination.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2724359">
-          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Tests/Controller/DefaultControllerTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22435898">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/BrowserKit/Request.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-30.0">
-          <caret line="55" column="20" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Client.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34151548">
-          <caret line="64" column="20" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/Response.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34151548">
-          <caret line="480" column="20" selection-start-line="480" selection-start-column="20" selection-end-line="480" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Test/WebTestCase.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36819637">
-          <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbKilometragem/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2561366">
-          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/BrowserKit/Client.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34151548">
-          <caret line="277" column="20" selection-start-line="277" selection-start-column="20" selection-end-line="277" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Entity/TbHorario.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.0352564">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Repository/HorarioRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5192308">
-          <caret line="150" column="0" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/Template/painel.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/show.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64102566">
-          <caret line="61" column="74" selection-start-line="61" selection-start-column="74" selection-end-line="61" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/edit.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7692308">
@@ -731,20 +493,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1923077">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Controller/TbFinancasController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14423077">
-          <caret line="16" column="74" selection-start-line="16" selection-start-column="74" selection-end-line="16" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.016025642">
-          <caret line="65" column="30" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -773,7 +521,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36858973">
           <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -809,13 +556,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.40064102">
           <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.03125">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -868,13 +608,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/new.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32017076">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/template/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.17609392">
@@ -886,13 +619,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Form/TbFinancasType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5122732">
-          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -921,7 +647,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.65705127">
           <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -929,7 +654,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -937,23 +661,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.203125">
           <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.6">
-          <caret line="41" column="49" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app_dev.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -961,6 +668,188 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.46474358">
           <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app_dev.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Entity/TbFinancas.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Form/ProductType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-23.75">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Form/TbCategoriaType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Form/TbHorarioType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Form/TbKilometragemType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-25.625">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Form/TbTipoEntradaType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbCategoria/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17628205">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35576922">
+          <caret line="43" column="45" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43269232">
+          <caret line="28" column="74" selection-start-line="28" selection-start-column="74" selection-end-line="28" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tetranz/select2entity-bundle/Tetranz/Select2EntityBundle/Form/Type/Select2EntityType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.125">
+          <caret line="52" column="17" selection-start-line="52" selection-start-column="15" selection-end-line="52" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Controller/TbFinancasController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.25">
+          <caret line="85" column="55" selection-start-line="85" selection-start-column="55" selection-end-line="85" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bundles/mrscontrole/js/select2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bundles/mrscontrole/css/select2-bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.05102041">
+          <caret line="0" column="365" selection-start-line="0" selection-start-column="365" selection-end-line="0" selection-end-column="365" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.015625">
+          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43910256">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Form/TbFinancasType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5032051">
+          <caret line="35" column="46" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Form/JogoType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25641027">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbHorario/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3846154">
+          <caret line="80" column="59" selection-start-line="80" selection-start-column="59" selection-end-line="80" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20833333">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="e#49#106#0#PHP" expanded="true" />
+            <element signature="e#3125#3154#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Controller/JogoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25641027">
+          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+          <folding>
+            <element signature="e#1570#1594#1#PHP" expanded="true" />
+            <element signature="e#3924#3948#1#PHP" expanded="true" />
+            <element signature="e#4562#4586#1#PHP" expanded="true" />
+            <element signature="e#5869#5893#1#PHP" expanded="true" />
+            <element signature="e#6920#6944#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MRS/ControleBundle/Resources/views/TbFinancas/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-28.791666">
+          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2248394">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
           <folding />
         </state>
       </provider>

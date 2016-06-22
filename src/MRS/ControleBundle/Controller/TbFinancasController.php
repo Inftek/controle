@@ -83,7 +83,7 @@ class TbFinancasController extends Controller
     private function createCreateForm(TbFinancas $entity)
     {
         $entity->setFinDataCadastro(new \DateTime('now'));
-        $form = $this->createForm(new TbFinancasType(), $entity, array(
+        $form = $this->createForm(TbFinancasType::class, $entity, array(
             'validation_groups' => array('create'),
             'action' => $this->generateUrl('financas_create'),
             'method' => 'POST',

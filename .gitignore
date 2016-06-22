@@ -12,3 +12,4 @@
 .idea/
 .gitignore
 .idea/
+/web/files/*
