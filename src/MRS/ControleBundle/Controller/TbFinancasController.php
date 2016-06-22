@@ -99,17 +99,16 @@ class TbFinancasController extends Controller
      *
      * @Route("/new", name="financas_new")
      * @Method("GET")
-     * @Template()
      */
     public function newAction()
     {
         $entity = new TbFinancas();
         $form   = $this->createCreateForm($entity);
 
-        return array(
+        return $this->render('MRSControleBundle:TbFinancas:new.html.twig',array(
             'entity' => $entity,
             'form'   => $form->createView(),
-        );
+        ));
     }
 
     /**

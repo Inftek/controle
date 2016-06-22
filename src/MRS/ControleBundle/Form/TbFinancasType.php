@@ -31,6 +31,7 @@ class TbFinancasType extends AbstractType
             ->add('finValor',MoneyType::class, array('currency' => 'BRL', 'scale' => 2,'label' => 'Valor'))
             ->add('finDescricao',TextType::class,array('label' => 'Descrição'))
             ->add('tenCodigo',EntityType::class, array('label'=> 'Tipo',
+                                              'attr' => array('class'=>'input-sm'),
                                               'class' => 'MRSControleBundle:TbTipoEntrada',
                                               'placeholder' => false
                                              )
